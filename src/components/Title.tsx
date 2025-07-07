@@ -13,11 +13,15 @@ export default function Title() {
 
       <div className="justify-center flex h-5 items-center gap-4 text-sm">
         <Badge asChild>
-          <a href="https://www.linkedin.com/in/brandon-sh-chan/">brandon-sh-chan</a>
+          <a target="_blank" href="https://www.linkedin.com/in/brandon-sh-chan/">
+            brandon-sh-chan
+          </a>
         </Badge>
         <Separator orientation="vertical" />
         <Badge asChild>
-          <a href="https://github.com/br-Chan">br-Chan</a>
+          <a target="_blank" href="https://github.com/br-Chan">
+            br-Chan
+          </a>
         </Badge>
       </div>
 

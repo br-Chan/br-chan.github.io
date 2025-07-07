@@ -8,8 +8,8 @@ export const Route = createFileRoute("/")({
 
 function App() {
   return (
-    <div className="text-center">
-      <header className="min-h-screen flex flex-col items-center bg-white text-black text-[calc(10px+2vmin)]">
+    <div className="text-center w-3xl p-4 justify-center bg-white">
+      <header className="min-h-screen flex flex-col items-center text-[calc(10px+2vmin)]">
         <Title />
         <img
           src={logo}
