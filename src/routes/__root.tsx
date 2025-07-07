@@ -5,11 +5,11 @@ import Header from "../components/Header";
 
 export const Route = createRootRoute({
 	component: () => (
-		<div className="flex flex-col items-center gap-2 bg-gray-800">
+		<main className="flex flex-col items-center gap-2 bg-gray-800">
 			<Header />
 
 			<Outlet />
 			<TanStackRouterDevtools />
-		</div>
+		</main>
 	),
 });
