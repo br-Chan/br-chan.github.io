@@ -5,6 +5,7 @@ import CVLinks from "@/components/CVLinks";
 import CVStatement from "@/components/CVStatement";
 import CVTitle from "@/components/CVTitle";
 import { Separator } from "@/components/ui/separator";
+import CVProjects from "@/components/CVProjects";
 
 export const Route = createFileRoute("/")({
 	component: App,
@@ -25,6 +26,8 @@ function App() {
 			<CVEducation />
 
 			<CVExperience />
+
+			<CVProjects />
 		</section>
 	);
 }
