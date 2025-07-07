@@ -5,6 +5,8 @@
 [] options to customise who I am (uni student, software developer, completely anonymised, dead, etc)
 [] options to customise font (Aptos, Times New Roman, Comic Mono)
 [] options/filters to show different projects, experiences, etc
+[] options for interesting gimmicks (no-javascript version, , ,)
+[] music?
 
 Welcome to your new TanStack app!
 

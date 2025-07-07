@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "../logo.svg";
-import Title from "@/components/Title";
+import CVTitle from "@/components/CVTitle";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="text-center w-3xl p-4 justify-center bg-white">
       <header className="min-h-screen flex flex-col items-center text-[calc(10px+2vmin)]">
-        <Title />
+        <CVTitle />
         <img
           src={logo}
           className="h-[40vmin] pointer-events-none animate-[spin_20s_linear_infinite]"
