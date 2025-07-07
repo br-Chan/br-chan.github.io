@@ -1,6 +1,6 @@
 export default function CVStatement() {
 	return (
-		<div className="w-full flex flex-col gap-2">
+		<div className="flex w-full flex-col gap-2">
 			Hi, I'm a Penultimate Software Engineering student at the University
 			of Auckland. I'm passionate in helping other people and solving
 			problems, and I'm always ready to learn new things. I'm seeking the

@@ -3,9 +3,9 @@ import { Separator } from "./ui/separator";
 
 export default function CVTitle() {
 	return (
-		<div className="w-full flex flex-col gap-2">
+		<div className="flex w-full flex-col gap-2">
 			<div className="space-y-1">
-				<h1 className="text-center text-4xl font-extrabold">
+				<h1 className="text-center font-extrabold text-4xl">
 					Brandon Chan
 				</h1>
 				<p className="text-muted-foreground text-sm">
@@ -14,7 +14,7 @@ export default function CVTitle() {
 				</p>
 			</div>
 
-			<div className="justify-center flex h-5 items-center gap-4 text-sm">
+			<div className="flex h-5 items-center justify-center gap-4 text-sm">
 				{/* TODO: extract these into a json? maybe not worth the effort */}
 				<Badge asChild>
 					<a

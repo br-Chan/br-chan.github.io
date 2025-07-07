@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<div className="gap-2 flex flex-col min-h-screen text-center w-3xl p-4 justify-start bg-white">
+		<div className="flex min-h-screen w-3xl flex-col justify-start gap-2 bg-white p-4 text-center">
 			<header className="items-center text-[calc(10px+2vmin)]">
 				<CVTitle />
 			</header>
