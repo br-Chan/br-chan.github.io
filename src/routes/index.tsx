@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import CVEducation from "@/components/CVEducation";
+import CVExperience from "@/components/CVExperience";
 import CVLinks from "@/components/CVLinks";
 import CVStatement from "@/components/CVStatement";
 import CVTitle from "@/components/CVTitle";
 import { Separator } from "@/components/ui/separator";
-import CVEducation from "@/components/CVEducation";
 
 export const Route = createFileRoute("/")({
 	component: App,
@@ -22,6 +23,8 @@ function App() {
 			<CVStatement />
 
 			<CVEducation />
+
+			<CVExperience />
 		</section>
 	);
 }
