@@ -39,8 +39,6 @@ export default function CVTitle() {
           </a>
         </Badge>
       </div>
-
-      <Separator />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "../logo.svg";
 import CVTitle from "@/components/CVTitle";
+import CVStatement from "@/components/CVStatement";
+import { Separator } from "@/components/ui/separator";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -8,34 +10,16 @@ export const Route = createFileRoute("/")({
 
 function App() {
   return (
-    <div className="text-center w-3xl p-4 justify-center bg-white">
-      <header className="min-h-screen flex flex-col items-center text-[calc(10px+2vmin)]">
+    <div className="gap-2 flex flex-col min-h-screen text-center w-3xl p-4 justify-start bg-white">
+      <header className="items-center text-[calc(10px+2vmin)]">
         <CVTitle />
-        <img
-          src={logo}
-          className="h-[40vmin] pointer-events-none animate-[spin_20s_linear_infinite]"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
       </header>
+      <Separator />
+      <body>
+        <section>
+          <CVStatement />
+        </section>
+      </body>
     </div>
   );
 }
