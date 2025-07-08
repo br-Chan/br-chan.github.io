@@ -5,8 +5,9 @@ export default function Header() {
 	return (
 		<header className="flex w-full justify-between gap-2 bg-white p-2 text-black">
 			<nav className="flex flex-row">
-				<div className="px-2 font-bold">
+				<div className="flex flex-row gap-4 px-2 font-bold">
 					<Link to="/">Home</Link>
+					<Link to="/cv">CV</Link>
 				</div>
 			</nav>
 		</header>
