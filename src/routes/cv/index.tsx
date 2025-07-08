@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import CVEducation from "@/components/CVEducation";
-import CVExperience from "@/components/CVExperience";
-import CVLinks from "@/components/CVLinks";
-import CVProjects from "@/components/CVProjects";
-import CVStatement from "@/components/CVStatement";
-import CVTitle from "@/components/CVTitle";
 import { Separator } from "@/components/ui/separator";
+import CVEducation from "@/routes/cv/-components/CVEducation";
+import CVExperience from "@/routes/cv/-components/CVExperience";
+import CVLinks from "@/routes/cv/-components/CVLinks";
+import CVProjects from "@/routes/cv/-components/CVProjects";
+import CVStatement from "@/routes/cv/-components/CVStatement";
+import CVTitle from "@/routes/cv/-components/CVTitle";
 
 export const Route = createFileRoute("/cv/")({
 	component: CV,
