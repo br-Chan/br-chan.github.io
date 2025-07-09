@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Rankle for New York Times Games",
+		"techStack": [
+			"React",
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Firebase"
+		],
+		"startDate": "Jun 2024",
+		"endDate": "present",
+		"bulletPoints": [
+			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
+			"Features OAuth account authentication, responsive design and interactive UI/UX."
+		]
+	},
+	{
+		"name": "The Missing Dollar Mystery",
+		"techStack": ["Java", "JavaFX", "OpenAI API"],
+		"startDate": "Jul 2024",
+		"endDate": "Oct 2024",
+		"bulletPoints": [
+			"Developed a ready-to-launch private investigation game suiting clients' needs with a team.",
+			"Designed screen flows, distributed workloads among team, implemented key features: interactive clues, game timers, interfaces to communicate with OpenAI API, prompt engineering (30 realistic conversation topics, accurate end-of-game scoring and feedback to gauge player’s skill)."
+		]
+	},
+	{
+		"name": "SESA x WDCC Hackathon",
+		"techStack": ["React", "Next.js", "TypeScript"],
+		"startDate": "Aug 2024",
+		"endDate": "Aug 2024",
+		"bulletPoints": [
+			"Awarded Most Over-engineered as a team; deployed a multiplayer spaceship crew simulator.",
+			"Built frontend player and death screens; integrated team member’s Chart.js code to main repository."
+		]
+	}
+]
