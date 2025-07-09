@@ -34,5 +34,30 @@
 			"Awarded Most Over-engineered as a team; deployed a multiplayer spaceship crew simulator.",
 			"Built frontend player and death screens; integrated team member’s Chart.js code to main repository."
 		]
+	},
+	{
+		"name": "Venue Hire System",
+		"techStack": ["Java"],
+		"startDate": "Mar 2024",
+		"endDate": "Apr 2024",
+		"bulletPoints": [
+			"Designed and implemented a system in Java for storing and managing venues and their bookings that a real venue hire company could use."
+		]
+	},
+	{
+		"name": "Customisable LOTTO Generator",
+		"techStack": ["Java", "Java Swing"],
+		"startDate": "Dec 2023",
+		"endDate": "Mar 2024",
+		"bulletPoints": [
+			"Intuitive GUI .exe application to randomly generate personalised Lottery numbers with options panel."
+		]
+	},
+	{
+		"name": "Stop! Don't put any more until type properties are finalised",
+		"techStack": ["don't"],
+		"startDate": "do",
+		"endDate": "it",
+		"bulletPoints": ["peanuts", "and pie"]
 	}
 ]

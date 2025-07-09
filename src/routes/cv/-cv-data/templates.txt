@@ -1,0 +1,11 @@
+To copy json templates
+
+Project:
+,
+{
+	"name": "",
+	"techStack": ["", ""],
+	"startDate": "",
+	"endDate": "",
+	"bulletPoints": ["", ""]
+}
