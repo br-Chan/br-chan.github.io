@@ -6,7 +6,7 @@ export default function CVLinks() {
 	return (
 		<div className="flex h-5 items-center justify-center gap-4 text-sm">
 			{/* TODO: extract these into a json? maybe not worth the effort */}
-			<Badge asChild className="bg-[#0077b5]">
+			<Badge asChild className="bg-[#0077b5] text-md">
 				<a
 					className="hover:underline"
 					href="https://www.linkedin.com/in/brandon-sh-chan/"
@@ -18,7 +18,7 @@ export default function CVLinks() {
 				</a>
 			</Badge>
 			<Separator orientation="vertical" />
-			<Badge asChild>
+			<Badge asChild className="text-md">
 				<a
 					className="hover:underline"
 					href="https://github.com/br-Chan"
@@ -30,7 +30,7 @@ export default function CVLinks() {
 				</a>
 			</Badge>
 			<Separator orientation="vertical" />
-			<Badge asChild className="bg-[#FF0000]">
+			<Badge asChild className="bg-[#FF0000] text-md">
 				<a
 					className="hover:underline"
 					href="https://www.youtube.com/@br-Chan-g5l"
