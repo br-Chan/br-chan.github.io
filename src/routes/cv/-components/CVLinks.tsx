@@ -8,9 +8,9 @@ export default function CVLinks() {
 			<Badge asChild>
 				<a
 					className="hover:underline"
-					target="_blank"
 					href="https://www.linkedin.com/in/brandon-sh-chan/"
 					rel="noopener"
+					target="_blank"
 				>
 					brandon-sh-chan
 				</a>
@@ -19,9 +19,9 @@ export default function CVLinks() {
 			<Badge asChild>
 				<a
 					className="hover:underline"
-					target="_blank"
 					href="https://github.com/br-Chan"
 					rel="noopener"
+					target="_blank"
 				>
 					br-Chan
 				</a>
@@ -30,9 +30,9 @@ export default function CVLinks() {
 			<Badge asChild>
 				<a
 					className="hover:underline"
-					target="_blank"
 					href="https://www.youtube.com/@br-Chan-g5l"
 					rel="noopener"
+					target="_blank"
 				>
 					br-Chan
 				</a>
