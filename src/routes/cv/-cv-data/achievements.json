@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Dean's Honours List, Part I and II Engineering",
+		"sponsor": "University of Auckland",
+		"date": "2023, 2024",
+		"bulletPoints": [
+			"Top 5% in cohort: 9.00/9.00 Engineering GPA in Part I and Part II."
+		]
+	},
+	{
+		"name": "Future Forward: Sustainability Case Challenge",
+		"sponsor": "Tonkin + Taylor",
+		"date": "Sep 2023",
+		"bulletPoints": [
+			"Won 1st out of 6 teams: our team presented solutions to increase nature in the city, designing a land utilisation plan to increase greenspace in unused areas, a themed month to boost public engagement, and an app that made use of Arduino to monitor personal potted plants."
+		]
+	},
+	{
+		"name": "YIC Sarawak, Malaysia",
+		"sponsor": "Swinburne University of Technology",
+		"date": "Aug 2019",
+		"bulletPoints": [
+			"Won Gold out of 50+ teams in the Young Innovators Challenge to solve real-world problems.",
+			"Built working prototype using Arduino and developed Bluetooth-connected mobile app."
+		]
+	}
+]

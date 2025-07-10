@@ -1,13 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
-import CVEducation from "./-components/CVEducation";
-import CVExperience from "./-components/CVExperience";
+import { CVAchievements } from "./-components/CVAchievements";
+import { CVEducation } from "./-components/CVEducation";
+import { CVExperience } from "./-components/CVExperience";
 import CVLinks from "./-components/CVLinks";
 import { CVProjects } from "./-components/CVProjects";
+import { CVSkillsAndInterests } from "./-components/CVSkillsAndInterests";
 import CVStatement from "./-components/CVStatement";
 import CVTitle from "./-components/CVTitle";
-import type { Project } from "./-components/types";
+import type {
+	Achievement,
+	Education,
+	Experience,
+	Project,
+	SkillOrInterest,
+} from "./-components/types";
+import rawAchievements from "./-cv-data/achievements.json";
+import rawEducations from "./-cv-data/educations.json";
+import rawExperiences from "./-cv-data/experiences.json";
 import rawProjects from "./-cv-data/projects.json";
+import rawSkillsAndInterests from "./-cv-data/skills-and-interests.json";
 
 export const Route = createFileRoute("/cv/")({
 	component: CV,
@@ -25,11 +37,17 @@ function CV() {
 
 			<CVStatement />
 
-			<CVEducation />
+			<CVEducation educations={rawEducations as Education[]} />
 
-			<CVExperience />
+			<CVExperience experiences={rawExperiences as Experience[]} />
 
 			<CVProjects projects={rawProjects as Project[]} />
+
+			<CVAchievements achievements={rawAchievements as Achievement[]} />
+
+			<CVSkillsAndInterests
+				skillsAndInterests={rawSkillsAndInterests as SkillOrInterest[]}
+			/>
 		</section>
 	);
 }

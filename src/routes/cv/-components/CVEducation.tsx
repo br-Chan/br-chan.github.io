@@ -1,22 +1,37 @@
-export default function CVEducation() {
-	return (
-		<section className="flex flex-col">
-			<h2 className="font-bold text-2xl underline">Education</h2>
-			{/* TODO: put in json? */}
-			{/* TODO: create component for this */}
-			<section className="flex w-full justify-between">
-				<span className="font-bold">
-					• Bachelor of Engineering (Hons) Software, University of
-					Auckland
-				</span>
-				<span>2023 - 2026</span>
-			</section>
-			<section className="flex w-full justify-between">
-				<span className="font-bold">
-					• Cambridge AS, A LEVELS & IGCSE
-				</span>
-				<span>2019 - 2022</span>
-			</section>
-		</section>
-	);
+import { type FC, memo } from "react";
+import type { Education } from "./types";
+
+export interface CVEducationProps {
+	educations: Education[];
+	showGrades?: boolean;
 }
+
+export const CVEducation: FC<CVEducationProps> = memo(
+	({ educations, showGrades = false }) => {
+		return (
+			<section className="flex flex-col">
+				<h2 className="font-bold text-2xl underline">Education</h2>
+				{/* TODO: create component for this */}
+				{educations.map((education) => {
+					return (
+						<section
+							className="flex w-full justify-between"
+							key={education.name + education.startDate}
+						>
+							<span className="font-bold">
+								• {education.name}
+								&nbsp;
+								{showGrades && `(${education.grades})`}
+							</span>
+							<span>
+								{education.startDate}
+								&nbsp;-&nbsp;
+								{education.endDate}
+							</span>
+						</section>
+					);
+				})}
+			</section>
+		);
+	},
+);

@@ -1,5 +1,25 @@
 To copy json templates
 
+Education:
+,
+{
+	"name": "",
+	"grades": "",
+	"startDate":  "",
+	"endDate": ""
+}
+
+Experience:
+,
+{
+	"role": "",
+	"company": "",
+	"location": "",
+	"startDate": "",
+	"endDate": "",
+	"bulletPoints": ["", ""]
+}
+
 Project:
 ,
 {
@@ -7,5 +27,14 @@ Project:
 	"techStack": ["", ""],
 	"startDate": "",
 	"endDate": "",
+	"bulletPoints": ["", ""]
+}
+
+Achievement:
+,
+{
+	"name": "",
+	"sponsor":"",
+	"date": "",
 	"bulletPoints": ["", ""]
 }

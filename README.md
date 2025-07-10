@@ -1,12 +1,15 @@
 # TODO List + Ideas
 
-[] replicate CV
-[] options to customise who the reader is (recruiter, friend, random user, etc)
-[] options to customise who I am (uni student, software developer, completely anonymised, dead, etc)
-[] options to customise font (Aptos, Times New Roman, Comic Mono)
-[] options/filters to show different projects, experiences, etc
-[] options for interesting gimmicks (no-javascript version, , ,)
-[] music?
+[ ] replicate CV
+[ ] make component for CV section
+[ ] expand the 'tech' type
+[ ] finish the TODOs
+[ ] options to customise who the reader is (recruiter, friend, random user, etc)
+[ ] options to customise who I am (uni student, software developer, completely anonymised, dead, etc)
+[ ] options to customise font (Aptos, Times New Roman, Comic Mono)
+[ ] options/filters to show different projects, experiences, etc
+[ ] options for interesting gimmicks (no-javascript version, CV<->resume, ,)
+[ ] music?
 
 Welcome to your new TanStack app!
 

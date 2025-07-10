@@ -1,0 +1,36 @@
+[
+	{
+		"role": "Software Developer",
+		"company": "Web Development and Consulting Club",
+		"location": "Auckland",
+		"startDate": "Mar 2025",
+		"endDate": "present",
+		"bulletPoints": [
+			"Full-stack development: utilising Next.js and Payload CMS to develop a member management and booking portal for the University of Auckland Badminton Club."
+		]
+	},
+	{
+		"role": "Software Engineer Intern",
+		"company": "Allied Telesis",
+		"location": "Christchurch",
+		"startDate": "Nov 2024",
+		"endDate": "Feb 2025",
+		"bulletPoints": [
+			"Designed and developed a full-stack web application to seamlessly manage staff recruitment.",
+			"Elicited requirements from clients and created, organised, completed 120+ Jira tasks.",
+			"Enabled application tracking and sorting, authentication and professional UI/UX in Angular frontend.",
+			"Designed 5 database models for MySQL using Sequelize ORM, with many-to-many relationships to represent applicants, applications, staff users, etc.",
+			"Created 32 API endpoints for Express backend, with Postman for testing."
+		]
+	},
+	{
+		"role": "Private Tutor",
+		"company": "MyTuition",
+		"location": "Auckland",
+		"startDate": "Apr 2024",
+		"endDate": "May 2024",
+		"bulletPoints": [
+			"IGCSE Mathematics - teach students new concepts, review past tests and provide support for exams."
+		]
+	}
+]
