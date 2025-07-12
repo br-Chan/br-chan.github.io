@@ -110,7 +110,7 @@ function AccordionTrigger({
 		>
 			<AccordionPrimitive.Trigger
 				className={cn(
-					"flex flex-1 cursor-pointer items-center justify-between py-4 text-start font-medium hover:underline",
+					"flex flex-1 cursor-pointer items-center justify-between px-4 py-4 text-start font-medium transition-colors duration-200 hover:bg-gray-100",
 					className,
 				)}
 				data-slot="accordion-trigger"

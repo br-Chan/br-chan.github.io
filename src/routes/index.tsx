@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { motion } from "motion/react";
 import {
 	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Separator } from "@/components/ui/separator";
+} from "@/components/animate-ui/radix/accordion";
 
 export const Route = createFileRoute("/")({
 	component: App,
@@ -13,23 +13,33 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen w-6xl flex-col justify-start gap-2 bg-white p-4 px-8">
-			<header>
-				<span className="font-extrabold">Hi, I'm</span>
-				<h1 className="font-extrabold text-4xl">Brandon Chan</h1>
-				<span className="text-muted-foreground text-sm">
-					Penultimate Software Engineering Student at the University
-					of Auckland
+		<section className="flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-52">
+			<motion.header
+				className=" flex h-60 w-sm flex-col gap-2 rounded-4xl bg-red-600 p-4 text-center"
+				transition={{ type: "spring", stiffness: 150, damping: 1 }}
+				whileTap={{ rotate: 5 }}
+			>
+				<span className="font-extrabold text-4xl text-white">
+					Hello, I'm...
 				</span>
-			</header>
-
-			<Separator />
-
+				<h1 className="flex flex-1 items-center justify-center rounded-md bg-white font-extrabold text-4xl">
+					Brandon Chan
+				</h1>
+				<div className="flex gap-2">
+					<span className="font-extrabold text-3xl text-white">
+						a...
+					</span>
+					<span className="rounded-md bg-white text-sm">
+						Penultimate Software Engineering Student at the
+						University of Auckland
+					</span>
+				</div>
+				{/* <span className="text-muted-foreground text-sm"></span> */}
+			</motion.header>
 			<span>
 				I love Learning, Creating and Doing things - usually all 3 at
 				once.
 			</span>
-
 			<section>
 				<h2 className="font-bold text-2xl underline">Learning</h2>
 
