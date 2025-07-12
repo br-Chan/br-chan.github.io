@@ -1,13 +1,11 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
-import { LabelList, RadialBar, RadialBarChart } from "recharts";
+import { Bar, BarChart, XAxis, YAxis } from "recharts";
 
 import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
@@ -21,31 +19,15 @@ import {
 export const description = "A radial chart with a label";
 
 const chartData = [
-	{ keyboardLayout: "WORKMAN", wpm: 0, fill: "var(--chart-4)" },
-	{ keyboardLayout: "COLEMAK", wpm: 31, fill: "var(--chart-3)" },
-	{ keyboardLayout: "DVORAK", wpm: 90, fill: "var(--chart-2)" },
 	{ keyboardLayout: "QWERTY", wpm: 119, fill: "var(--chart-1)" },
+	{ keyboardLayout: "DVORAK", wpm: 90, fill: "var(--chart-2)" },
+	{ keyboardLayout: "COLEMAK", wpm: 31, fill: "var(--chart-3)" },
+	{ keyboardLayout: "WORKMAN", wpm: 0, fill: "var(--chart-4)" },
 ];
 
 const chartConfig = {
 	wpm: {
 		label: "WPM",
-	},
-	qwerty: {
-		label: "QWERTY",
-		color: "var(--chart-1)",
-	},
-	dvorak: {
-		label: "DVORAK",
-		color: "var(--chart-2)",
-	},
-	colemak: {
-		label: "COLEMAK",
-		color: "var(--chart-3)",
-	},
-	workman: {
-		label: "WORKMAN",
-		color: "var(--chart-4)",
 	},
 } satisfies ChartConfig;
 
@@ -59,41 +41,31 @@ export const TypingCharts = () => {
 					keyboard layouts...
 				</CardDescription>
 			</CardHeader>
-			<CardContent className="flex-1 pb-0">
-				<ChartContainer
-					className="mx-auto aspect-square max-h-[300px]"
-					config={chartConfig}
-				>
-					<RadialBarChart
+			<CardContent>
+				<ChartContainer className="max-h-[200px]" config={chartConfig}>
+					<BarChart
+						accessibilityLayer
 						data={chartData}
-						endAngle={0}
-						innerRadius={30}
-						outerRadius={160}
-						startAngle={180}
+						layout="vertical"
+						margin={{
+							left: 20,
+						}}
 					>
+						<XAxis dataKey="wpm" hide type="number" />
+						<YAxis
+							dataKey="keyboardLayout"
+							tickLine={false}
+							tickMargin={10}
+							type="category"
+						/>
 						<ChartTooltip
-							content={
-								<ChartTooltipContent
-									hideLabel
-									nameKey="keyboardLayout"
-								/>
-							}
+							content={<ChartTooltipContent hideLabel />}
 							cursor={false}
 						/>
-						<RadialBar background dataKey="wpm">
-							<LabelList
-								className="fill-black font-bold capitalize mix-blend-luminosity"
-								dataKey="keyboardLayout"
-								fontSize={11}
-								position="insideStart"
-							/>
-						</RadialBar>
-					</RadialBarChart>
+						<Bar dataKey="wpm" fill="var(--color-wpm)" radius={5} />
+					</BarChart>
 				</ChartContainer>
 			</CardContent>
-			<CardFooter className="flex-col gap-2 text-sm">
-				I'm a footer
-			</CardFooter>
 		</Card>
 	);
 };

@@ -98,7 +98,7 @@ function App() {
 					</AccordionItem>
 				</Accordion>
 
-				<section>
+				<section className="flex flex-col gap-4">
 					<h2 className="font-bold text-2xl underline">DOING</h2>
 
 					<section className="flex flex-col gap-2">
@@ -135,9 +135,15 @@ function App() {
 								</a>
 							</Badge>
 						</span>
-						<div className="">
+						<div>
 							<TypingCharts />
 						</div>
+					</section>
+					<section className="flex flex-col gap-2">
+						<h3 className="font-bold text-xl">
+							Battle of Polytopia:
+						</h3>
+						next part
 					</section>
 				</section>
 			</section>
