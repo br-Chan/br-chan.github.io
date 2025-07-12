@@ -8,7 +8,7 @@ import {
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
 import { Badge } from "@/components/ui/badge";
-import { TypingCharts } from "./-components/TypingCharts";
+import { TypingChart } from "./-components/TypingChart";
 
 export const Route = createFileRoute("/")({
 	component: App,
@@ -136,7 +136,7 @@ function App() {
 							</Badge>
 						</span>
 						<div>
-							<TypingCharts />
+							<TypingChart />
 						</div>
 					</section>
 					<section className="flex flex-col gap-2">

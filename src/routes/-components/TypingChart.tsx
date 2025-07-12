@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, LabelList, XAxis, YAxis } from "recharts";
 
 import {
 	Card,
@@ -31,7 +31,7 @@ const chartConfig = {
 	},
 } satisfies ChartConfig;
 
-export const TypingCharts = () => {
+export const TypingChart = () => {
 	return (
 		<Card className="flex flex-col">
 			<CardHeader className="items-center pb-0">
@@ -42,13 +42,17 @@ export const TypingCharts = () => {
 				</CardDescription>
 			</CardHeader>
 			<CardContent>
-				<ChartContainer className="max-h-[200px]" config={chartConfig}>
+				<ChartContainer
+					className="max-h-[200px] w-full"
+					config={chartConfig}
+				>
 					<BarChart
 						accessibilityLayer
 						data={chartData}
 						layout="vertical"
 						margin={{
 							left: 20,
+							right: 20,
 						}}
 					>
 						<XAxis dataKey="wpm" hide type="number" />
@@ -62,7 +66,15 @@ export const TypingCharts = () => {
 							content={<ChartTooltipContent hideLabel />}
 							cursor={false}
 						/>
-						<Bar dataKey="wpm" fill="var(--color-wpm)" radius={5} />
+						<Bar dataKey="wpm" fill="var(--color-wpm)" radius={5}>
+							<LabelList
+								className="fill-foreground"
+								dataKey="wpm"
+								fontSize={12}
+								offset={8}
+								position="right"
+							/>
+						</Bar>
 					</BarChart>
 				</ChartContainer>
 			</CardContent>
