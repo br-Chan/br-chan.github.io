@@ -1,5 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
+import rawAchievements from "@/data/achievements.json";
+import rawEducations from "@/data/educations.json";
+import rawExperiences from "@/data/experiences.json";
+import rawProjects from "@/data/projects.json";
+import rawSkillsAndInterests from "@/data/skills-and-interests.json";
 import { CVAchievements } from "./-components/CVAchievements";
 import { CVEducation } from "./-components/CVEducation";
 import { CVExperience } from "./-components/CVExperience";
@@ -15,11 +20,6 @@ import type {
 	Project,
 	SkillOrInterest,
 } from "./-components/types";
-import rawAchievements from "./-cv-data/achievements.json";
-import rawEducations from "./-cv-data/educations.json";
-import rawExperiences from "./-cv-data/experiences.json";
-import rawProjects from "./-cv-data/projects.json";
-import rawSkillsAndInterests from "./-cv-data/skills-and-interests.json";
 
 export const Route = createFileRoute("/cv/")({
 	component: CV,
