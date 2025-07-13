@@ -5,6 +5,7 @@ import rawEducations from "@/data/educations.json";
 import rawExperiences from "@/data/experiences.json";
 import rawProjects from "@/data/projects.json";
 import rawSkillsAndInterests from "@/data/skills-and-interests.json";
+import Title from "../-components/Title";
 import { CVAchievements } from "./-components/CVAchievements";
 import { CVEducation } from "./-components/CVEducation";
 import { CVExperience } from "./-components/CVExperience";
@@ -12,7 +13,6 @@ import CVLinks from "./-components/CVLinks";
 import { CVProjects } from "./-components/CVProjects";
 import { CVSkillsAndInterests } from "./-components/CVSkillsAndInterests";
 import CVStatement from "./-components/CVStatement";
-import CVTitle from "./-components/CVTitle";
 import type {
 	Achievement,
 	Education,
@@ -29,7 +29,7 @@ function CV() {
 	return (
 		<section className="mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-60 2xl:mx-80">
 			<header className="flex w-full flex-col items-center gap-2 text-center">
-				<CVTitle />
+				<Title />
 				<CVLinks />
 			</header>
 

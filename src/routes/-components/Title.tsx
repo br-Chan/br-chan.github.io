@@ -1,4 +1,4 @@
-export default function CVTitle() {
+export default function Title() {
 	return (
 		<div>
 			<h1 className="font-extrabold text-4xl">Brandon Chan</h1>

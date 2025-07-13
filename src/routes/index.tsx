@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "motion/react";
 import { FaCar, FaExternalLinkAlt, FaKeyboard } from "react-icons/fa";
 import {
 	Accordion,
@@ -8,6 +7,8 @@ import {
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
 import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import Title from "./-components/Title";
 import { TypingChart } from "./-components/TypingChart";
 
 export const Route = createFileRoute("/")({
@@ -17,28 +18,8 @@ export const Route = createFileRoute("/")({
 function App() {
 	return (
 		<section className="flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-52">
-			<motion.header
-				className=" flex h-60 w-sm flex-col gap-2 rounded-4xl bg-red-600 p-4 text-center"
-				transition={{ type: "spring", stiffness: 150, damping: 1 }}
-				whileTap={{ rotate: 5 }}
-			>
-				<span className="font-extrabold text-4xl text-white">
-					Hello, I'm...
-				</span>
-				<h1 className="flex flex-1 items-center justify-center rounded-md bg-white font-extrabold text-4xl">
-					Brandon Chan
-				</h1>
-				<div className="flex gap-2">
-					<span className="font-extrabold text-3xl text-white">
-						a...
-					</span>
-					<span className="rounded-md bg-white text-sm">
-						Penultimate Software Engineering Student at the
-						University of Auckland
-					</span>
-				</div>
-				{/* <span className="text-muted-foreground text-sm"></span> */}
-			</motion.header>
+			<Title />
+			<Separator />
 			<span>
 				I love Learning, Creating and Doing things - usually all 3 at
 				once.

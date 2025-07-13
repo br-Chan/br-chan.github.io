@@ -1,7 +1,6 @@
 "use client";
 
 import { Bar, BarChart, LabelList, XAxis, YAxis } from "recharts";
-
 import {
 	Card,
 	CardContent,
@@ -52,7 +51,7 @@ export const TypingChart = () => {
 						layout="vertical"
 						margin={{
 							left: 20,
-							right: 20,
+							right: 30,
 						}}
 					>
 						<XAxis dataKey="wpm" hide type="number" />
@@ -66,7 +65,11 @@ export const TypingChart = () => {
 							content={<ChartTooltipContent hideLabel />}
 							cursor={false}
 						/>
-						<Bar dataKey="wpm" fill="var(--color-wpm)" radius={5}>
+						<Bar
+							dataKey="wpm"
+							fill="var(--color-wpm)"
+							radius={[0, 100, 100, 0]}
+						>
 							<LabelList
 								className="fill-foreground"
 								dataKey="wpm"
