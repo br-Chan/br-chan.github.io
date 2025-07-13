@@ -7,7 +7,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
-import { Badge } from "@/components/ui/badge";
+import { BadgeLink } from "@/components/BadgeLink";
 import { Separator } from "@/components/ui/separator";
 import Title from "./-components/Title";
 import { TypingChart } from "./-components/TypingChart";
@@ -84,79 +84,21 @@ function App() {
 					<h2 className="font-bold text-2xl underline">DOING</h2>
 
 					<section className="flex flex-col gap-2">
-						<h3 className="font-bold text-xl">Typing:</h3>
-						<span className="flex gap-2">
-							<Badge
-								asChild
-								className="bg-[#19191c] text-[#e2b714] text-sm"
-							>
-								<a
-									className="hover:underline"
-									href="https://monkeytype.com/profile/DvorakTurkey"
-									rel="noopener"
-									target="_blank"
-								>
-									<FaKeyboard />
-									Monkeytype profile
-									<FaExternalLinkAlt />
-								</a>
-							</Badge>
-							<Badge
-								asChild
-								className="bg-[#d52f3a] text-sm text-white"
-							>
-								<a
-									className="hover:underline"
-									href="https://www.nitrotype.com/racer/allors4612"
-									rel="noopener"
-									target="_blank"
-								>
-									<FaCar />
-									Nitro Type profile
-									<FaExternalLinkAlt />
-								</a>
-							</Badge>
-						</span>
-						<p>
-							I was a hunt-and-pecker until 2017, when I started
-							learning touch typing at typing.com. Over the next 3
-							years of practice, my typing speed grew to about 100
-							WPM (words per minute) and I set my sights on the
-							other keyboard layouts. I began learning Dvorak in
-							2020 and Colemak in 2024.
-						</p>
-						<TypingChart />
-					</section>
-					<section className="flex flex-col gap-2">
 						<h3 className="font-bold text-xl">WDCC:</h3>
 						<span className="flex gap-2">
-							<Badge
-								asChild
-								className="bg-[#3a86fe] text-sm text-white"
-							>
-								<a
-									className="hover:underline"
-									href="wdcc.co.nz/"
-									rel="noopener"
-									target="_blank"
-								>
-									<PiCowFill />
-									WDCC
-									<FaExternalLinkAlt />
-								</a>
-							</Badge>
-							<Badge asChild className="text-sm">
-								<a
-									className="hover:underline"
-									href="https://github.com/UoaWDCC/uabc-web"
-									rel="noopener"
-									target="_blank"
-								>
-									<FaGithub />
-									uabc-web
-									<FaExternalLinkAlt />
-								</a>
-							</Badge>
+							<BadgeLink
+								className="bg-[#3a86fe]"
+								href="https://wdcc.co.nz/"
+								label="WDCC"
+								startIcon={<PiCowFill />}
+								target="_blank"
+							/>
+							<BadgeLink
+								href="https://github.com/UoaWDCC/uabc-web"
+								label="uabc-web"
+								startIcon={<FaGithub />}
+								target="_blank"
+							/>
 						</span>
 						<p>
 							I'm a software developer in a software project at
@@ -167,6 +109,34 @@ function App() {
 					<section className="flex flex-col gap-2">
 						<h3 className="font-bold text-xl">Hackathons:</h3>
 						TODO: WDCC x SESA Hackathon 2024, KiwiJam 2024
+					</section>
+					<section className="flex flex-col gap-2">
+						<h3 className="font-bold text-xl">Typing:</h3>
+						<span className="flex gap-2">
+							<BadgeLink
+								className="bg-[#19191c] text-[#e2b714]"
+								href="https://monkeytype.com/profile/DvorakTurkey"
+								label="Monkeytype profile"
+								startIcon={<FaKeyboard />}
+								target="_blank"
+							/>
+							<BadgeLink
+								className="bg-[#d52f3a]"
+								href="https://www.nitrotype.com/racer/allors4612"
+								label="Nitro Type profile"
+								startIcon={<FaCar />}
+								target="_blank"
+							/>
+						</span>
+						<p>
+							I was a hunt-and-pecker until 2017, when I started
+							learning touch typing. Over the next 3 years of
+							practice, my typing speed grew to about 100 WPM
+							(words per minute) and I set my sights on the other
+							keyboard layouts. I began learning Dvorak in 2020
+							and Colemak in 2025.
+						</p>
+						<TypingChart />
 					</section>
 				</section>
 			</section>
