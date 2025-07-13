@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FaCar, FaExternalLinkAlt, FaKeyboard } from "react-icons/fa";
+import { FaCar, FaExternalLinkAlt, FaGithub, FaKeyboard } from "react-icons/fa";
+import { PiCowFill } from "react-icons/pi";
 import {
 	Accordion,
 	AccordionContent,
@@ -116,15 +117,56 @@ function App() {
 								</a>
 							</Badge>
 						</span>
-						<div>
-							<TypingChart />
-						</div>
+						<p>
+							I was a hunt-and-pecker until 2017, when I started
+							learning touch typing at typing.com. Over the next 3
+							years of practice, my typing speed grew to about 100
+							WPM (words per minute) and I set my sights on the
+							other keyboard layouts. I began learning Dvorak in
+							2020 and Colemak in 2024.
+						</p>
+						<TypingChart />
 					</section>
 					<section className="flex flex-col gap-2">
-						<h3 className="font-bold text-xl">
-							Battle of Polytopia:
-						</h3>
-						next part
+						<h3 className="font-bold text-xl">WDCC:</h3>
+						<span className="flex gap-2">
+							<Badge
+								asChild
+								className="bg-[#3a86fe] text-sm text-white"
+							>
+								<a
+									className="hover:underline"
+									href="wdcc.co.nz/"
+									rel="noopener"
+									target="_blank"
+								>
+									<PiCowFill />
+									WDCC
+									<FaExternalLinkAlt />
+								</a>
+							</Badge>
+							<Badge asChild className="text-sm">
+								<a
+									className="hover:underline"
+									href="https://github.com/UoaWDCC/uabc-web"
+									rel="noopener"
+									target="_blank"
+								>
+									<FaGithub />
+									uabc-web
+									<FaExternalLinkAlt />
+								</a>
+							</Badge>
+						</span>
+						<p>
+							I'm a software developer in a software project at
+							the Web Development and Consulting Club! Come check
+							out what we're up to.
+						</p>
+					</section>
+					<section className="flex flex-col gap-2">
+						<h3 className="font-bold text-xl">Hackathons:</h3>
+						TODO: WDCC x SESA Hackathon 2024, KiwiJam 2024
 					</section>
 				</section>
 			</section>

@@ -2,13 +2,6 @@
 
 import { Bar, BarChart, LabelList, XAxis, YAxis } from "recharts";
 import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import {
 	type ChartConfig,
 	ChartContainer,
 	ChartTooltip,
@@ -32,55 +25,41 @@ const chartConfig = {
 
 export const TypingChart = () => {
 	return (
-		<Card className="flex flex-col">
-			<CardHeader className="items-center pb-0">
-				<CardTitle>Keyboard Layouts</CardTitle>
-				<CardDescription>
-					After mastering QWERTY, I set my sights on the other
-					keyboard layouts...
-				</CardDescription>
-			</CardHeader>
-			<CardContent>
-				<ChartContainer
-					className="max-h-[200px] w-full"
-					config={chartConfig}
+		<ChartContainer className="max-h-[200px] w-full" config={chartConfig}>
+			<BarChart
+				accessibilityLayer
+				data={chartData}
+				layout="vertical"
+				margin={{
+					left: 20,
+					right: 30,
+				}}
+			>
+				<XAxis dataKey="wpm" hide type="number" />
+				<YAxis
+					dataKey="keyboardLayout"
+					tickLine={false}
+					tickMargin={10}
+					type="category"
+				/>
+				<ChartTooltip
+					content={<ChartTooltipContent hideLabel />}
+					cursor={false}
+				/>
+				<Bar
+					dataKey="wpm"
+					fill="var(--color-wpm)"
+					radius={[0, 100, 100, 0]}
 				>
-					<BarChart
-						accessibilityLayer
-						data={chartData}
-						layout="vertical"
-						margin={{
-							left: 20,
-							right: 30,
-						}}
-					>
-						<XAxis dataKey="wpm" hide type="number" />
-						<YAxis
-							dataKey="keyboardLayout"
-							tickLine={false}
-							tickMargin={10}
-							type="category"
-						/>
-						<ChartTooltip
-							content={<ChartTooltipContent hideLabel />}
-							cursor={false}
-						/>
-						<Bar
-							dataKey="wpm"
-							fill="var(--color-wpm)"
-							radius={[0, 100, 100, 0]}
-						>
-							<LabelList
-								className="fill-foreground"
-								dataKey="wpm"
-								fontSize={12}
-								offset={8}
-								position="right"
-							/>
-						</Bar>
-					</BarChart>
-				</ChartContainer>
-			</CardContent>
-		</Card>
+					<LabelList
+						className="fill-foreground"
+						dataKey="wpm"
+						fontSize={12}
+						offset={8}
+						position="right"
+					/>
+				</Bar>
+			</BarChart>
+		</ChartContainer>
 	);
 };
