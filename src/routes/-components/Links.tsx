@@ -1,9 +1,9 @@
 import { BadgeLink } from "@/components/BadgeLink";
 import { Separator } from "@/components/ui/separator";
 
-export default function CVLinks() {
+export const Links = () => {
 	return (
-		<div className="flex h-5 items-center justify-center gap-4 text-sm">
+		<div className="flex h-5 items-center gap-4 text-sm">
 			{/* TODO: extract these into a json? maybe not worth the effort */}
 			<BadgeLink
 				className="text-md"
@@ -30,4 +30,4 @@ export default function CVLinks() {
 			/>
 		</div>
 	);
-}
+};

@@ -15,6 +15,7 @@ import Title from "../-components/Title";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
 import { TypingChart } from "./-components/TypingChart";
+import { Links } from "../-components/Links";
 
 export const Route = createFileRoute("/(home)/")({
 	component: App,
@@ -22,8 +23,9 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white p-4 px-8 md:w-3xl lg:w-4xl xl:w-5xl">
+		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white p-4 px-8 lg:w-4xl xl:w-5xl">
 			<Title />
+			<Links />
 			<Separator />
 			<p>
 				I love&nbsp;

@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
+import { motion } from "motion/react";
 
 export type BadgeLinkProps = {
 	className?: string;
@@ -48,25 +49,31 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 		}
 
 		return (
-			<Badge
-				asChild
-				className={cn(
-					"bg-black text-sm text-white",
-					typeColor,
-					className,
-				)}
+			<motion.span
+				whileHover={{
+					y: -2,
+				}}
 			>
-				<a
-					className="hover:underline"
-					href={href}
-					rel="noopener"
-					target={target}
+				<Badge
+					asChild
+					className={cn(
+						"bg-black text-sm text-white",
+						typeColor,
+						className,
+					)}
 				>
-					{!!startIcon && startIcon}
-					{label}
-					{endIcon}
-				</a>
-			</Badge>
+					<a
+						className="hover:underline"
+						href={href}
+						rel="noopener"
+						target={target}
+					>
+						{!!startIcon && startIcon}
+						{label}
+						{endIcon}
+					</a>
+				</Badge>
+			</motion.span>
 		);
 	},
 );
