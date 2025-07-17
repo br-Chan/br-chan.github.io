@@ -15,7 +15,6 @@ import {
 export interface ProjectCardProps {
 	project: Project;
 	github?: string;
-	_image?: boolean;
 	variant?: "bullet" | "summary";
 	className?: string;
 	titleClassName?: string;
@@ -23,7 +22,6 @@ export interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> = ({
 	project,
-	_image = false,
 	variant = "bullet",
 	className,
 	titleClassName,
