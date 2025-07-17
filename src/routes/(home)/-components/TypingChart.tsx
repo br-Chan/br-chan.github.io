@@ -46,11 +46,7 @@ export const TypingChart = () => {
 					content={<ChartTooltipContent hideLabel />}
 					cursor={false}
 				/>
-				<Bar
-					dataKey="wpm"
-					fill="var(--color-wpm)"
-					radius={[0, 100, 100, 0]}
-				>
+				<Bar dataKey="wpm" radius={[0, 100, 100, 0]}>
 					<LabelList
 						className="fill-foreground"
 						dataKey="wpm"

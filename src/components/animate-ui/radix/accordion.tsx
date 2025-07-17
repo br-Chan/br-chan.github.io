@@ -127,6 +127,10 @@ function AccordionTrigger({
 						fontSize: isOpen ? "18px" : "30px",
 					}}
 					className="flex flex-1 items-center justify-between"
+					initial={{
+						padding: 32,
+						fontSize: "30px",
+					}}
 				>
 					{Icon && (
 						<motion.div
@@ -147,16 +151,16 @@ function AccordionTrigger({
 							}
 							className="absolute size-30"
 							initial={{
-								height: 0,
-								width: 0,
-								opacity: 0,
-								x: 200,
+								height: 120,
+								width: 120,
+								opacity: 100,
+								x: 0,
 							}}
 							transition={{
 								type: "stiff",
 							}}
 						>
-							<Icon className="-translate-x-10 size-full opacity-30" />
+							<Icon className="-translate-x-8 size-full opacity-30" />
 						</motion.div>
 					)}
 
@@ -164,6 +168,7 @@ function AccordionTrigger({
 						animate={{
 							x: isOpen ? 0 : 100,
 						}}
+						initial={{ x: 100 }}
 						transition={{ type: "stiff" }}
 					>
 						{children}
