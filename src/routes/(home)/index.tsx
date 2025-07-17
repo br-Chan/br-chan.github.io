@@ -21,7 +21,7 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-52">
+		<section className="flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-64">
 			<Title />
 			<Separator />
 			<span>

@@ -1,5 +1,10 @@
-import type { FC } from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { type FC, memo } from "react";
+import {
+	FaExternalLinkAlt,
+	FaGithub,
+	FaLinkedin,
+	FaYoutube,
+} from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 
@@ -10,28 +15,58 @@ export type BadgeLinkProps = {
 	target?: React.HTMLAttributeAnchorTarget | undefined;
 	startIcon?: React.ReactNode;
 	endIcon?: React.ReactNode;
+	type?: "GitHub" | "YouTube" | "LinkedIn";
 };
 
-export const BadgeLink: FC<BadgeLinkProps> = ({
-	className,
-	href,
-	label,
-	target = "_self",
-	startIcon,
-	endIcon = <FaExternalLinkAlt />,
-}) => {
-	return (
-		<Badge asChild className={cn("bg-black text-sm text-white", className)}>
-			<a
-				className="hover:underline"
-				href={href}
-				rel="noopener"
-				target={target}
+export const BadgeLink: FC<BadgeLinkProps> = memo(
+	({
+		className,
+		href,
+		label,
+		target = "_self",
+		startIcon,
+		endIcon = <FaExternalLinkAlt />,
+		type,
+	}) => {
+		let typeColor = "";
+		if (!startIcon) {
+			switch (type) {
+				case "GitHub":
+					startIcon = <FaGithub />;
+					break;
+				case "YouTube":
+					startIcon = <FaYoutube />;
+					typeColor = "bg-[#FF0000]";
+					break;
+				case "LinkedIn":
+					startIcon = <FaLinkedin />;
+					typeColor = "bg-[#0077b5]";
+					break;
+				default:
+					undefined;
+			}
+		}
+
+		return (
+			<Badge
+				asChild
+				className={cn(
+					"bg-black text-sm text-white",
+					typeColor,
+					className,
+				)}
 			>
-				{!!startIcon && startIcon}
-				{label}
-				{endIcon}
-			</a>
-		</Badge>
-	);
-};
+				<a
+					className="hover:underline"
+					href={href}
+					rel="noopener"
+					target={target}
+				>
+					{!!startIcon && startIcon}
+					{label}
+					{endIcon}
+				</a>
+			</Badge>
+		);
+	},
+);

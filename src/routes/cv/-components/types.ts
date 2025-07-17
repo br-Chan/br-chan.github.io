@@ -10,6 +10,11 @@ export type Tech =
 	| "TypeScript"
 	| "Tailwind CSS";
 
+export type ProjectLink = {
+	href: string;
+	type: "GitHub" | "YouTube";
+};
+
 export type Education = {
 	name: string;
 	grades: string;
@@ -33,6 +38,7 @@ export type Project = {
 	endDate: string;
 	bulletPoints: string[]; // TODO: make bullet-point component!
 	summary: string;
+	links: ProjectLink[];
 };
 
 export type Achievement = {

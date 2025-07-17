@@ -13,6 +13,13 @@
 		"bulletPoints": [
 			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
 			"Features OAuth account authentication, responsive design and interactive UI/UX."
+		],
+		"summary": "My first web development project that went from a simple HTML file with basic JavaScript to a full-stack React application with authentication, responsive design and modern UI. Became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.",
+		"links": [
+			{
+				"href": "https://github.com/br-Chan/Rankle",
+				"type": "GitHub"
+			}
 		]
 	},
 	{
@@ -23,16 +30,34 @@
 		"bulletPoints": [
 			"Developed a ready-to-launch private investigation game suiting clients' needs with a team.",
 			"Designed screen flows, distributed workloads among team, implemented key features: interactive clues, game timers, interfaces to communicate with OpenAI API, prompt engineering (30 realistic conversation topics, accurate end-of-game scoring and feedback to gauge player’s skill)."
+		],
+		"summary": "A pixel-themed game used to train private investigators (and entertain the commonfolk) using JavaFX and OpenAI's GPT model. Developed for the semester-long SOFTENG 206 group project.",
+		"links": [
+			{
+				"href": "https://github.com/br-Chan/Missing-Dollar-Mystery-with-GPT",
+				"type": "GitHub"
+			},
+			{
+				"href": "https://www.youtube.com/watch?v=tjx5raeqHC4",
+				"type": "YouTube"
+			}
 		]
 	},
 	{
-		"name": "SESA x WDCC Hackathon",
+		"name": "SESA x WDCC Hackathon 2024",
 		"techStack": ["React", "Next.js", "TypeScript"],
 		"startDate": "Aug 2024",
 		"endDate": "Aug 2024",
 		"bulletPoints": [
 			"Awarded Most Over-engineered as a team; deployed a multiplayer spaceship crew simulator.",
 			"Built frontend player and death screens; integrated team member’s Chart.js code to main repository."
+		],
+		"summary": "A Jackbox-esque multiplayer spaceship crew simulator game. Players must communicate and collaborate with each other to obtain resources essential for the ship's survival. Three mobile web clients and a TV lobby screen connect to a server to manage game state. I did maybe 5% of the work (but definitely check out the amazing work of my friends).",
+		"links": [
+			{
+				"href": "https://github.com/ExceptionHandlersUOA/SpaceshipCrewGame",
+				"type": "GitHub"
+			}
 		]
 	},
 	{
@@ -42,6 +67,13 @@
 		"endDate": "Apr 2024",
 		"bulletPoints": [
 			"Designed and implemented a system in Java for storing and managing venues and their bookings that a real venue hire company could use."
+		],
+		"summary": "A terminal system written in Java for storing and managing venues and their bookings that a \"Real Venue Hire Company\"™ could use! Developed for a SOFTENG 281 project.",
+		"links": [
+			{
+				"href": "https://github.com/br-Chan/Venue-Hire-System",
+				"type": "GitHub"
+			}
 		]
 	},
 	{
@@ -51,13 +83,17 @@
 		"endDate": "Mar 2024",
 		"bulletPoints": [
 			"Intuitive GUI .exe application to randomly generate personalised Lottery numbers with options panel."
+		],
+		"summary": "My first Java development project. A GUI application for randomly generating Lottery numbers, based on New Zealand's LOTTO game rules. Comes with intuitive personalisation: add lucky numbers to always appear in your lines, play with Strike or the Powerball enabled, and increase your chances of winning! (\"note: does not actually increase chances of winning\"",
+		"links": [
+			{
+				"href": "https://github.com/br-Chan/Customisable-LOTTO-Generator",
+				"type": "GitHub"
+			},
+			{
+				"href": "https://youtu.be/v4kLY8e4RHg",
+				"type": "YouTube"
+			}
 		]
-	},
-	{
-		"name": "Stop! Don't put any more until type properties are finalised",
-		"techStack": ["don't"],
-		"startDate": "do",
-		"endDate": "it",
-		"bulletPoints": ["peanuts", "and pie"]
 	}
 ]
