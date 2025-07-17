@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { type FC, memo } from "react";
 import {
 	FaExternalLinkAlt,
@@ -7,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
-import { motion } from "motion/react";
 
 export type BadgeLinkProps = {
 	className?: string;

@@ -1,5 +1,4 @@
 import type { FC } from "react";
-import { FaGithub } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/routes/cv/-components/types";
 import { BadgeLink } from "./BadgeLink";
@@ -16,7 +15,7 @@ import {
 export interface ProjectCardProps {
 	project: Project;
 	github?: string;
-	image?: boolean;
+	_image?: boolean;
 	variant?: "bullet" | "summary";
 	className?: string;
 	titleClassName?: string;
@@ -24,7 +23,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> = ({
 	project,
-	image = false,
+	_image = false,
 	variant = "bullet",
 	className,
 	titleClassName,
