@@ -11,16 +11,10 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as IndexImport } from './routes/index'
 import { Route as CvIndexImport } from './routes/cv/index'
+import { Route as homeIndexImport } from './routes/(home)/index'
 
 // Create/Update Routes
-
-const IndexRoute = IndexImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const CvIndexRoute = CvIndexImport.update({
   id: '/cv/',
@@ -28,15 +22,21 @@ const CvIndexRoute = CvIndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const homeIndexRoute = homeIndexImport.update({
+  id: '/(home)/',
+  path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
+    '/(home)/': {
+      id: '/(home)/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof IndexImport
+      preLoaderRoute: typeof homeIndexImport
       parentRoute: typeof rootRoute
     }
     '/cv/': {
@@ -52,18 +52,18 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+  '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
 }
 
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+  '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/': typeof IndexRoute
+  '/(home)/': typeof homeIndexRoute
   '/cv/': typeof CvIndexRoute
 }
 
@@ -72,17 +72,17 @@ export interface FileRouteTypes {
   fullPaths: '/' | '/cv'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/cv'
-  id: '__root__' | '/' | '/cv/'
+  id: '__root__' | '/(home)/' | '/cv/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
+  homeIndexRoute: typeof homeIndexRoute
   CvIndexRoute: typeof CvIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
+  homeIndexRoute: homeIndexRoute,
   CvIndexRoute: CvIndexRoute,
 }
 
@@ -96,12 +96,12 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/",
+        "/(home)/",
         "/cv/"
       ]
     },
-    "/": {
-      "filePath": "index.tsx"
+    "/(home)/": {
+      "filePath": "(home)/index.tsx"
     },
     "/cv/": {
       "filePath": "cv/index.tsx"

@@ -32,6 +32,7 @@ export type Project = {
 	startDate: string;
 	endDate: string;
 	bulletPoints: string[]; // TODO: make bullet-point component!
+	summary: string;
 };
 
 export type Achievement = {
