@@ -9,6 +9,7 @@ import Title from "../-components/Title";
 import { CVAchievements } from "./-components/CVAchievements";
 import { CVEducation } from "./-components/CVEducation";
 import { CVExperience } from "./-components/CVExperience";
+import { CVLinks } from "./-components/CVLinks";
 import { CVProjects } from "./-components/CVProjects";
 import { CVSkillsAndInterests } from "./-components/CVSkillsAndInterests";
 import CVStatement from "./-components/CVStatement";
@@ -19,7 +20,6 @@ import type {
 	Project,
 	SkillOrInterest,
 } from "./-components/types";
-import { Links } from "../-components/Links";
 
 export const Route = createFileRoute("/cv/")({
 	component: CV,
@@ -30,7 +30,7 @@ function CV() {
 		<section className="mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-60 2xl:mx-80">
 			<header className="flex w-full flex-col items-center gap-2 text-center">
 				<Title />
-				<Links />
+				<CVLinks />
 			</header>
 
 			<Separator />

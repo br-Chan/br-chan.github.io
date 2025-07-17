@@ -14,8 +14,8 @@ import rawProjects from "@/data/projects.json";
 import Title from "../-components/Title";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
+import { SocialLinks } from "./-components/SocialLinks";
 import { TypingChart } from "./-components/TypingChart";
-import { Links } from "../-components/Links";
 
 export const Route = createFileRoute("/(home)/")({
 	component: App,
@@ -24,8 +24,10 @@ export const Route = createFileRoute("/(home)/")({
 function App() {
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white p-4 px-8 lg:w-4xl xl:w-5xl">
-			<Title />
-			<Links />
+			<header className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
+				<Title />
+				<SocialLinks />
+			</header>
 			<Separator />
 			<p>
 				I love&nbsp;

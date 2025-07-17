@@ -1,7 +1,7 @@
 import { BadgeLink } from "@/components/BadgeLink";
 import { Separator } from "@/components/ui/separator";
 
-export const Links = () => {
+export const CVLinks = () => {
 	return (
 		<div className="flex h-5 items-center gap-4 text-sm">
 			{/* TODO: extract these into a json? maybe not worth the effort */}
