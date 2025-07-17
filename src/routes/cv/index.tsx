@@ -28,7 +28,7 @@ export const Route = createFileRoute("/cv/")({
 function CV() {
 	return (
 		<section className="mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 xl:mx-60 2xl:mx-80">
-			<header className="flex w-full flex-col items-center gap-2 text-center">
+			<header className="flex w-full flex-col items-center gap-2 md:text-center">
 				<Title />
 				<CVLinks />
 			</header>
