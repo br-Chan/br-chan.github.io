@@ -62,13 +62,14 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						return <p key={point}>• {point}</p>;
 					})}
 				{variant === "summary" && (
-					<p className="text-lg">{project.summary}</p>
+					<p className="text-md">{project.summary}</p>
 				)}
 			</CardContent>
 			<CardFooter>
 				<span className="flex gap-2">
 					{project.links?.map((link) => (
 						<BadgeLink
+							className="text-xs"
 							href={link.href}
 							key={link.href}
 							label={link.type}

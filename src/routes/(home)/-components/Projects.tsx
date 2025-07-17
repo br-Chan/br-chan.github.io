@@ -14,7 +14,7 @@ export const Projects: FC<ProjectsProps> = memo(({ projects }) => {
 					<ProjectCard
 						key={project.name}
 						project={project}
-						titleClassName="text-xl"
+						titleClassName="text-lg"
 						variant="summary"
 					/>
 				);

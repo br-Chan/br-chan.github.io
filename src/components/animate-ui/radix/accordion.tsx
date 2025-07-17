@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import { Accordion as AccordionPrimitive } from "radix-ui";
 import * as React from "react";
+import type { IconType } from "react-icons/lib";
 import { cn } from "@/lib/utils";
 
 type AccordionItemContextType = {
@@ -62,6 +63,7 @@ type AccordionTriggerProps = React.ComponentProps<
 	typeof AccordionPrimitive.Trigger
 > & {
 	transition?: Transition;
+	startIcon?: IconType;
 	chevron?: boolean;
 };
 
@@ -70,6 +72,7 @@ function AccordionTrigger({
 	className,
 	children,
 	transition = { type: "spring", stiffness: 150, damping: 22 },
+	startIcon,
 	chevron = true,
 	...props
 }: AccordionTriggerProps) {
@@ -79,6 +82,7 @@ function AccordionTrigger({
 		() => triggerRef.current as HTMLButtonElement,
 	);
 	const { isOpen, setIsOpen } = useAccordionItem();
+	const Icon: IconType | undefined = startIcon;
 
 	React.useEffect(() => {
 		const node = triggerRef.current;
@@ -117,17 +121,64 @@ function AccordionTrigger({
 				ref={triggerRef}
 				{...props}
 			>
-				{children}
+				<motion.div
+					animate={{
+						padding: isOpen ? 1 : 32,
+						fontSize: isOpen ? "18px" : "30px",
+					}}
+					className="flex flex-1 items-center justify-between"
+				>
+					{Icon && (
+						<motion.div
+							animate={
+								isOpen
+									? {
+											height: 0,
+											width: 0,
+											opacity: 0,
+											x: 200,
+										}
+									: {
+											height: 120,
+											width: 120,
+											opacity: 100,
+											x: 0,
+										}
+							}
+							className="absolute size-30"
+							initial={{
+								height: 0,
+								width: 0,
+								opacity: 0,
+								x: 200,
+							}}
+							transition={{
+								type: "stiff",
+							}}
+						>
+							<Icon className="-translate-x-10 size-full opacity-30" />
+						</motion.div>
+					)}
 
-				{chevron && (
-					<motion.div
-						animate={{ rotate: isOpen ? 180 : 0 }}
-						data-slot="accordion-trigger-chevron"
-						transition={transition}
+					<motion.span
+						animate={{
+							x: isOpen ? 0 : 100,
+						}}
+						transition={{ type: "stiff" }}
 					>
-						<ChevronDown className="size-5 shrink-0" />
-					</motion.div>
-				)}
+						{children}
+					</motion.span>
+
+					{chevron && (
+						<motion.div
+							animate={{ rotate: isOpen ? 180 : 0 }}
+							data-slot="accordion-trigger-chevron"
+							transition={transition}
+						>
+							<ChevronDown className="size-5 shrink-0" />
+						</motion.div>
+					)}
+				</motion.div>
 			</AccordionPrimitive.Trigger>
 		</AccordionPrimitive.Header>
 	);
