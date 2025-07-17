@@ -23,9 +23,9 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white py-4 lg:w-4xl lg:px-8 xl:w-5xl">
-			<div className="px-4">
-				<header className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
+		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white py-4 md:px-8 lg:w-4xl xl:w-5xl">
+			<div className="flex flex-col gap-2 px-4">
+				<header className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
 					<Title />
 					<SocialLinks />
 				</header>
@@ -43,17 +43,17 @@ function App() {
 
 			<Accordion type="multiple">
 				<AccordionItem
-					className="rounded-t-2xl bg-amber-300/30"
+					className="bg-amber-300/30 md:rounded-t-2xl"
 					value="creating"
 				>
 					<AccordionTrigger
-						className="rounded-t-2xl hover:bg-amber-300/30"
+						className="hover:bg-amber-300/30 md:rounded-t-2xl"
 						startIcon={FaPenToSquare}
 					>
 						CREATING
 					</AccordionTrigger>
 
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-amber-300/30 p-4">
 							<h3 className="font-bold text-2xl">Projects</h3>
 							<Projects projects={rawProjects as Project[]} />
@@ -68,7 +68,7 @@ function App() {
 					>
 						LEARNING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-blue-400/30 p-4">
 							<h3 className="font-bold text-2xl">
 								Languages and Tools
@@ -94,16 +94,16 @@ function App() {
 				</AccordionItem>
 
 				<AccordionItem
-					className="rounded-b-2xl bg-red-400/30"
+					className="bg-red-400/30 md:rounded-b-2xl"
 					value="doing"
 				>
 					<AccordionTrigger
-						className="rounded-b-2xl hover:bg-red-400/30"
+						className="hover:bg-red-400/30 md:rounded-b-2xl"
 						startIcon={FaKeyboard}
 					>
 						DOING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-red-400/30 p-4">
 							<h3 className="font-bold text-2xl">WDCC</h3>
 							<span className="flex gap-2">

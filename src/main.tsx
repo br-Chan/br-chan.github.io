@@ -1,4 +1,8 @@
-import { createRouter, RouterProvider } from "@tanstack/react-router";
+import {
+	createHashHistory,
+	createRouter,
+	RouterProvider,
+} from "@tanstack/react-router";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
@@ -9,10 +13,13 @@ import "./styles.css";
 import reportWebVitals from "./reportWebVitals.ts";
 import { NotFoundCard } from "./routes/-components/NotFoundCard.tsx";
 
+const hashHistory = createHashHistory();
+
 // Create a new router instance
 const router = createRouter({
 	routeTree,
 	context: {},
+	history: hashHistory,
 	defaultPreload: "intent",
 	scrollRestoration: true,
 	defaultStructuralSharing: true,
