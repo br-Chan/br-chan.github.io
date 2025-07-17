@@ -30,11 +30,11 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 		<Card className={cn(className)}>
 			{/* TODO: add image of project to the left side */}
 			<CardHeader>
-				<CardTitle className="flex items-center justify-between gap-4">
+				<CardTitle className="flex flex-col justify-between md:flex-row md:gap-4">
 					<span className={cn("font-bold", titleClassName)}>
 						{project.name}
 					</span>
-					<span className="space-x-1 space-y-1 text-end font-bold">
+					<span className="space-x-1 space-y-1 font-bold md:text-end">
 						{/* TODO: create component for this */}
 						{project.techStack.map((tech) => {
 							return (

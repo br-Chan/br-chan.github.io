@@ -23,21 +23,23 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white p-4 px-8 lg:w-4xl xl:w-5xl">
-			<header className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
-				<Title />
-				<SocialLinks />
-			</header>
-			<Separator />
-			<p>
-				I love&nbsp;
-				<span className="font-bold text-amber-500">creating</span>
-				,&nbsp;
-				<span className="font-bold text-blue-500">learning</span>
-				&nbsp;and&nbsp;
-				<span className="font-bold text-red-500">doing</span>
-				&nbsp;things - usually all 3 at once.
-			</p>
+		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white py-4 lg:w-4xl lg:px-8 xl:w-5xl">
+			<div className="px-4">
+				<header className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
+					<Title />
+					<SocialLinks />
+				</header>
+				<Separator />
+				<p>
+					I love&nbsp;
+					<span className="font-bold text-amber-500">creating</span>
+					,&nbsp;
+					<span className="font-bold text-blue-500">learning</span>
+					&nbsp;and&nbsp;
+					<span className="font-bold text-red-500">doing</span>
+					&nbsp;things - usually all 3 at once.
+				</p>
+			</div>
 
 			<Accordion type="multiple">
 				<AccordionItem
@@ -51,7 +53,7 @@ function App() {
 						CREATING
 					</AccordionTrigger>
 
-					<AccordionContent className="flex flex-col gap-8 px-8 py-4">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-amber-300/30 p-4">
 							<h3 className="font-bold text-2xl">Projects</h3>
 							<Projects projects={rawProjects as Project[]} />
@@ -66,13 +68,12 @@ function App() {
 					>
 						LEARNING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-8 px-8 py-4">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-blue-400/30 p-4">
 							<h3 className="font-bold text-2xl">
 								Languages and Tools
 							</h3>
-							A table here that shows all techs I know. Columns:
-							category. Rows: the techs.
+							Under construction...
 						</section>
 
 						<section className="flex flex-col gap-4 rounded-lg bg-blue-400/30 p-4">
@@ -102,7 +103,7 @@ function App() {
 					>
 						DOING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-8 px-8 py-4">
+					<AccordionContent className="flex flex-col gap-2 px-2 py-4 lg:gap-8 lg:px-8">
 						<section className="flex flex-col gap-4 rounded-lg bg-red-400/30 p-4">
 							<h3 className="font-bold text-2xl">WDCC</h3>
 							<span className="flex gap-2">
