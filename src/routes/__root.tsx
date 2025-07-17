@@ -5,10 +5,10 @@ import Header from "../components/Header";
 
 export const Route = createRootRoute({
 	component: () => (
-		<main className="flex flex-col items-center gap-6 bg-gray-800">
+		<main className="flex min-h-screen flex-col items-center gap-6 bg-gray-800">
 			<Header />
 
-			<div className="container">
+			<div className="container flex flex-col items-center">
 				<Outlet />
 			</div>
 

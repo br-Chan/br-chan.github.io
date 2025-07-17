@@ -28,6 +28,13 @@ Project:
 	"startDate": "",
 	"endDate": "",
 	"bulletPoints": ["", ""]
+	"summary": "",
+	"links": [
+		{
+			"href": "",
+			"type": ""
+		}
+	]
 }
 
 Achievement:
