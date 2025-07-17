@@ -71,7 +71,7 @@ function AccordionTrigger({
 	ref,
 	className,
 	children,
-	transition = { type: "spring", stiffness: 150, damping: 22 },
+	transition = { type: "stiff" },
 	startIcon,
 	chevron = true,
 	...props
@@ -136,7 +136,7 @@ function AccordionTrigger({
 											height: 0,
 											width: 0,
 											opacity: 0,
-											x: 200,
+											x: 300,
 										}
 									: {
 											height: 120,
@@ -194,7 +194,7 @@ type AccordionContentProps = React.ComponentProps<
 function AccordionContent({
 	className,
 	children,
-	transition = { type: "spring", stiffness: 150, damping: 22 },
+	transition = { type: "stiff" },
 	...props
 }: AccordionContentProps) {
 	const { isOpen } = useAccordionItem();

@@ -16,7 +16,11 @@ export const NotFoundCard = () => {
 			<CardHeader className="text-2xl">
 				<CardTitle>Page Not Found</CardTitle>
 				<CardAction>
-					<a href={"/"} rel="noopener" target="_blank">
+					<a
+						href={"https://www.youtube.com/watch?v=xvFZjo5PgG0"}
+						rel="noopener"
+						target="_blank"
+					>
 						<FaCaretUp />
 					</a>
 				</CardAction>
