@@ -228,7 +228,12 @@ function AccordionContent({
 						transition={transition}
 						{...props}
 					>
-						<div className={cn("pt-0 pb-4 text-sm", className)}>
+						<div
+							className={cn(
+								"flex flex-col gap-2 px-2 py-6 text-sm md:gap-4 md:px-8",
+								className,
+							)}
+						>
 							{children}
 						</div>
 					</motion.div>

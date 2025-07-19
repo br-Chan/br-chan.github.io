@@ -9,6 +9,15 @@ import {
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
 import { BadgeLink } from "@/components/BadgeLink";
+import { SubSection } from "@/components/SubSection";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import rawProjects from "@/data/projects.json";
 import Title from "../-components/Title";
@@ -53,11 +62,13 @@ function App() {
 						CREATING
 					</AccordionTrigger>
 
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
-						<section className="flex flex-col gap-4 rounded-lg bg-amber-300/30 p-4">
-							<h3 className="font-bold text-2xl">Projects</h3>
+					<AccordionContent>
+						<SubSection
+							className="bg-amber-300/30"
+							title="Projects"
+						>
 							<Projects projects={rawProjects as Project[]} />
-						</section>
+						</SubSection>
 					</AccordionContent>
 				</AccordionItem>
 
@@ -68,28 +79,38 @@ function App() {
 					>
 						LEARNING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
-						<section className="flex flex-col gap-4 rounded-lg bg-blue-400/30 p-4">
-							<h3 className="font-bold text-2xl">
-								Languages and Tools
-							</h3>
-							Under construction...
-						</section>
+					<AccordionContent>
+						<SubSection
+							className="bg-blue-400/30"
+							title="Languages and Tools"
+						>
+							<Card>
+								<CardContent>Under construction...</CardContent>
+							</Card>
+						</SubSection>
 
-						<section className="flex flex-col gap-4 rounded-lg bg-blue-400/30 p-4">
-							<h3 className="font-bold text-2xl">
-								University Courses
-							</h3>
-							<p>• ENGGEN 303 | Innovation and Business Cases</p>
-							<p>
-								• SOFTENG 351 | Fundamentals of Database Systems
-							</p>
-							<p>• SOFTENG 370 | Operating Systems</p>
-							<p>
-								• SOFTENG 373 |Computer Graphics and Image
-								Processing
-							</p>
-						</section>
+						<SubSection
+							className="bg-blue-400/30"
+							title="University Courses"
+						>
+							<Card>
+								<CardContent>
+									<p>
+										• ENGGEN 303 | Innovation and Business
+										Cases
+									</p>
+									<p>
+										• SOFTENG 351 | Fundamentals of Database
+										Systems
+									</p>
+									<p>• SOFTENG 370 | Operating Systems</p>
+									<p>
+										• SOFTENG 373 |Computer Graphics and
+										Image Processing
+									</p>
+								</CardContent>
+							</Card>
+						</SubSection>
 					</AccordionContent>
 				</AccordionItem>
 
@@ -103,63 +124,71 @@ function App() {
 					>
 						DOING
 					</AccordionTrigger>
-					<AccordionContent className="flex flex-col gap-2 px-2 py-4 md:gap-8 md:px-8">
-						<section className="flex flex-col gap-4 rounded-lg bg-red-400/30 p-4">
-							<h3 className="font-bold text-2xl">WDCC</h3>
-							<span className="flex gap-2">
-								<BadgeLink
-									className="bg-[#3a86fe]"
-									href="https://wdcc.co.nz/"
-									label="WDCC"
-									startIcon={<PiCowFill />}
-									target="_blank"
-								/>
-								<BadgeLink
-									href="https://github.com/UoaWDCC/uabc-web"
-									label="uabc-web"
-									startIcon={<FaGithub />}
-									target="_blank"
-								/>
-							</span>
-							<p>
-								I'm a software developer in a software project
-								at the Web Development and Consulting Club! Come
-								check out what we're up to.
-							</p>
-						</section>
-						<section className="flex flex-col gap-4 rounded-lg bg-red-400/30 p-4">
-							<h3 className="font-bold text-2xl">Typing</h3>
-							<span className="flex gap-2">
-								<BadgeLink
-									className="bg-[#19191c] text-[#e2b714]"
-									href="https://monkeytype.com/profile/DvorakTurkey"
-									label="Monkeytype profile"
-									startIcon={<FaKeyboard />}
-									target="_blank"
-								/>
-								<BadgeLink
-									className="bg-[#d52f3a]"
-									href="https://www.nitrotype.com/racer/allors4612"
-									label="Nitro Type profile"
-									startIcon={<FaCar />}
-									target="_blank"
-								/>
-							</span>
-							<p>
-								I was a hunt-and-pecker until 2017, when I
-								started learning touch typing. Over the next 3
-								years of practice, my typing speed grew to about
-								100 WPM (words per minute) and I set my sights
-								on the other keyboard layouts. I began learning
-								Dvorak in 2020 and Colemak in 2025.
-							</p>
-							<TypingChart />
-						</section>
-						<section className="flex flex-col gap-4 rounded-lg bg-red-400/30 p-4">
-							<h3 className="font-bold text-2xl">Hackathons</h3>
-							{/* TODO: WDCC x SESA Hackathon 2024, KiwiJam 2024 */}
-							<p>Under construction...</p>
-						</section>
+					<AccordionContent>
+						<SubSection className="bg-red-400/30" title="WDCC">
+							<Card>
+								<CardContent>
+									<p>
+										I'm a software developer in a software
+										project at the Web Development and
+										Consulting Club! Come check out what
+										we're up to.
+									</p>
+								</CardContent>
+								<CardFooter>
+									<span className="flex gap-2">
+										<BadgeLink
+											className="bg-[#3a86fe]"
+											href="https://wdcc.co.nz/"
+											label="WDCC"
+											startIcon={<PiCowFill />}
+											target="_blank"
+										/>
+										<BadgeLink
+											href="https://github.com/UoaWDCC/uabc-web"
+											label="uabc-web"
+											startIcon={<FaGithub />}
+											target="_blank"
+										/>
+									</span>
+								</CardFooter>
+							</Card>
+						</SubSection>
+
+						<SubSection className="bg-red-400/30" title="Typing">
+							<Card>
+								<CardContent className="flex flex-col gap-2">
+									<TypingChart />
+									<p>
+										I was a hunt-and-pecker until 2017, when
+										I started learning touch typing. Over
+										the next 3 years of practice, my typing
+										speed grew to about 100 WPM (words per
+										minute) and I set my sights on the other
+										keyboard layouts. I began learning
+										Dvorak in 2020 and Colemak in 2025.
+									</p>
+								</CardContent>
+								<CardFooter>
+									<span className="flex gap-2">
+										<BadgeLink
+											className="bg-[#19191c] text-[#e2b714]"
+											href="https://monkeytype.com/profile/DvorakTurkey"
+											label="Monkeytype profile"
+											startIcon={<FaKeyboard />}
+											target="_blank"
+										/>
+										<BadgeLink
+											className="bg-[#d52f3a]"
+											href="https://www.nitrotype.com/racer/allors4612"
+											label="Nitro Type profile"
+											startIcon={<FaCar />}
+											target="_blank"
+										/>
+									</span>
+								</CardFooter>
+							</Card>
+						</SubSection>
 					</AccordionContent>
 				</AccordionItem>
 			</Accordion>
