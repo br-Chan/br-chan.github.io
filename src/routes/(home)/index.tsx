@@ -10,14 +10,7 @@ import {
 } from "@/components/animate-ui/radix/accordion";
 import { BadgeLink } from "@/components/BadgeLink";
 import { SubSection } from "@/components/SubSection";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import rawProjects from "@/data/projects.json";
 import Title from "../-components/Title";
