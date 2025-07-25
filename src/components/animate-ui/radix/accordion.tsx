@@ -114,7 +114,7 @@ function AccordionTrigger({
 		>
 			<AccordionPrimitive.Trigger
 				className={cn(
-					"flex flex-1 cursor-pointer items-center justify-between px-4 py-4 text-start font-medium transition-colors duration-200 hover:bg-gray-100",
+					"flex flex-1 cursor-pointer items-center justify-between px-4 py-4 text-start font-medium transition-colors duration-200 hover:bg-gray-100 md:px-4",
 					className,
 				)}
 				data-slot="accordion-trigger"
@@ -123,13 +123,13 @@ function AccordionTrigger({
 			>
 				<motion.div
 					animate={{
-						padding: isOpen ? 1 : 32,
-						fontSize: isOpen ? "18px" : "30px",
+						padding: isOpen ? 1 : 24,
+						fontSize: isOpen ? "24px" : "32px",
 					}}
 					className="flex flex-1 items-center justify-between"
 					initial={{
-						padding: 32,
-						fontSize: "30px",
+						padding: 28,
+						fontSize: "32px",
 					}}
 				>
 					{Icon && (
@@ -140,21 +140,21 @@ function AccordionTrigger({
 											height: 0,
 											width: 0,
 											opacity: 0,
-											x: 300,
+											x: 100,
 										}
 									: {
-											height: 120,
-											width: 120,
+											height: 80,
+											width: 80,
 											opacity: 100,
-											x: 0,
+											x: 20,
 										}
 							}
 							className="absolute size-30"
 							initial={{
-								height: 120,
-								width: 120,
+								height: 80,
+								width: 80,
 								opacity: 100,
-								x: 0,
+								x: 20,
 							}}
 							transition={{
 								type: "stiff",
@@ -166,9 +166,9 @@ function AccordionTrigger({
 
 					<motion.span
 						animate={{
-							x: isOpen ? 0 : 100,
+							x: isOpen ? 0 : 90,
 						}}
-						initial={{ x: 100 }}
+						initial={{ x: 90 }}
 						transition={{ type: "stiff" }}
 					>
 						{children}

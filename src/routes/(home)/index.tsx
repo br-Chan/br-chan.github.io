@@ -45,11 +45,11 @@ function App() {
 
 			<Accordion type="multiple">
 				<AccordionItem
-					className="bg-amber-300/30 md:rounded-t-2xl"
+					className="border-0 bg-amber-300/30 md:rounded-t-2xl"
 					value="creating"
 				>
 					<AccordionTrigger
-						className="hover:bg-amber-300/30 md:rounded-t-2xl"
+						className="bg-amber-300/30 hover:bg-amber-300/20 md:rounded-t-2xl"
 						startIcon={FaPenToSquare}
 					>
 						CREATING
@@ -65,9 +65,12 @@ function App() {
 					</AccordionContent>
 				</AccordionItem>
 
-				<AccordionItem className="bg-blue-400/30" value="learning">
+				<AccordionItem
+					className="border-0 bg-blue-400/30"
+					value="learning"
+				>
 					<AccordionTrigger
-						className="hover:bg-blue-400/30"
+						className="bg-blue-400/30 hover:bg-blue-400/20"
 						startIcon={FaBook}
 					>
 						LEARNING
@@ -108,11 +111,11 @@ function App() {
 				</AccordionItem>
 
 				<AccordionItem
-					className="bg-red-400/30 md:rounded-b-2xl"
+					className="border-0 bg-red-400/30 md:rounded-b-2xl"
 					value="doing"
 				>
 					<AccordionTrigger
-						className="hover:bg-red-400/30 md:rounded-b-2xl"
+						className="bg-red-400/30 hover:bg-red-400/20 md:rounded-b-2xl"
 						startIcon={FaKeyboard}
 					>
 						DOING
