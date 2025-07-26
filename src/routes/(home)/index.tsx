@@ -13,7 +13,6 @@ import { SubSection } from "@/components/SubSection";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import rawProjects from "@/data/projects.json";
-import Title from "../-components/Title";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
 import { SocialLinks } from "./-components/SocialLinks";
@@ -25,13 +24,13 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	return (
-		<section className="flex min-h-screen w-full flex-col justify-start gap-4 bg-white py-4 md:px-8 lg:w-4xl xl:w-5xl">
+		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 md:px-8 lg:px-16 xl:px-32">
 			<div className="flex flex-col gap-2 px-4">
-				<header className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
+				{/* <header className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
 					<Title />
 					<SocialLinks />
 				</header>
-				<Separator />
+				<Separator /> */}
 				<p>
 					I love&nbsp;
 					<span className="font-bold text-amber-500">creating</span>

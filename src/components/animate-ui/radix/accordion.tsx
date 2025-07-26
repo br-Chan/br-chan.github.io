@@ -128,7 +128,7 @@ function AccordionTrigger({
 					}}
 					className="flex flex-1 items-center justify-between"
 					initial={{
-						padding: 28,
+						padding: 24,
 						fontSize: "32px",
 					}}
 				>

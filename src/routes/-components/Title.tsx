@@ -1,4 +1,4 @@
-export default function Title() {
+export const Title = () => {
 	return (
 		<div>
 			<h1 className="font-extrabold text-4xl">Brandon Chan</h1>
@@ -8,4 +8,4 @@ export default function Title() {
 			</span>
 		</div>
 	);
-}
+};

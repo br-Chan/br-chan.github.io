@@ -37,6 +37,7 @@ export const IconLink: FC<IconLinkProps> = memo(
 
 		return (
 			<motion.span
+				className="flex"
 				whileHover={{
 					y: -2,
 				}}
