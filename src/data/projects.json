@@ -1,6 +1,45 @@
 [
 	{
+		"name": "Partly x WDCC Hackathon",
+		"projectType": "competition",
+		"cv": true,
+		"techStack": ["React", "Next.js", "TypeScript", "Yamada UI"],
+		"startDate": "Jul 2025",
+		"endDate": "Jul 2025",
+		"bulletPoints": [
+			"Awarded Most Production-ready as a team; deployed an interactive interface to navigate Partly's extensive world tree of automotive parts.",
+			"Implemented fetching and displaying data for a specific part in an intuitive information card."
+		],
+		"summary": "We deployed a portal for Partly's World Tree of all generic car parts. View a horizontal and vertical table of the tree, or search for parts through a visual diagram. You can also view each part's details in an intuitive card. All data was fetched from Partly's API - it was an awesome experience all around.",
+		"links": [
+			{
+				"href": "https://github.com/jeffplays2005/partly-hackathon-team-3",
+				"type": "GitHub"
+			}
+		]
+	},
+	{
+		"name": "Kiwijam 2025",
+		"projectType": "competition",
+		"cv": false,
+		"techStack": ["Microsoft Paint"],
+		"startDate": "Jul 2025",
+		"endDate": "Jul 2025",
+		"bulletPoints": [
+			"Did stuff on Microsoft Paint. I maybe lost 1 brain cell. Who am I kidding, I lost half of them."
+		],
+		"summary": "I did nothing but bad Microsoft Paint art for this. It was hilarious. But do check out Are We There Yet?, a game about working together as a pilot and air traffic controller.",
+		"links": [
+			{
+				"href": "https://thuliferousgames.itch.io/are-we-there-yet",
+				"type": "Itch.io"
+			}
+		]
+	},
+	{
 		"name": "Rankle for New York Times Games",
+		"projectType": "project",
+		"cv": true,
 		"techStack": [
 			"React",
 			"Next.js",
@@ -24,6 +63,8 @@
 	},
 	{
 		"name": "The Missing Dollar Mystery",
+		"projectType": "project",
+		"cv": true,
 		"techStack": ["Java", "JavaFX", "OpenAI API"],
 		"startDate": "Jul 2024",
 		"endDate": "Oct 2024",
@@ -45,6 +86,8 @@
 	},
 	{
 		"name": "SESA x WDCC Hackathon 2024",
+		"projectType": "competition",
+		"cv": true,
 		"techStack": ["React", "Next.js", "TypeScript"],
 		"startDate": "Aug 2024",
 		"endDate": "Aug 2024",
@@ -61,7 +104,25 @@
 		]
 	},
 	{
+		"name": "Kiwijam 2024",
+		"projectType": "competition",
+		"cv": false,
+		"techStack": ["Godot"],
+		"startDate": "Jul 2024",
+		"endDate": "Jul 2024",
+		"bulletPoints": ["No."],
+		"summary": "Your Winchester Mystery Home - PLEASE don't try this game, I think all of us who worked on this will agree it will give you a heart attack",
+		"links": [
+			{
+				"href": "https://hoverth.itch.io/your-winchester-mystery-home",
+				"type": "Itch.io"
+			}
+		]
+	},
+	{
 		"name": "Venue Hire System",
+		"projectType": "project",
+		"cv": false,
 		"techStack": ["Java"],
 		"startDate": "Mar 2024",
 		"endDate": "Apr 2024",
@@ -78,6 +139,8 @@
 	},
 	{
 		"name": "Customisable LOTTO Generator",
+		"projectType": "project",
+		"cv": false,
 		"techStack": ["Java", "Java Swing"],
 		"startDate": "Dec 2023",
 		"endDate": "Mar 2024",

@@ -1,14 +1,17 @@
 // TODO: make this cooler (colour-coded, icons?, enforced?)
+// TODO: this is kind of redundant, must improve the system (e.g. search params in /projects, and then search each project for it)
 export type Tech =
 	| "Firebase"
 	| "Java"
 	| "JavaFX"
 	| "Java Swing"
+	| "Microsoft Paint"
 	| "Next.js"
 	| "OpenAI API"
 	| "React"
 	| "TypeScript"
-	| "Tailwind CSS";
+	| "Tailwind CSS"
+	| "Yamada UI";
 
 export type ProjectLink = {
 	href: string;
@@ -33,6 +36,8 @@ export type Experience = {
 
 export type Project = {
 	name: string;
+	projectType: "project" | "competition";
+	cv: boolean;
 	techStack: Tech[];
 	startDate: string;
 	endDate: string;

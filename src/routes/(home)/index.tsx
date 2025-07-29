@@ -57,7 +57,19 @@ function App() {
 							className="bg-amber-300/30"
 							title="Projects"
 						>
-							<Projects projects={rawProjects as Project[]} />
+							<Projects
+								projects={rawProjects as Project[]}
+								projectType="project"
+							/>
+						</SubSection>
+						<SubSection
+							className="bg-amber-300/30"
+							title="Competitions"
+						>
+							<Projects
+								projects={rawProjects as Project[]}
+								projectType="competition"
+							/>
 						</SubSection>
 					</AccordionContent>
 				</AccordionItem>
