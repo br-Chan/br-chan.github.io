@@ -33,6 +33,10 @@
 			{
 				"href": "https://thuliferousgames.itch.io/are-we-there-yet",
 				"type": "Itch.io"
+			},
+			{
+				"href": "https://github.com/Hoverth/KiwiJam2025",
+				"type": "GitHub"
 			}
 		]
 	},
@@ -116,6 +120,10 @@
 			{
 				"href": "https://hoverth.itch.io/your-winchester-mystery-home",
 				"type": "Itch.io"
+			},
+			{
+				"href": "https://github.com/Hoverth/KiwiJam2024",
+				"type": "GitHub"
 			}
 		]
 	},

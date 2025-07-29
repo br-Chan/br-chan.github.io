@@ -34,7 +34,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 					<span className={cn("font-bold", titleClassName)}>
 						{project.name}
 					</span>
-					<span className="space-x-1 space-y-1 font-bold md:text-end">
+					<span className="flex h-fit flex-wrap gap-1 font-bold md:justify-end">
 						{/* TODO: create component for this */}
 						{project.techStack.map((tech) => {
 							return (

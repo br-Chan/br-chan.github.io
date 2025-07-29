@@ -66,12 +66,7 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 						className,
 					)}
 				>
-					<a
-						className="hover:underline"
-						href={href}
-						rel="noopener"
-						target={target}
-					>
+					<a href={href} rel="noopener" target={target}>
 						{!!startIcon && startIcon}
 						{label}
 						{endIcon}

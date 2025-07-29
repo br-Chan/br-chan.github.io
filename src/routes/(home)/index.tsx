@@ -23,12 +23,7 @@ export const Route = createFileRoute("/(home)/")({
 function App() {
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
-			<div className="flex flex-col gap-2 px-4">
-				{/* <header className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
-					<Title />
-					<SocialLinks />
-				</header>
-				<Separator /> */}
+			<div className="flex w-fit flex-col gap-2 px-4">
 				<p>
 					I love&nbsp;
 					<span className="font-bold text-amber-500">creating</span>
@@ -100,19 +95,13 @@ function App() {
 						>
 							<Card>
 								<CardContent>
+									<p>• COMPSCI 316 | Cyber Security</p>
 									<p>
-										• ENGGEN 303 | Innovation and Business
-										Cases
+										• SOFTENG 306 | Software Engineering
+										Design 2
 									</p>
-									<p>
-										• SOFTENG 351 | Fundamentals of Database
-										Systems
-									</p>
-									<p>• SOFTENG 370 | Operating Systems</p>
-									<p>
-										• SOFTENG 373 |Computer Graphics and
-										Image Processing
-									</p>
+									<p>• SOFTENG 325 | Software Architecture</p>
+									<p>• SOFTENG 364 | Networks and Security</p>
 								</CardContent>
 							</Card>
 						</SubSection>
@@ -175,7 +164,7 @@ function App() {
 									</p>
 								</CardContent>
 								<CardFooter>
-									<span className="flex gap-2">
+									<span className="flex flex-wrap gap-2">
 										<BadgeLink
 											className="bg-[#19191c] text-[#e2b714]"
 											href="https://monkeytype.com/profile/DvorakTurkey"
