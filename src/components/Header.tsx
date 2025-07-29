@@ -4,7 +4,7 @@ import { SocialLinks } from "@/routes/(home)/-components/SocialLinks";
 
 export default function Header() {
 	return (
-		<header className="fixed z-100 flex w-full flex-col items-center justify-between gap-2 border-x-2 border-b-2 bg-white p-2 px-4 text-black md:flex-row md:px-8">
+		<header className="fixed z-100 flex w-full flex-col items-center justify-between gap-2 border-b-2 bg-white p-2 px-4 text-black md:flex-row md:px-8">
 			<div className="flex w-full items-center gap-2 md:w-fit">
 				{/* <img alt="logo" className="size-15" src={logo} /> */}
 				<Title />

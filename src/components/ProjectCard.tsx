@@ -53,7 +53,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 					</span>
 				</CardDescription>
 			</CardHeader>
-			<CardContent>
+			<CardContent className="h-full">
 				{variant === "bullet" &&
 					project.bulletPoints.map((point) => {
 						return <p key={point}>• {point}</p>;

@@ -8,7 +8,7 @@ export interface ProjectsProps {
 
 export const Projects: FC<ProjectsProps> = memo(({ projects }) => {
 	return (
-		<>
+		<div className="grid gap-4 lg:grid-cols-2 2xl:grid-cols-3">
 			{projects.map((project) => {
 				return (
 					<ProjectCard
@@ -19,6 +19,6 @@ export const Projects: FC<ProjectsProps> = memo(({ projects }) => {
 					/>
 				);
 			})}
-		</>
+		</div>
 	);
 });
