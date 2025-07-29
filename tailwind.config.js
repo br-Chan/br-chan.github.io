@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],    
+	content: ["./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
-            keyframes: {
+			keyframes: {
 				slideDown: {
 					from: { height: "0px" },
 					to: { height: "var(--radix-accordion-content-height)" },

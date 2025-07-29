@@ -11,11 +11,9 @@ import {
 import { BadgeLink } from "@/components/BadgeLink";
 import { SubSection } from "@/components/SubSection";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
-import { SocialLinks } from "./-components/SocialLinks";
 import { TypingChart } from "./-components/TypingChart";
 
 export const Route = createFileRoute("/(home)/")({
