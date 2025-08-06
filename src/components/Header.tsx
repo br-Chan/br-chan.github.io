@@ -15,6 +15,7 @@ export default function Header() {
 				<div className="flex flex-row items-center gap-4 font-bold">
 					<Link to="/">Home</Link>
 					<Link to="/cv">CV</Link>
+					<Link to="/todo">Todo</Link>
 				</div>
 				<SocialLinks />
 			</nav>

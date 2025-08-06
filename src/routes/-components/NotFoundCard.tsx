@@ -12,7 +12,7 @@ import {
 
 export const NotFoundCard = () => {
 	return (
-		<Card className="w-md">
+		<Card className="z-1 mt-8 w-md">
 			<CardHeader className="text-2xl">
 				<CardTitle>Page Not Found</CardTitle>
 				<CardAction>

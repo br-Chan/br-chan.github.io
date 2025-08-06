@@ -13,7 +13,7 @@ export const Route = createRootRoute({
 
 			<Header />
 
-			<div className="mt-[153.6px] flex w-full flex-col items-center md:mt-[105.6px]">
+			<div className="mt-[153.6px] flex min-h-screen w-full flex-col items-center md:mt-[105.6px]">
 				{/* <Header /> */}
 				<Outlet />
 			</div>

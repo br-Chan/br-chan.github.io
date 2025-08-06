@@ -11,10 +11,17 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as TodoIndexImport } from './routes/todo/index'
 import { Route as CvIndexImport } from './routes/cv/index'
 import { Route as homeIndexImport } from './routes/(home)/index'
 
 // Create/Update Routes
+
+const TodoIndexRoute = TodoIndexImport.update({
+  id: '/todo/',
+  path: '/todo/',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const CvIndexRoute = CvIndexImport.update({
   id: '/cv/',
@@ -46,6 +53,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CvIndexImport
       parentRoute: typeof rootRoute
     }
+    '/todo/': {
+      id: '/todo/'
+      path: '/todo'
+      fullPath: '/todo'
+      preLoaderRoute: typeof TodoIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -54,36 +68,41 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
+  '/todo': typeof TodoIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
+  '/todo': typeof TodoIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/(home)/': typeof homeIndexRoute
   '/cv/': typeof CvIndexRoute
+  '/todo/': typeof TodoIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cv'
+  fullPaths: '/' | '/cv' | '/todo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cv'
-  id: '__root__' | '/(home)/' | '/cv/'
+  to: '/' | '/cv' | '/todo'
+  id: '__root__' | '/(home)/' | '/cv/' | '/todo/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   homeIndexRoute: typeof homeIndexRoute
   CvIndexRoute: typeof CvIndexRoute
+  TodoIndexRoute: typeof TodoIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   homeIndexRoute: homeIndexRoute,
   CvIndexRoute: CvIndexRoute,
+  TodoIndexRoute: TodoIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,7 +116,8 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/(home)/",
-        "/cv/"
+        "/cv/",
+        "/todo/"
       ]
     },
     "/(home)/": {
@@ -105,6 +125,9 @@ export const routeTree = rootRoute
     },
     "/cv/": {
       "filePath": "cv/index.tsx"
+    },
+    "/todo/": {
+      "filePath": "todo/index.tsx"
     }
   }
 }

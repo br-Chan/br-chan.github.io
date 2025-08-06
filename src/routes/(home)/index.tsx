@@ -10,7 +10,13 @@ import {
 } from "@/components/animate-ui/radix/accordion";
 import { BadgeLink } from "@/components/BadgeLink";
 import { SubSection } from "@/components/SubSection";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
@@ -119,14 +125,31 @@ function App() {
 						DOING
 					</AccordionTrigger>
 					<AccordionContent>
-						<SubSection className="bg-red-400/30" title="WDCC">
+						<SubSection
+							className="bg-red-400/30"
+							title="Volunteer Work"
+						>
 							<Card>
+								<CardHeader>
+									<CardTitle className="font-bold text-lg">
+										WDCC
+									</CardTitle>
+								</CardHeader>
 								<CardContent>
 									<p>
 										I'm a software developer in a software
 										project at the Web Development and
-										Consulting Club! Come check out what
-										we're up to.
+										Consulting Club! We're developing a
+										member management and court booking
+										portal for the University of Auckland
+										Badminton Club. I'm working full-stack,
+										creating components for the frontend and
+										working on backend services and
+										endpoints, among other awesome stuff and
+										a tiny bit of DevOps (which is
+										particularly not awesome when things
+										don't work) Come check out what we're up
+										to.
 									</p>
 								</CardContent>
 								<CardFooter>
@@ -149,10 +172,14 @@ function App() {
 							</Card>
 						</SubSection>
 
-						<SubSection className="bg-red-400/30" title="Typing">
+						<SubSection className="bg-red-400/30" title="Hobbies">
 							<Card>
+								<CardHeader>
+									<CardTitle className="font-bold text-lg">
+										Typing
+									</CardTitle>
+								</CardHeader>
 								<CardContent className="flex flex-col gap-2">
-									<TypingChart />
 									<p>
 										I was a hunt-and-pecker until 2017, when
 										I started learning touch typing. Over
@@ -162,6 +189,7 @@ function App() {
 										keyboard layouts. I began learning
 										Dvorak in 2020 and Colemak in 2025.
 									</p>
+									<TypingChart />
 								</CardContent>
 								<CardFooter>
 									<span className="flex flex-wrap gap-2">
