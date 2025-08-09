@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { FaCaretUp } from "react-icons/fa";
 import {
 	Card,
@@ -16,7 +17,10 @@ export const Route = createFileRoute("/todo/")({
 
 function RouteComponent() {
 	const { setStarColor } = useStarContext();
-	setStarColor("purple");
+
+	useEffect(() => {
+		setStarColor("purple");
+	});
 
 	return (
 		<Card className="z-1 mt-8 w-md">

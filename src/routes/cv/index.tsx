@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { useStarContext } from "@/context/StarContext";
 import rawAchievements from "@/data/achievements.json";
@@ -28,7 +29,10 @@ export const Route = createFileRoute("/cv/")({
 
 function CV() {
 	const { setStarColor } = useStarContext();
-	setStarColor("#22c55e");
+
+	useEffect(() => {
+		setStarColor("#22c55e");
+	});
 
 	return (
 		<section className="z-1 mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 shadow-xl xl:mx-60 2xl:mx-80">

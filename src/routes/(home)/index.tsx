@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { FaCar, FaGithub } from "react-icons/fa";
 import { FaBook, FaKeyboard, FaPenToSquare } from "react-icons/fa6";
 import { PiCowFill } from "react-icons/pi";
@@ -29,6 +30,10 @@ export const Route = createFileRoute("/(home)/")({
 
 function App() {
 	const { setStarColor } = useStarContext();
+
+	useEffect(() => {
+		setStarColor("#4b5563");
+	});
 
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
