@@ -17,6 +17,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { useStarContext } from "@/context/starContext";
 import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
@@ -27,6 +28,8 @@ export const Route = createFileRoute("/(home)/")({
 });
 
 function App() {
+	const { setStarColor } = useStarContext();
+
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
 			<div className="flex w-fit flex-col gap-2 px-4">
@@ -44,6 +47,7 @@ function App() {
 			<Accordion type="multiple">
 				<AccordionItem
 					className="border-0 bg-amber-300/30 md:rounded-t-2xl"
+					onMouseOver={() => setStarColor("#f59e0b")} // amber 500
 					value="creating"
 				>
 					<AccordionTrigger
@@ -77,6 +81,7 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-blue-400/30"
+					onMouseOver={() => setStarColor("#3b82f6")} // blue 500
 					value="learning"
 				>
 					<AccordionTrigger
@@ -116,6 +121,7 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-red-400/30 md:rounded-b-2xl"
+					onMouseOver={() => setStarColor("#ef4444")} // red 500
 					value="doing"
 				>
 					<AccordionTrigger

@@ -8,12 +8,16 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { useStarContext } from "@/context/starContext";
 
 export const Route = createFileRoute("/todo/")({
 	component: RouteComponent,
 });
 
 function RouteComponent() {
+	const { setStarColor } = useStarContext();
+	setStarColor("purple");
+
 	return (
 		<Card className="z-1 mt-8 w-md">
 			<CardHeader className="text-2xl">
@@ -32,7 +36,13 @@ function RouteComponent() {
 					</a>
 				</CardAction>
 			</CardHeader>
-			<CardContent>- this todo list</CardContent>
+			<CardContent>
+				<ol>
+					<li>- dark mode</li>
+					<li>- </li>
+					<li>- this todo list</li>
+				</ol>
+			</CardContent>
 		</Card>
 	);
 }
