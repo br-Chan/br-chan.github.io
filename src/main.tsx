@@ -10,7 +10,6 @@ import ReactDOM from "react-dom/client";
 import { routeTree } from "./routeTree.gen";
 
 import "./styles.css";
-import { StarContextProvider } from "@/context/starContext.tsx";
 import reportWebVitals from "./reportWebVitals.ts";
 import { NotFoundCard } from "./routes/-components/NotFoundCard.tsx";
 
@@ -41,9 +40,7 @@ if (rootElement && !rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
-			<StarContextProvider>
-				<RouterProvider router={router} />
-			</StarContextProvider>
+			<RouterProvider router={router} />
 		</StrictMode>,
 	);
 }
