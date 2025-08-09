@@ -9,7 +9,7 @@ import {
 	useSpring,
 } from "motion/react";
 import * as React from "react";
-import { useStarContext } from "@/context/starContext";
+import { useStarContext } from "@/context/StarContext";
 import { cn } from "@/lib/utils";
 
 type StarLayerProps = HTMLMotionProps<"div"> & {

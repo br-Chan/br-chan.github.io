@@ -8,7 +8,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { useStarContext } from "@/context/starContext";
+import { useStarContext } from "@/context/StarContext";
 
 export const Route = createFileRoute("/todo/")({
 	component: RouteComponent,

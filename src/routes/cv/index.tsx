@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
-import { useStarContext } from "@/context/starContext";
+import { useStarContext } from "@/context/StarContext";
 import rawAchievements from "@/data/achievements.json";
 import rawEducations from "@/data/educations.json";
 import rawExperiences from "@/data/experiences.json";

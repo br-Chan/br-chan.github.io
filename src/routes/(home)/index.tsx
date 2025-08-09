@@ -17,7 +17,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { useStarContext } from "@/context/starContext";
+import { useStarContext } from "@/context/StarContext";
 import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
