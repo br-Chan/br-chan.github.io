@@ -31,9 +31,10 @@ export const Route = createFileRoute("/(home)/")({
 function App() {
 	const { setStarColor } = useStarContext();
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run upon first render only
 	useEffect(() => {
 		setStarColor("#4b5563");
-	});
+	}, []);
 
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">

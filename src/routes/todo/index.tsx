@@ -18,9 +18,10 @@ export const Route = createFileRoute("/todo/")({
 function RouteComponent() {
 	const { setStarColor } = useStarContext();
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run upon first render only
 	useEffect(() => {
 		setStarColor("purple");
-	});
+	}, []);
 
 	return (
 		<Card className="z-1 mt-8 w-md">
