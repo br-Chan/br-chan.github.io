@@ -1,5 +1,24 @@
 [
 	{
+		"name": "WDCC x SESA Hackathon 2025",
+		"projectType": "competition",
+		"cv": true,
+		"techStack": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+		"startDate": "Aug 2025",
+		"endDate": "Aug 2025",
+		"bulletPoints": [
+			"Awarded Most Over-engineered as a team; deployed platform to archive social media posts via RSS.",
+			"Built display cards, pages for RSS posts fetched from backend; added server-side data mutations."
+		],
+		"summary": "A platform to archive your social media posts via RSS and add your own, stored on an independent database so your memories will be saved forever even if the social media platform dies. I came up with the idea, but it was the brilliant work of my friends on the backend and those who hooked it up with the frontend that awarded us Most Over-engineered. Some of the work I did for team included building cards and pages to display posts and adding server-side data mutations.",
+		"links": [
+			{
+				"href": "https://github.com/ExceptionHandlersUOA/NostalgiaClient",
+				"type": "GitHub"
+			}
+		]
+	},
+	{
 		"name": "Partly x WDCC Hackathon",
 		"projectType": "competition",
 		"cv": true,
@@ -89,7 +108,7 @@
 		]
 	},
 	{
-		"name": "SESA x WDCC Hackathon 2024",
+		"name": "WDCC x SESA Hackathon 2024",
 		"projectType": "competition",
 		"cv": true,
 		"techStack": ["React", "Next.js", "TypeScript"],
