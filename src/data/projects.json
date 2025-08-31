@@ -1,5 +1,27 @@
 [
 	{
+		"name": "Portfolio website",
+		"projectType": "project",
+		"cv": false,
+		"techStack": [
+			"React",
+			"Vite",
+			"Tanstack Router",
+			"Tailwind CSS",
+			"TypeScript"
+		],
+		"startDate": "Jul 2025",
+		"endDate": "present",
+		"bulletPoints": ["Deployed my own portfolio website"],
+		"summary": "I finally sat down and created my own personal website. Unfortunately I seem to have lost it, and I can't find it anywhere. Where could it have gone? I feel like it's right under my nose...",
+		"links": [
+			{
+				"href": "https://github.com/br-Chan/br-chan.github.io",
+				"type": "GitHub"
+			}
+		]
+	},
+	{
 		"name": "WDCC x SESA Hackathon 2025",
 		"projectType": "competition",
 		"cv": true,
@@ -174,7 +196,7 @@
 		"bulletPoints": [
 			"Intuitive GUI .exe application to randomly generate personalised Lottery numbers with options panel."
 		],
-		"summary": "My first Java development project. A GUI application for randomly generating Lottery numbers, based on New Zealand's LOTTO game rules. Comes with intuitive personalisation: add lucky numbers to always appear in your lines, play with Strike or the Powerball enabled, and increase your chances of winning! (\"note: does not actually increase chances of winning\"",
+		"summary": "My first Java development project. A GUI application for randomly generating Lottery numbers, based on New Zealand's LOTTO game rules. Comes with intuitive personalisation: add lucky numbers to always appear in your lines, play with Strike or the Powerball enabled, and increase your chances of winning! (note: does not actually increase chances of winning)",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Customisable-LOTTO-Generator",
