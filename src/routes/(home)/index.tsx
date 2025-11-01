@@ -39,14 +39,14 @@ function App() {
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
 			<div className="flex w-fit flex-col gap-2 px-4">
-				<p>
-					I love&nbsp;
+				<p className="text-black dark:text-slate-100">
+					I love{" "}
 					<span className="font-bold text-amber-500">creating</span>
-					,&nbsp;
+					{", "}
 					<span className="font-bold text-blue-500">learning</span>
-					&nbsp;and&nbsp;
-					<span className="font-bold text-red-500">doing</span>
-					&nbsp;things - usually all 3 at once.
+					{" and "}
+					<span className="font-bold text-red-500">doing</span> things
+					- usually all 3 at once.
 				</p>
 			</div>
 
@@ -57,24 +57,21 @@ function App() {
 					value="creating"
 				>
 					<AccordionTrigger
-						className="bg-amber-300/30 hover:bg-amber-300/20 md:rounded-t-2xl"
+						className="bg-amber-300 md:rounded-t-2xl"
 						startIcon={FaPenToSquare}
 					>
 						CREATING
 					</AccordionTrigger>
 
 					<AccordionContent>
-						<SubSection
-							className="bg-amber-300/30"
-							title="Projects"
-						>
+						<SubSection className="bg-amber-300" title="Projects">
 							<Projects
 								projects={rawProjects as Project[]}
 								projectType="project"
 							/>
 						</SubSection>
 						<SubSection
-							className="bg-amber-300/30"
+							className="bg-amber-300"
 							title="Competitions"
 						>
 							<Projects
@@ -91,14 +88,14 @@ function App() {
 					value="learning"
 				>
 					<AccordionTrigger
-						className="bg-blue-400/30 hover:bg-blue-400/20"
+						className="bg-blue-400"
 						startIcon={FaBook}
 					>
 						LEARNING
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-blue-400/30"
+							className="bg-blue-400"
 							title="Languages and Tools"
 						>
 							<Card>
@@ -107,7 +104,7 @@ function App() {
 						</SubSection>
 
 						<SubSection
-							className="bg-blue-400/30"
+							className="bg-blue-400"
 							title="University Courses"
 						>
 							<Card>
@@ -131,14 +128,14 @@ function App() {
 					value="doing"
 				>
 					<AccordionTrigger
-						className="bg-red-400/30 hover:bg-red-400/20 md:rounded-b-2xl"
+						className="bg-red-400 md:rounded-b-2xl"
 						startIcon={FaKeyboard}
 					>
 						DOING
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-red-400/30"
+							className="bg-red-400"
 							title="Volunteer Work"
 						>
 							<Card>
@@ -184,7 +181,7 @@ function App() {
 							</Card>
 						</SubSection>
 
-						<SubSection className="bg-red-400/30" title="Hobbies">
+						<SubSection className="bg-red-400" title="Hobbies">
 							<Card>
 								<CardHeader>
 									<CardTitle className="font-bold text-lg">

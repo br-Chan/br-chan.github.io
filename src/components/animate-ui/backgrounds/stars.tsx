@@ -115,7 +115,7 @@ function StarsBackground({
 		// biome-ignore lint/a11y/noStaticElementInteractions: Animate UI decided to do this I guess
 		<div
 			className={cn(
-				"relative size-full overflow-hidden",
+				"relative size-full overflow-hidden dark:bg-neutral-950",
 				//bg-[radial-gradient(ellipse_at_bottom,_#d9d9d9_0%,_#fff_100%)]
 				//bg-[radial-gradient(ellipse_at_bottom,_#262626_0%,_#000_100%)]
 				className,

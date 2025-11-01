@@ -5,8 +5,9 @@ import Header from "../components/Header";
 
 export const Route = createRootRoute({
 	component: () => (
-		<main className="flex min-h-screen flex-col items-center bg-white">
-			<StarsBackground className="fixed inset-0 z-0 flex items-center justify-center rounded-xl" />
+		// Add dark to className to test dark mode
+		<main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
+			<StarsBackground className="fixed inset-0 z-0 flex items-center justify-center" />
 
 			<Header />
 
@@ -16,7 +17,7 @@ export const Route = createRootRoute({
 			</div>
 
 			{/* TODO: Create way better footer */}
-			<p className="z-100 w-full border-t-2 bg-white py-4 text-center text-muted-foreground">
+			<p className="z-100 w-full border-t-2 bg-white py-4 text-center text-muted-foreground dark:bg-[#400050]">
 				made by br-Chan
 			</p>
 
