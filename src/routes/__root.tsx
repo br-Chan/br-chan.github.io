@@ -1,4 +1,4 @@
-import { createRootRoute, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { StarsBackground } from "@/components/animate-ui/backgrounds/stars";
 import Header from "../components/Header";
@@ -17,9 +17,12 @@ export const Route = createRootRoute({
 			</div>
 
 			{/* TODO: Create way better footer */}
-			<p className="z-100 w-full border-t-2 bg-white py-4 text-center text-muted-foreground dark:bg-[#400050]">
-				made by br-Chan
-			</p>
+			<span className="z-100 m-4 w-fit rounded-md bg-white p-2 text-center text-muted-foreground dark:bg-[#400050]">
+				made by{" "}
+				<Link className="hover:underline" to="/">
+					br-Chan
+				</Link>
+			</span>
 
 			<TanStackRouterDevtools />
 		</main>

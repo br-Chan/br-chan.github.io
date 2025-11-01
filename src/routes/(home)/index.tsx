@@ -33,7 +33,7 @@ function App() {
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run upon first render only
 	useEffect(() => {
-		setStarColor("#4b5563");
+		setStarColor("#f59e0b");
 	}, []);
 
 	return (

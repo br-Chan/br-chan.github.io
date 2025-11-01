@@ -20,7 +20,7 @@ function RouteComponent() {
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run upon first render only
 	useEffect(() => {
-		setStarColor("purple");
+		setStarColor("#7c007e");
 	}, []);
 
 	return (

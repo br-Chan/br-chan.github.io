@@ -111,18 +111,28 @@ function StarsBackground({
 		[offsetX, offsetY, factor],
 	);
 
+	const bgStyle = React.useMemo(
+		() => ({
+			backgroundImage: `radial-gradient(ellipse, ${starColor}50 0%, #fff 80%)`,
+			transition: "background-image 1000ms ease", // TODO: doesn't work
+		}),
+		[starColor],
+	);
+
 	return (
 		// biome-ignore lint/a11y/noStaticElementInteractions: Animate UI decided to do this I guess
 		<div
 			className={cn(
 				"relative size-full overflow-hidden dark:bg-neutral-950",
-				//bg-[radial-gradient(ellipse_at_bottom,_#d9d9d9_0%,_#fff_100%)]
-				//bg-[radial-gradient(ellipse_at_bottom,_#262626_0%,_#000_100%)]
 				className,
 			)}
 			data-slot="stars-background"
 			onMouseMove={handleMouseMove}
 			{...props}
+			style={{
+				...props.style,
+				...bgStyle,
+			}}
 		>
 			<motion.div
 				className={cn({ "pointer-events-none": !pointerEvents })}
@@ -130,7 +140,7 @@ function StarsBackground({
 			>
 				<StarLayer
 					count={1000}
-					size={3}
+					size={4}
 					starColor={starColor}
 					transition={{
 						repeat: Infinity,
@@ -140,7 +150,7 @@ function StarsBackground({
 				/>
 				<StarLayer
 					count={400}
-					size={2}
+					size={3}
 					starColor={starColor}
 					transition={{
 						repeat: Infinity,
@@ -150,7 +160,7 @@ function StarsBackground({
 				/>
 				<StarLayer
 					count={200}
-					size={3}
+					size={2}
 					starColor={starColor}
 					transition={{
 						repeat: Infinity,

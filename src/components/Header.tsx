@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { motion } from "motion/react";
 import { Title } from "@/routes/-components/Title";
 import { SocialLinks } from "@/routes/(home)/-components/SocialLinks";
 
@@ -12,10 +13,47 @@ export default function Header() {
 
 			<nav className="flex w-full items-center justify-between">
 				{/* TODO: refactor using Shadcn Navigation Menu */}
+				{/* TODO: extract motion logic to its own component */}
 				<div className="flex flex-row items-center gap-4 font-bold text-xl">
-					<Link to="/">Home</Link>
-					<Link to="/cv">CV</Link>
-					<Link to="/todo">Todo</Link>
+					<motion.span
+						transition={{
+							type: "tween",
+							duration: 0.1,
+						}}
+						whileHover={{
+							y: -2,
+						}}
+					>
+						<Link className="hover:underline" to="/">
+							Home
+						</Link>
+					</motion.span>
+					<motion.span
+						transition={{
+							type: "tween",
+							duration: 0.1,
+						}}
+						whileHover={{
+							y: -2,
+						}}
+					>
+						<Link className="hover:underline" to="/cv">
+							CV
+						</Link>
+					</motion.span>
+					<motion.span
+						transition={{
+							type: "tween",
+							duration: 0.1,
+						}}
+						whileHover={{
+							y: -2,
+						}}
+					>
+						<Link className="hover:underline" to="/todo">
+							Todo
+						</Link>
+					</motion.span>
 				</div>
 				<SocialLinks />
 			</nav>
