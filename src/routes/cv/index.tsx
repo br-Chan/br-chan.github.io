@@ -36,7 +36,7 @@ function CV() {
 	}, []);
 
 	return (
-		<section className="z-1 mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 shadow-xl xl:mx-60 2xl:mx-80">
+		<section className="z-1 mx-2 flex min-h-screen flex-col justify-start gap-2 bg-white p-4 px-8 font-normal-sans shadow-xl xl:mx-60 2xl:mx-80">
 			<header className="flex w-full flex-col items-center gap-2 md:text-center">
 				<Title />
 				<CVLinks />

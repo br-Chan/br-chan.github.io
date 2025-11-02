@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
+@import "@fontsource/comic-mono";
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -12,6 +15,21 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.font-sans {
+	font-family: "Comic Relief", sans-serif;
+}
+
+.font-normal-sans {
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+.font-mono {
+	font-family: "Comic Mono", monospace;
 }
 
 code {

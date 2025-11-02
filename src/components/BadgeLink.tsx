@@ -61,7 +61,7 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 				<Badge
 					asChild
 					className={cn(
-						"bg-black text-sm text-white",
+						"bg-black font-normal-sans text-sm text-white",
 						typeColor,
 						className,
 					)}

@@ -149,7 +149,7 @@ function AccordionTrigger({
 											x: 20,
 										}
 							}
-							className="absolute size-30"
+							className="absolute size-30 text-white"
 							initial={{
 								height: 80,
 								width: 80,
@@ -168,6 +168,7 @@ function AccordionTrigger({
 						animate={{
 							x: isOpen ? 0 : 90,
 						}}
+						className="text-white"
 						initial={{ x: 90 }}
 						transition={{ type: "stiff" }}
 					>

@@ -21,7 +21,12 @@ export const SubSection: FC<SubSectionProps> = ({
 				className,
 			)}
 		>
-			<h3 className={cn("font-bold text-2xl", titleClassName)}>
+			<h3
+				className={cn(
+					"font-medium text-2xl text-white",
+					titleClassName,
+				)}
+			>
 				{title}
 			</h3>
 			{children}

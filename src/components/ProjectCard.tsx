@@ -38,7 +38,11 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						{/* TODO: create component for this */}
 						{project.techStack.map((tech) => {
 							return (
-								<Badge key={tech} variant="secondary">
+								<Badge
+									className="font-normal-sans"
+									key={tech}
+									variant="secondary"
+								>
 									{tech}
 								</Badge>
 							);

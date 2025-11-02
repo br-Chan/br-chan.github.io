@@ -57,21 +57,27 @@ function App() {
 					value="creating"
 				>
 					<AccordionTrigger
-						className="bg-amber-300 md:rounded-t-2xl"
+						className="bg-amber-400 font-sans md:rounded-t-2xl"
 						startIcon={FaPenToSquare}
+						style={{
+							WebkitTextStroke: "6px",
+							WebkitTextStrokeColor: "#ad7e00",
+							paintOrder: "stroke fill",
+							// letterSpacing: "2px",
+						}}
 					>
-						CREATING
+						Creating
 					</AccordionTrigger>
 
 					<AccordionContent>
-						<SubSection className="bg-amber-300" title="Projects">
+						<SubSection className="bg-amber-400" title="Projects">
 							<Projects
 								projects={rawProjects as Project[]}
 								projectType="project"
 							/>
 						</SubSection>
 						<SubSection
-							className="bg-amber-300"
+							className="bg-amber-400"
 							title="Competitions"
 						>
 							<Projects
@@ -88,10 +94,17 @@ function App() {
 					value="learning"
 				>
 					<AccordionTrigger
-						className="bg-blue-400"
+						className="bg-blue-500 font-sans"
+						color="blue"
 						startIcon={FaBook}
+						style={{
+							WebkitTextStroke: "6px",
+							WebkitTextStrokeColor: "#0448b0",
+							paintOrder: "stroke fill",
+							// letterSpacing: "3px",
+						}}
 					>
-						LEARNING
+						Learning
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
@@ -128,10 +141,16 @@ function App() {
 					value="doing"
 				>
 					<AccordionTrigger
-						className="bg-red-400 md:rounded-b-2xl"
+						className="bg-red-500 font-sans md:rounded-b-2xl"
 						startIcon={FaKeyboard}
+						style={{
+							WebkitTextStroke: "6px",
+							WebkitTextStrokeColor: "#ad0c14",
+							paintOrder: "stroke fill",
+							// letterSpacing: "3px",
+						}}
 					>
-						DOING
+						Doing
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection

@@ -6,7 +6,7 @@ import Header from "../components/Header";
 export const Route = createRootRoute({
 	component: () => (
 		// Add dark to className to test dark mode
-		<main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
+		<main className="flex min-h-screen flex-col items-center bg-white font-mono dark:bg-black">
 			<StarsBackground className="fixed inset-0 z-0 flex items-center justify-center" />
 
 			<Header />
