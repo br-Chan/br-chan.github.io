@@ -63,7 +63,7 @@ function App() {
 					value="creating"
 				>
 					<AccordionTrigger
-						className="bg-amber-400 font-sans md:rounded-t-2xl"
+						className="bg-amber-400 font-sans hover:opacity-90 md:rounded-t-2xl"
 						startIcon={FaPenToSquare}
 						style={{
 							WebkitTextStroke: "6px",
@@ -100,7 +100,7 @@ function App() {
 					value="learning"
 				>
 					<AccordionTrigger
-						className="bg-blue-500 font-sans"
+						className="bg-blue-500 font-sans hover:opacity-90"
 						color="blue"
 						startIcon={FaBook}
 						style={{
@@ -114,16 +114,19 @@ function App() {
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-blue-400"
+							className="bg-blue-500"
 							title="Languages and Tools"
 						>
 							<Card>
-								<CardContent>Under construction...</CardContent>
+								<CardContent>
+									Coming soon! At least, before the heat death
+									of the universe. ~ 2/11/25
+								</CardContent>
 							</Card>
 						</SubSection>
 
 						<SubSection
-							className="bg-blue-400"
+							className="bg-blue-500"
 							title="University Courses"
 						>
 							<Card>
@@ -147,7 +150,7 @@ function App() {
 					value="doing"
 				>
 					<AccordionTrigger
-						className="bg-red-500 font-sans md:rounded-b-2xl"
+						className="bg-red-500 font-sans hover:opacity-90 md:rounded-b-2xl"
 						startIcon={FaKeyboard}
 						style={{
 							WebkitTextStroke: "6px",
@@ -160,7 +163,7 @@ function App() {
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-red-400"
+							className="bg-red-500"
 							title="Volunteer Work"
 						>
 							<Card>
@@ -206,7 +209,7 @@ function App() {
 							</Card>
 						</SubSection>
 
-						<SubSection className="bg-red-400" title="Hobbies">
+						<SubSection className="bg-red-500" title="Hobbies">
 							<Card>
 								<CardHeader>
 									<CardTitle className="font-bold text-lg">
@@ -222,6 +225,16 @@ function App() {
 										minute) and I set my sights on the other
 										keyboard layouts. I began learning
 										Dvorak in 2020 and Colemak in 2025.
+									</p>
+									<p>
+										My personal record for 30 sec is 143 WPM
+										(English 1k), but my current
+										long-running goal is to master as many
+										keyboard layouts as possible. This is
+										harder than it sounds - it's like when
+										you switch from JavaScript to Java and
+										forget to add semicolons all the time,
+										but 30 times worse.
 									</p>
 									<TypingChart />
 								</CardContent>

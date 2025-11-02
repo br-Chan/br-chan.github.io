@@ -13,7 +13,7 @@
 		"startDate": "Jul 2025",
 		"endDate": "present",
 		"bulletPoints": ["Deployed my own portfolio website"],
-		"summary": "I finally sat down and created my own personal website. Unfortunately I seem to have lost it, and I can't find it anywhere. Where could it have gone? I feel like it's right under my nose...",
+		"summary": "I finally sat down and created my own personal website. Unfortunately I can't seem to find it anywhere. Where could it have gone? I feel like it's right under my nose...",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/br-chan.github.io",
@@ -29,10 +29,10 @@
 		"startDate": "Aug 2025",
 		"endDate": "Aug 2025",
 		"bulletPoints": [
-			"Awarded Most Over-engineered as a team; deployed platform to archive social media posts via RSS.",
+			"Awarded Most Over-engineered as a 6-dev team; deployed platform to archive social media posts via RSS.",
 			"Built display cards, pages for RSS posts fetched from backend; added server-side data mutations."
 		],
-		"summary": "A platform to archive your social media posts via RSS and add your own, stored on an independent database so your memories will be saved forever even if the social media platform dies. I came up with the idea, but it was the brilliant work of my friends on the backend and those who hooked it up with the frontend that awarded us Most Over-engineered. Some of the work I did for team included building cards and pages to display posts and adding server-side data mutations.",
+		"summary": "In 36 hours with a team of 6 developers, we created a platform to archive your social media posts via RSS and add your own, stored on an independent database so your memories will be saved forever even if the social media platform dies.\nI came up with the idea, but it was the brilliant work of my friends on the backend and those who hooked it up with the frontend that awarded us Most Over-engineered.\nSome of the work I did for team included building cards and pages to display posts and adding server-side data mutations.",
 		"links": [
 			{
 				"href": "https://github.com/ExceptionHandlersUOA/NostalgiaClient",
@@ -51,11 +51,15 @@
 			"Awarded Most Production-ready as a team; deployed an interactive interface to navigate Partly's extensive world tree of automotive parts.",
 			"Implemented fetching and displaying data for a specific part in an intuitive information card."
 		],
-		"summary": "We deployed a portal for Partly's World Tree of all generic car parts. View a horizontal and vertical table of the tree, or search for parts through a visual diagram. You can also view each part's details in an intuitive card. All data was fetched from Partly's API - it was an awesome experience all around.",
+		"summary": "In 9 hours with a team of 4 developers, we deployed a portal for Partly's World Tree of all generic car parts, which was awarded Most Production-ready. View a horizontal and vertical table of the tree, or search for parts through a visual diagram. You can also view each part's details in an intuitive card; all data was fetched from Partly's API.\nIt was an awesome experience all around.",
 		"links": [
 			{
 				"href": "https://github.com/jeffplays2005/partly-hackathon-team-3",
 				"type": "GitHub"
+			},
+			{
+				"href": "https://www.youtube.com/watch?v=RktCHxd7Igk",
+				"type": "YouTube"
 			}
 		]
 	},
@@ -67,9 +71,10 @@
 		"startDate": "Jul 2025",
 		"endDate": "Jul 2025",
 		"bulletPoints": [
-			"Did stuff on Microsoft Paint. I maybe lost 1 brain cell. Who am I kidding, I lost half of them."
+			"Did stuff on Microsoft Paint. I maybe lost 1 brain cell. Who am I kidding, I lost half of them.",
+			"Was personally awarded Best Painter by John M. Paint."
 		],
-		"summary": "I did nothing but bad Microsoft Paint art for this. It was hilarious. But do check out Are We There Yet?, a game about working together as a pilot and air traffic controller.",
+		"summary": "I did nothing but bad Microsoft Paint art for this. It was hilarious. Do check out Are We There Yet?, a game about working together as a pilot and air traffic controller.",
 		"links": [
 			{
 				"href": "https://thuliferousgames.itch.io/are-we-there-yet",
@@ -98,7 +103,7 @@
 			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
 			"Features OAuth account authentication, responsive design and interactive UI/UX."
 		],
-		"summary": "My first web development project that went from a simple HTML file with basic JavaScript to a full-stack React application with authentication, responsive design and modern UI. Became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.",
+		"summary": "A full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this one up by the end of 2025 and move on for bigger and better things.",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Rankle",
@@ -117,7 +122,7 @@
 			"Developed a ready-to-launch private investigation game suiting clients' needs with a team.",
 			"Designed screen flows, distributed workloads among team, implemented key features: interactive clues, game timers, interfaces to communicate with OpenAI API, prompt engineering (30 realistic conversation topics, accurate end-of-game scoring and feedback to gauge player’s skill)."
 		],
-		"summary": "A pixel-themed game used to train private investigators (and entertain the commonfolk) using JavaFX and OpenAI's GPT model. Developed for the semester-long SOFTENG 206 group project.",
+		"summary": "A pixel-themed game used to train private investigators (and entertain the commonfolk) using JavaFX and OpenAI's GPT model. Developed for the semester-long SOFTENG 206 group project.\nI designed screen flows, distributed workloads among our 3-developer team and implemented key features such as interactive clues, game timers and interfaces to communicate with OpenAI API.",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Missing-Dollar-Mystery-with-GPT",
@@ -140,7 +145,7 @@
 			"Awarded Most Over-engineered as a team; deployed a multiplayer spaceship crew simulator.",
 			"Built frontend player and death screens; integrated team member’s Chart.js code to main repository."
 		],
-		"summary": "A Jackbox-esque multiplayer spaceship crew simulator game. Players must communicate and collaborate with each other to obtain resources essential for the ship's survival. Three mobile web clients and a TV lobby screen connect to a server to manage game state. I did maybe 5% of the work (but definitely check out the amazing work of my friends).",
+		"summary": "A Jackbox-esque multiplayer spaceship crew simulator game. Players must communicate and collaborate with each other to obtain resources essential for the ship's survival. Three mobile web clients and a TV lobby screen connect to a server to manage game state.",
 		"links": [
 			{
 				"href": "https://github.com/ExceptionHandlersUOA/SpaceshipCrewGame",
@@ -156,7 +161,7 @@
 		"startDate": "Jul 2024",
 		"endDate": "Jul 2024",
 		"bulletPoints": ["No."],
-		"summary": "Your Winchester Mystery Home - PLEASE don't try this game, I think all of us who worked on this will agree it will give you a heart attack",
+		"summary": "Your Winchester Mystery Home - PLEASE don't try this game, I think all 4 of us who worked on this will agree it will give you a heart attack.",
 		"links": [
 			{
 				"href": "https://hoverth.itch.io/your-winchester-mystery-home",
@@ -178,7 +183,7 @@
 		"bulletPoints": [
 			"Designed and implemented a system in Java for storing and managing venues and their bookings that a real venue hire company could use."
 		],
-		"summary": "A terminal system written in Java for storing and managing venues and their bookings that a \"Real Venue Hire Company\"™ could use! Developed for a SOFTENG 281 project.",
+		"summary": "A terminal system written in Java for storing and managing venues and their bookings that a \"Real Venue Hire Company\"™ could use! Developed for a SOFTENG 281 project.\nWe had many such software projects over a variety of university courses, but this one volunteered as tribute to show up on this site.",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Venue-Hire-System",
@@ -196,7 +201,7 @@
 		"bulletPoints": [
 			"Intuitive GUI .exe application to randomly generate personalised Lottery numbers with options panel."
 		],
-		"summary": "My first Java development project. A GUI application for randomly generating Lottery numbers, based on New Zealand's LOTTO game rules. Comes with intuitive personalisation: add lucky numbers to always appear in your lines, play with Strike or the Powerball enabled, and increase your chances of winning! (note: does not actually increase chances of winning)",
+		"summary": "A GUI application for randomly generating Lottery numbers, based on New Zealand's LOTTO game rules. Comes with intuitive personalisation: add lucky numbers to always appear in your lines, play with Strike or the Powerball enabled, and increase your chances of winning! (note: does not actually increase chances of winning)",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Customisable-LOTTO-Generator",
