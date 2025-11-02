@@ -16,6 +16,10 @@
 		"summary": "I finally sat down and created my own personal website. Unfortunately I can't seem to find it anywhere. Where could it have gone? I feel like it's right under my nose...",
 		"links": [
 			{
+				"href": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+				"type": "Deployment"
+			},
+			{
 				"href": "https://github.com/br-Chan/br-chan.github.io",
 				"type": "GitHub"
 			}
@@ -35,6 +39,10 @@
 		"summary": "In 36 hours with a team of 6 developers, we created a platform to archive your social media posts via RSS and add your own, stored on an independent database so your memories will be saved forever even if the social media platform dies.\nI came up with the idea, but it was the brilliant work of my friends on the backend and those who hooked it up with the frontend that awarded us Most Over-engineered.\nSome of the work I did for team included building cards and pages to display posts and adding server-side data mutations.",
 		"links": [
 			{
+				"href": "https://archive.feroxfoxxo.com/dashboard",
+				"type": "Deployment"
+			},
+			{
 				"href": "https://github.com/ExceptionHandlersUOA/NostalgiaClient",
 				"type": "GitHub"
 			}
@@ -53,6 +61,10 @@
 		],
 		"summary": "In 9 hours with a team of 4 developers, we deployed a portal for Partly's World Tree of all generic car parts, which was awarded Most Production-ready. View a horizontal and vertical table of the tree, or search for parts through a visual diagram. You can also view each part's details in an intuitive card; all data was fetched from Partly's API.\nIt was an awesome experience all around.",
 		"links": [
+			{
+				"href": "http://partly-team-3.netlify.app/",
+				"type": "Deployment"
+			},
 			{
 				"href": "https://github.com/jeffplays2005/partly-hackathon-team-3",
 				"type": "GitHub"
@@ -106,6 +118,10 @@
 		"summary": "A full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this one up by the end of 2025 and move on for bigger and better things.",
 		"links": [
 			{
+				"href": "https://rankle-rho.vercel.app/",
+				"type": "Deployment"
+			},
+			{
 				"href": "https://github.com/br-Chan/Rankle",
 				"type": "GitHub"
 			}
@@ -147,6 +163,10 @@
 		],
 		"summary": "A Jackbox-esque multiplayer spaceship crew simulator game. Players must communicate and collaborate with each other to obtain resources essential for the ship's survival. Three mobile web clients and a TV lobby screen connect to a server to manage game state.",
 		"links": [
+			{
+				"href": "https://space.feroxfoxxo.com/",
+				"type": "Deployment"
+			},
 			{
 				"href": "https://github.com/ExceptionHandlersUOA/SpaceshipCrewGame",
 				"type": "GitHub"

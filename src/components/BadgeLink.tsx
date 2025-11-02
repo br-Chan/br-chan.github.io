@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { type FC, memo } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { FaGithub, FaItchIo, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import {
+	FaGithub,
+	FaItchIo,
+	FaLinkedin,
+	FaWebAwesome,
+	FaYoutube,
+} from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 
@@ -12,7 +18,7 @@ export type BadgeLinkProps = {
 	target?: React.HTMLAttributeAnchorTarget | undefined;
 	startIcon?: React.ReactNode;
 	endIcon?: React.ReactNode;
-	type?: "GitHub" | "YouTube" | "LinkedIn" | "Itch.io";
+	type?: string;
 };
 
 export const BadgeLink: FC<BadgeLinkProps> = memo(
@@ -42,6 +48,10 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 				case "Itch.io":
 					startIcon = <FaItchIo />;
 					typeColor = "bg-[#FA5C5C]";
+					break;
+				case "Deployment":
+					startIcon = <FaWebAwesome />;
+					typeColor = "bg-[#9333ea]";
 					break;
 				default:
 					undefined;
