@@ -99,7 +99,7 @@
 		]
 	},
 	{
-		"name": "Rankle for New York Times Games",
+		"name": "Rankle for NYT Games",
 		"projectType": "project",
 		"cv": true,
 		"techStack": [
@@ -115,7 +115,7 @@
 			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
 			"Features OAuth account authentication, responsive design and interactive UI/UX."
 		],
-		"summary": "A full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this one up by the end of 2025 and move on for bigger and better things.",
+		"summary": "Input your statistics for Wordle, Connections and other New York Times games, and receive a weighted average grade.\nA full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this project up by the end of 2025.",
 		"links": [
 			{
 				"href": "https://rankle-rho.vercel.app/",

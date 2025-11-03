@@ -25,15 +25,14 @@ export const VolunteerWork = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					I was a software developer in a software project at the Web
-					Development and Consulting Club! In a team of 11 we revamped
-					and deployed the University of Auckland Badminton Club's web
+					I was a full-stack software developer at the Web Development
+					and Consulting Club! In a team of 11, we revamped and
+					deployed the University of Auckland Badminton Club's web
 					portal for member management and court bookings.
-					<br />I worked full-stack: I created components for the
-					frontend, worked on backend services and endpoints and built
-					frontend interfaces such as login, onboarding flows and
-					admin interfaces. My last feature will hopefully be
-					implementing{" "}
+					<br />I created components for the frontend, worked on
+					backend services and endpoints and built frontend interfaces
+					such as login, onboarding flows and admin interfaces. My
+					last feature will hopefully be implementing{" "}
 					<a
 						className="font-normal-mono"
 						href="https://nextjs.org/?uwu=true"
@@ -43,11 +42,10 @@ export const VolunteerWork = () => (
 						?uwu=true
 					</a>{" "}
 					to the logo :)
-					<br />
+					{/* <br />
 					This was among the best experiences I've had in my degree
 					(and possibly beyond?), where I got to meet so many people,
-					learn so many new things about web development and genuinely
-					have a lot of fun.
+					learn so many new things and genuinely have a lot of fun. */}
 				</p>
 			</CardContent>
 			<CardFooter>
@@ -89,13 +87,10 @@ export const VolunteerWork = () => (
 				<p>
 					I'm one of two class reps for the Part III Software
 					Engineering Cohort of 2025.
-					<br />I was responsible for facilitating communication
-					between students and staff, and helping to coordinate
-					various department-wide events. This included collecting
-					unbiased feedback from the cohort, reporting any significant
-					concerns to the teaching staff, and working with staff and
-					the cohort to address concerns and enhance the learning
-					experience for all students.
+					<br />I was responsible for collecting unbiased feedback
+					from the cohort, working with staff and the cohort to
+					address any concerns, and helping to coordinate
+					department-wide events.
 					<br />
 					Being a class rep this year was incredibly rewarding; I got
 					to meet and talk to so many new people (staff and students

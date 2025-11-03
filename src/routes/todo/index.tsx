@@ -43,8 +43,13 @@ function RouteComponent() {
 			</CardHeader>
 			<CardContent>
 				<ol>
-					<li>- dark mode</li>
 					<li>- Languages / tech subsection and tags</li>
+					<li>- University courses subsection: remove/revamp</li>
+					<li>- Hobbies subsection</li>
+					<li>- images</li>
+					<li>- dark mode</li>
+					<li>- 2-word mode: all items of text reduced to 2 words</li>
+					<li>- 'I have no whimsy' mode: no Comic Sans fonts</li>
 					<li>- the groceries</li>
 					<li>- the rest of this todo list</li>
 				</ol>
