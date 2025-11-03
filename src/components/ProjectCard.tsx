@@ -27,7 +27,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 	titleClassName,
 }) => {
 	return (
-		<Card className={cn(className)}>
+		<Card className={cn("font-normal-sans", className)}>
 			{/* TODO: add image of project to the left side */}
 			<CardHeader>
 				<CardTitle className="flex flex-col justify-between md:flex-row md:gap-4">

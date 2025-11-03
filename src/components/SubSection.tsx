@@ -6,6 +6,7 @@ export interface SubSectionProps {
 	className?: string;
 	title: string;
 	titleClassName?: string;
+	titleOutlineColor: string;
 }
 
 export const SubSection: FC<SubSectionProps> = ({
@@ -13,6 +14,7 @@ export const SubSection: FC<SubSectionProps> = ({
 	className,
 	title,
 	titleClassName,
+	titleOutlineColor,
 }) => {
 	return (
 		<section
@@ -26,6 +28,11 @@ export const SubSection: FC<SubSectionProps> = ({
 					"font-medium text-2xl text-white",
 					titleClassName,
 				)}
+				style={{
+					WebkitTextStroke: "6px",
+					WebkitTextStrokeColor: titleOutlineColor,
+					paintOrder: "stroke fill",
+				}}
 			>
 				{title}
 			</h3>

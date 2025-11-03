@@ -44,8 +44,9 @@ function App() {
 			</h1>
 			<img alt="rickroll" src="/rickroll.png" />
 			<h2>YOU JUST LOST THE GAME</h2>
-			<div className="flex w-fit flex-col gap-2 px-4">
-				<p className="text-black dark:text-slate-100">
+
+			<div className="flex w-fit flex-col gap-2 rounded-md border-2 bg-white px-4 py-2">
+				<p className="mt-1 text-black text-lg dark:text-slate-100">
 					I love{" "}
 					<span className="font-bold text-amber-500">creating</span>
 					{", "}
@@ -59,7 +60,8 @@ function App() {
 			<Accordion type="multiple">
 				<AccordionItem
 					className="border-0 bg-amber-300/30 md:rounded-t-2xl"
-					onMouseOver={() => setStarColor("#f59e0b")} // amber 500
+					onClick={() => setStarColor("#f59e0b")}
+					// onMouseOver={() => setStarColor("#f59e0b")} // amber 500
 					value="creating"
 				>
 					<AccordionTrigger
@@ -69,14 +71,17 @@ function App() {
 							WebkitTextStroke: "6px",
 							WebkitTextStrokeColor: "#ad7e00",
 							paintOrder: "stroke fill",
-							// letterSpacing: "2px",
 						}}
 					>
 						Creating
 					</AccordionTrigger>
 
 					<AccordionContent>
-						<SubSection className="bg-amber-400" title="Projects">
+						<SubSection
+							className="bg-amber-400"
+							title="Projects"
+							titleOutlineColor="#ad7e00"
+						>
 							<Projects
 								projects={rawProjects as Project[]}
 								projectType="project"
@@ -85,6 +90,7 @@ function App() {
 						<SubSection
 							className="bg-amber-400"
 							title="Competitions"
+							titleOutlineColor="#ad7e00"
 						>
 							<Projects
 								projects={rawProjects as Project[]}
@@ -96,7 +102,8 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-blue-400/30"
-					onMouseOver={() => setStarColor("#3b82f6")} // blue 500
+					onClick={() => setStarColor("#3b82f6")}
+					// onMouseOver={() => setStarColor("#3b82f6")} // blue 500
 					value="learning"
 				>
 					<AccordionTrigger
@@ -107,7 +114,6 @@ function App() {
 							WebkitTextStroke: "6px",
 							WebkitTextStrokeColor: "#0448b0",
 							paintOrder: "stroke fill",
-							// letterSpacing: "3px",
 						}}
 					>
 						Learning
@@ -116,6 +122,7 @@ function App() {
 						<SubSection
 							className="bg-blue-500"
 							title="Languages and Tools"
+							titleOutlineColor="#0448b0"
 						>
 							<Card>
 								<CardContent>
@@ -128,6 +135,7 @@ function App() {
 						<SubSection
 							className="bg-blue-500"
 							title="University Courses"
+							titleOutlineColor="#0448b0"
 						>
 							<Card>
 								<CardContent>
@@ -146,7 +154,8 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-red-400/30 md:rounded-b-2xl"
-					onMouseOver={() => setStarColor("#ef4444")} // red 500
+					onClick={() => setStarColor("#ef4444")}
+					// onMouseOver={() => setStarColor("#ef4444")} // red 500
 					value="doing"
 				>
 					<AccordionTrigger
@@ -156,7 +165,6 @@ function App() {
 							WebkitTextStroke: "6px",
 							WebkitTextStrokeColor: "#ad0c14",
 							paintOrder: "stroke fill",
-							// letterSpacing: "3px",
 						}}
 					>
 						Doing
@@ -165,6 +173,7 @@ function App() {
 						<SubSection
 							className="bg-red-500"
 							title="Volunteer Work"
+							titleOutlineColor="#ad0c14"
 						>
 							<Card>
 								<CardHeader>
@@ -209,7 +218,11 @@ function App() {
 							</Card>
 						</SubSection>
 
-						<SubSection className="bg-red-500" title="Hobbies">
+						<SubSection
+							className="bg-red-500"
+							title="Hobbies"
+							titleOutlineColor="#ad0c14"
+						>
 							<Card>
 								<CardHeader>
 									<CardTitle className="font-bold text-lg">
