@@ -32,6 +32,10 @@ body {
 	font-family: "Comic Mono", monospace;
 }
 
+.font-normal-mono {
+	font-family: "consolas", monospace;
+}
+
 code {
 	font-family:
 		source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

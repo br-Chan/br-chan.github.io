@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { FaCar, FaGithub } from "react-icons/fa";
+import { FaCar } from "react-icons/fa";
 import { FaBook, FaKeyboard, FaPenToSquare } from "react-icons/fa6";
-import { PiCowFill } from "react-icons/pi";
 import {
 	Accordion,
 	AccordionContent,
@@ -23,6 +22,7 @@ import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
 import { Projects } from "./-components/Projects";
 import { TypingChart } from "./-components/TypingChart";
+import { VolunteerWork } from "./-components/VolunteerWork";
 
 export const Route = createFileRoute("/(home)/")({
 	component: App,
@@ -35,6 +35,12 @@ function App() {
 	useEffect(() => {
 		setStarColor("#f59e0b");
 	}, []);
+
+	const onAccordionValueChange = (newOpenedItems: string[]) => {
+		console.log(newOpenedItems);
+		const color = newOpenedItems[newOpenedItems.length - 1];
+		color && setStarColor(color);
+	};
 
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
@@ -57,12 +63,10 @@ function App() {
 				</p>
 			</div>
 
-			<Accordion type="multiple">
+			<Accordion onValueChange={onAccordionValueChange} type="multiple">
 				<AccordionItem
 					className="border-0 bg-amber-300/30 md:rounded-t-2xl"
-					onClick={() => setStarColor("#f59e0b")}
-					// onMouseOver={() => setStarColor("#f59e0b")} // amber 500
-					value="creating"
+					value="#f59e0b" // amber 500
 				>
 					<AccordionTrigger
 						className="bg-amber-400 font-sans hover:opacity-90 md:rounded-t-2xl"
@@ -102,9 +106,7 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-blue-400/30"
-					onClick={() => setStarColor("#3b82f6")}
-					// onMouseOver={() => setStarColor("#3b82f6")} // blue 500
-					value="learning"
+					value="#3b82f6" // blue 500
 				>
 					<AccordionTrigger
 						className="bg-blue-500 font-sans hover:opacity-90"
@@ -154,9 +156,7 @@ function App() {
 
 				<AccordionItem
 					className="border-0 bg-red-400/30 md:rounded-b-2xl"
-					onClick={() => setStarColor("#ef4444")}
-					// onMouseOver={() => setStarColor("#ef4444")} // red 500
-					value="doing"
+					value="#ef4444" // red 500
 				>
 					<AccordionTrigger
 						className="bg-red-500 font-sans hover:opacity-90 md:rounded-b-2xl"
@@ -175,47 +175,7 @@ function App() {
 							title="Volunteer Work"
 							titleOutlineColor="#ad0c14"
 						>
-							<Card>
-								<CardHeader>
-									<CardTitle className="font-bold text-lg">
-										WDCC
-									</CardTitle>
-								</CardHeader>
-								<CardContent>
-									<p>
-										I'm a software developer in a software
-										project at the Web Development and
-										Consulting Club! We're developing a
-										member management and court booking
-										portal for the University of Auckland
-										Badminton Club. I'm working full-stack,
-										creating components for the frontend and
-										working on backend services and
-										endpoints, among other awesome stuff and
-										a tiny bit of DevOps (which is
-										particularly not awesome when things
-										don't work) Come check out what we're up
-										to.
-									</p>
-								</CardContent>
-								<CardFooter>
-									<span className="flex gap-2">
-										<BadgeLink
-											className="bg-[#3a86fe]"
-											href="https://wdcc.co.nz/"
-											label="WDCC"
-											startIcon={<PiCowFill />}
-											target="_blank"
-										/>
-										<BadgeLink
-											href="https://github.com/UoaWDCC/uabc-web"
-											label="uabc-web"
-											startIcon={<FaGithub />}
-											target="_blank"
-										/>
-									</span>
-								</CardFooter>
-							</Card>
+							<VolunteerWork />
 						</SubSection>
 
 						<SubSection

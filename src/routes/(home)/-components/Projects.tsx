@@ -9,7 +9,7 @@ export interface ProjectsProps {
 
 export const Projects: FC<ProjectsProps> = memo(({ projects, projectType }) => {
 	return (
-		<div className="grid gap-4 lg:grid-cols-2 2xl:grid-cols-3">
+		<div className="grid gap-4 sm:grid-cols-2 2xl:grid-cols-3">
 			{projects
 				.filter(
 					(project) =>

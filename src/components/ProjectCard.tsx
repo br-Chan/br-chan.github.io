@@ -27,7 +27,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 	titleClassName,
 }) => {
 	return (
-		<Card className={cn("font-normal-sans", className)}>
+		<Card className={cn(className)}>
 			{/* TODO: add image of project to the left side */}
 			<CardHeader>
 				<CardTitle className="flex flex-col justify-between md:flex-row md:gap-4">
@@ -67,10 +67,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 				)}
 			</CardContent>
 			<CardFooter>
-				<span className="flex gap-2">
+				<span className="flex flex-wrap gap-2">
 					{project.links?.map((link) => (
 						<BadgeLink
-							className="text-xs"
 							href={link.href}
 							key={link.href}
 							label={link.type}

@@ -44,8 +44,7 @@ function RouteComponent() {
 			<CardContent>
 				<ol>
 					<li>- dark mode</li>
-					<li>- Languages / tech subsection</li>
-					<li>- Volunteering subsection</li>
+					<li>- Languages / tech subsection and tags</li>
 					<li>- the groceries</li>
 					<li>- the rest of this todo list</li>
 				</ol>
