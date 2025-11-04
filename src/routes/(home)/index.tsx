@@ -44,12 +44,12 @@ function App() {
 
 	return (
 		<section className="flex min-h-screen w-full flex-col justify-start gap-8 bg-white py-8 *:z-1 md:px-8 lg:px-16 xl:px-32">
-			<h1 className="font-bold text-2xl">
+			{/* <h1 className="font-bold text-2xl">
 				NEVER GONNA GIVE YOU UP, NEVER GONNA LET YOU DOWN, NEVER GONNA
 				RUN AROUND AND DESERT YOU
 			</h1>
 			<img alt="rickroll" src="/rickroll.png" />
-			<h2>YOU JUST LOST THE GAME</h2>
+			<h2>YOU JUST LOST THE GAME</h2> */}
 
 			<div className="flex w-fit flex-col gap-2 rounded-md border-2 bg-white px-4 py-2">
 				<p className="mt-1 text-black text-lg dark:text-slate-100">
