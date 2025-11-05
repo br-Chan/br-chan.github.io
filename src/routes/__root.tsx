@@ -17,7 +17,7 @@ export const Route = createRootRoute({
 			</div>
 
 			{/* TODO: Create way better footer */}
-			<span className="z-100 m-4 w-fit rounded-md bg-white p-2 text-center text-muted-foreground dark:bg-[#400050]">
+			<span className="z-100 m-4 w-fit rounded-md border-2 bg-white p-2 text-center text-muted-foreground dark:bg-[#400050]">
 				made by{" "}
 				<Link className="hover:underline" to="/">
 					br-Chan

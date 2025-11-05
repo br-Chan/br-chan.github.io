@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { FaCar } from "react-icons/fa";
 import { FaBook, FaKeyboard, FaPenToSquare } from "react-icons/fa6";
 import {
 	Accordion,
@@ -8,20 +7,13 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
-import { BadgeLink } from "@/components/BadgeLink";
 import { SubSection } from "@/components/SubSection";
-import {
-	Card,
-	CardContent,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { useStarContext } from "@/context/StarContext";
 import rawProjects from "@/data/projects.json";
 import type { Project } from "../cv/-components/types";
+import { Hobbies } from "./-components/Hobbies";
 import { Projects } from "./-components/Projects";
-import { TypingChart } from "./-components/TypingChart";
 import { VolunteerWork } from "./-components/VolunteerWork";
 
 export const Route = createFileRoute("/(home)/")({
@@ -37,7 +29,6 @@ function App() {
 	}, []);
 
 	const onAccordionValueChange = (newOpenedItems: string[]) => {
-		console.log(newOpenedItems);
 		const color = newOpenedItems[newOpenedItems.length - 1];
 		color && setStarColor(color);
 	};
@@ -180,56 +171,10 @@ function App() {
 
 						<SubSection
 							className="bg-red-500"
-							title="Hobbies"
+							title="Hobbies and Interests"
 							titleOutlineColor="#ad0c14"
 						>
-							<Card>
-								<CardHeader>
-									<CardTitle className="font-bold text-lg">
-										Typing
-									</CardTitle>
-								</CardHeader>
-								<CardContent className="flex flex-col gap-2">
-									<p>
-										I was a hunt-and-pecker until 2017, when
-										I started learning touch typing. Over
-										the next 3 years of practice, my typing
-										speed grew to about 100 WPM (words per
-										minute) and I set my sights on the other
-										keyboard layouts. I began learning
-										Dvorak in 2020 and Colemak in 2025.
-									</p>
-									<p>
-										My personal record for 30 sec is 143 WPM
-										(English 1k), but my current
-										long-running goal is to master as many
-										keyboard layouts as possible. This is
-										harder than it sounds - it's like when
-										you switch from JavaScript to Java and
-										forget to add semicolons all the time,
-										but 30 times worse.
-									</p>
-									<TypingChart />
-								</CardContent>
-								<CardFooter>
-									<span className="flex flex-wrap gap-2">
-										<BadgeLink
-											className="bg-[#19191c] text-[#e2b714]"
-											href="https://monkeytype.com/profile/DvorakTurkey"
-											label="Monkeytype profile"
-											startIcon={<FaKeyboard />}
-											target="_blank"
-										/>
-										<BadgeLink
-											className="bg-[#d52f3a]"
-											href="https://www.nitrotype.com/racer/allors4612"
-											label="Nitro Type profile"
-											startIcon={<FaCar />}
-											target="_blank"
-										/>
-									</span>
-								</CardFooter>
-							</Card>
+							<Hobbies />
 						</SubSection>
 					</AccordionContent>
 				</AccordionItem>

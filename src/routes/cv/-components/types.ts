@@ -15,7 +15,7 @@ export type Tech =
 
 export type ProjectLink = {
 	href: string;
-	type: "GitHub" | "YouTube";
+	type: string;
 };
 
 export type Education = {

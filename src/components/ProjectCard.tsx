@@ -20,6 +20,8 @@ export interface ProjectCardProps {
 	titleClassName?: string;
 }
 
+// TODO: maybe rename this to "CreatingCard" but that might just be a pointless change
+// TODO: also decide if should make this a more general card (i.e. for Volunteer Work, etc)
 export const ProjectCard: FC<ProjectCardProps> = ({
 	project,
 	variant = "bullet",
