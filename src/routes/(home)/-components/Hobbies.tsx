@@ -19,7 +19,7 @@ import { TypingChart } from "./TypingChart";
 // TODO: make this configurable in json rather than hard-coded?
 export const Hobbies = () => (
 	<div className="grid gap-4 sm:grid-cols-2 2xl:grid-cols-3">
-		<Card className="col-span-3">
+		<Card className="sm:col-span-2 2xl:col-span-3">
 			<CardHeader>
 				<CardTitle className="font-bold text-lg">
 					Touch Typing
