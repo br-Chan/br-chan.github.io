@@ -112,7 +112,7 @@ export const Hobbies = () => (
 					<BadgeLink
 						className="bg-black"
 						href="https://www.poetryfoundation.org/poems/48634/eldorado-56d22a0920778"
-						label="'Eldorado' - my favourite poem"
+						label="'Eldorado' - a nice poem"
 						startIcon={<FaChessKnight />}
 						target="_blank"
 					/>

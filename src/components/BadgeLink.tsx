@@ -31,7 +31,7 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 		endIcon = <FaExternalLinkAlt />,
 		type,
 	}) => {
-		let typeColor = "";
+		let typeClassName = "";
 		if (!startIcon) {
 			switch (type) {
 				case "GitHub":
@@ -39,19 +39,19 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 					break;
 				case "YouTube":
 					startIcon = <FaYoutube />;
-					typeColor = "bg-[#FF0000]";
+					typeClassName = "bg-[#FF0000]";
 					break;
 				case "LinkedIn":
 					startIcon = <FaLinkedin />;
-					typeColor = "bg-[#0077b5]";
+					typeClassName = "bg-[#0077b5]";
 					break;
 				case "Itch.io":
 					startIcon = <FaItchIo />;
-					typeColor = "bg-[#FA5C5C]";
+					typeClassName = "bg-white text-[#FA5C5C] border-opaque";
 					break;
 				case "Deployment":
 					startIcon = <FaWebAwesome />;
-					typeColor = "bg-[#9333ea]";
+					typeClassName = "bg-[#9333ea]";
 					break;
 				default:
 					undefined;
@@ -72,7 +72,7 @@ export const BadgeLink: FC<BadgeLinkProps> = memo(
 					asChild
 					className={cn(
 						"bg-black font-normal-sans text-sm text-white",
-						typeColor,
+						typeClassName,
 						className,
 					)}
 				>
