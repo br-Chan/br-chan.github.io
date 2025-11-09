@@ -117,9 +117,9 @@ export const VolunteerWork = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					I contribute to the Polytopia Damage Calculator, one of the
-					most popular web apps for calculating damage in the
-					turn-based strategy game The Battle of Polytopia.
+					I contribute to the Polytopia Damage Calculator, the most
+					popular damage calculator for The Battle of Polytopia, a
+					turn-based strategy game.
 					<br />
 					My main contributions include fixing calculation bugs and
 					updating the calculator to support new versions of the game

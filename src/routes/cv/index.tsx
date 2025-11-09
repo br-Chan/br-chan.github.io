@@ -14,7 +14,6 @@ import { CVExperience } from "./-components/CVExperience";
 import { CVLinks } from "./-components/CVLinks";
 import { CVProjects } from "./-components/CVProjects";
 import { CVSkillsAndInterests } from "./-components/CVSkillsAndInterests";
-import CVStatement from "./-components/CVStatement";
 import type {
 	Achievement,
 	Education,
@@ -44,7 +43,7 @@ function CV() {
 
 			<Separator />
 
-			<CVStatement />
+			{/* <CVStatement /> */}
 
 			<CVEducation educations={rawEducations as Education[]} />
 

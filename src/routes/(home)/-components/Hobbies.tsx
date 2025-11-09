@@ -136,9 +136,9 @@ export const Hobbies = () => (
 				</p>
 				{/* Image here */}
 				<p>
-					{`${getRandomLofiSpelling(true)}`} isn't for everyone
-					though, and even I have preferences for certain sub-genres
-					of {`${getRandomLofiSpelling()}`} over other{" "}
+					{`${getRandomLofiSpelling(true)}`} isn't for everyone, and
+					even I have preferences for certain sub-genres of{" "}
+					{`${getRandomLofiSpelling()}`} over other{" "}
 					{`${getRandomLofiSpelling()}`} genres. One thing I hate
 					about {`${getRandomLofiSpelling()}`} is how many different
 					ways there are to spell {`${getRandomLofiSpelling()}`}.
@@ -156,5 +156,63 @@ export const Hobbies = () => (
 				</span>
 			</CardFooter>
 		</Card>
+		{/* <Card>
+			<CardHeader>
+				<CardTitle className="font-bold text-lg">
+					<span className="font-sans">Comic Sans</span>
+					{" / "}
+					<span className="font-mono">Comic Mono</span>
+				</CardTitle>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					One day, I made the font of my IDE a monospaced version of
+					Comic Sans as a joke. One year later, I don't think it's a
+					joke anymore. I have Comic Mono applied to all my IDEs, the
+					terminal, and my browser's monospace default.
+				</p>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-wrap gap-2">
+					<BadgeLink
+						className="bg-[#252423]"
+						href="https://dtinth.github.io/comic-mono-font/"
+						label="Comic Mono download"
+						startIcon={<FaDownload />}
+						target="_blank"
+					/>
+				</span>
+			</CardFooter>
+		</Card>
+		<Card>
+			<CardHeader>
+				<CardTitle className="font-bold text-lg">
+					The Best FOSS Password Manager
+				</CardTitle>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					Ever felt scared of using a password manager because of how
+					insecure it was? Never fear - now YOU can keep all your
+					private credentials safe on GitHub! 🚀
+					<br />
+					Create an account by adding a csv file and add all your very
+					very real passwords to it - it's as simple as that! Keeping
+					all your important credentials on a public platform has
+					never been easier.
+				</p>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-wrap gap-2">
+					<BadgeLink
+						href="https://github.com/br-Chan/the-best-FOSS-password-manager"
+						label="The Best FOSS Password Manager"
+						startIcon={<FaLock />}
+						target="_blank"
+						type="GitHub"
+					/>
+				</span>
+			</CardFooter>
+		</Card> */}
 	</div>
 );

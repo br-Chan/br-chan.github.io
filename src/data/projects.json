@@ -203,7 +203,7 @@
 		"bulletPoints": [
 			"Designed and implemented a system in Java for storing and managing venues and their bookings that a real venue hire company could use."
 		],
-		"summary": "A terminal system written in Java for storing and managing venues and their bookings that a \"Real Venue Hire Company\"™ could use! Developed for a SOFTENG 281 project.\nWe had many such software projects over a variety of university courses, but this one volunteered as tribute to show up on this site.",
+		"summary": "A terminal system written in Java for storing and managing venues and their bookings that a \"Real Venue Hire Company\"™ could use! Developed for a SOFTENG 281 project.\nWe had many such software projects over a variety of university courses, but this one is volunteered as tribute to be displayed here.",
 		"links": [
 			{
 				"href": "https://github.com/br-Chan/Venue-Hire-System",
