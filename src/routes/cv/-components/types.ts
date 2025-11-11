@@ -56,3 +56,8 @@ export type Achievement = {
 export type SkillOrInterest = {
 	point: string;
 };
+
+export type CourseCategory = {
+	type: string;
+	courses: string[];
+};

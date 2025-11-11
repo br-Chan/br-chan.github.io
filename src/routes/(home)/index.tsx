@@ -10,8 +10,10 @@ import {
 import { SubSection } from "@/components/SubSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStarContext } from "@/context/StarContext";
+import rawCourses from "@/data/courses.json";
 import rawProjects from "@/data/projects.json";
-import type { Project } from "../cv/-components/types";
+import type { CourseCategory, Project } from "../cv/-components/types";
+import { Courses } from "./-components/Courses";
 import { Hobbies } from "./-components/Hobbies";
 import { Projects } from "./-components/Projects";
 import { VolunteerWork } from "./-components/VolunteerWork";
@@ -118,9 +120,8 @@ function App() {
 							titleOutlineColor="#0448b0"
 						>
 							<Card>
-								<CardContent>
-									Coming soon! At least, before the heat death
-									of the universe. ~ 2/11/25
+								<CardContent className="text-lg">
+									Coming soon! ~ 11/11/25
 								</CardContent>
 							</Card>
 						</SubSection>
@@ -130,17 +131,16 @@ function App() {
 							title="University Courses"
 							titleOutlineColor="#0448b0"
 						>
-							<Card>
-								<CardContent>
-									<p>• COMPSCI 316 | Cyber Security</p>
-									<p>
-										• SOFTENG 306 | Software Engineering
-										Design 2
-									</p>
-									<p>• SOFTENG 325 | Software Architecture</p>
-									<p>• SOFTENG 364 | Networks and Security</p>
-								</CardContent>
-							</Card>
+							<span className="rounded-md bg-white p-2 font-normal-sans">
+								Just a few of the courses that I've taken in my
+								Bachelor of Engineering (Honours) degree
+								specialising in Software Engineering.
+							</span>
+							<Courses
+								courseCategories={
+									rawCourses as CourseCategory[]
+								}
+							/>
 						</SubSection>
 					</AccordionContent>
 				</AccordionItem>

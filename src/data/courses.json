@@ -1,0 +1,34 @@
+[
+	{
+		"type": "Design and Development",
+		"courses": [
+			"SOFTENG 325 - Software Architecture",
+			"SOFTENG 306 - Software Engineering Design 2",
+			"SOFTENG 206 - Software Engineering Design",
+			"SOFTENG 281 - Object Oriented Programming"
+		]
+	},
+	{
+		"type": "Data Structures and Algorithms",
+		"courses": [
+			"SOFTENG 284 - Data Structures and Algorithms",
+			"SOFTENG 282 - Software Engineering Theory"
+		]
+	},
+	{
+		"type": "Networks and Systems",
+		"courses": [
+			"SOFTENG 364 - Networks and Security",
+			"COMPSCI 316 - Cyber Security",
+			"SOFTENG 370 - Operating Systems",
+			"SOFTENG 351 - Fundamentals of Database Systems"
+		]
+	},
+	{
+		"type": "Team Management and Collaboration",
+		"courses": [
+			"ENGGEN 303 - Innovation and Business Cases",
+			"ENGGEN 204 - Professional Skills, Communication, and Collaboration"
+		]
+	}
+]

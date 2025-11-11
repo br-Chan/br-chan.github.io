@@ -45,3 +45,10 @@ Achievement:
 	"date": "",
 	"bulletPoints": ["", ""]
 }
+
+Courses:
+,
+{
+	"type": "",
+	"courses": []
+}
