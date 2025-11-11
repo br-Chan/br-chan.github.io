@@ -43,13 +43,16 @@ function RouteComponent() {
 			</CardHeader>
 			<CardContent>
 				<ol>
-					<li>- languages / tech subsection</li>
-					<li>- tech stack tag revamp</li>
-					<li>- images</li>
-					<li>- dark mode</li>
-					<li>- 2-word mode: all items of text reduced to 2 words</li>
-					<li>- 'I have no whimsy' mode: no Comic Sans fonts</li>
-					<li>- the groceries</li>
+					<li>- add the languages / tech subsection</li>
+					<li>- revamp the tech stack tags</li>
+					<li>- add images</li>
+					<li>- add dark mode</li>
+					<li>
+						- add 2-word mode: all items of text reduced to 2 words
+					</li>
+					<li>- add 'I have no whimsy' mode: no Comic Sans fonts</li>
+					<li>- get the groceries</li>
+					<li>- fix the screen responsiveness of this todo list</li>
 				</ol>
 			</CardContent>
 		</Card>
