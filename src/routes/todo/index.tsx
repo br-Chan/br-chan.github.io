@@ -24,7 +24,7 @@ function RouteComponent() {
 	}, []);
 
 	return (
-		<Card className="z-1 mt-8 w-md">
+		<Card className="z-1 mt-8">
 			<CardHeader className="text-2xl">
 				<CardTitle>TODO</CardTitle>
 				<CardDescription>
@@ -48,11 +48,11 @@ function RouteComponent() {
 					<li>- add images</li>
 					<li>- add dark mode</li>
 					<li>
-						- add 2-word mode: all items of text reduced to 2 words
+						- add '2-word' mode: all items of text reduced to 2
+						words
 					</li>
 					<li>- add 'I have no whimsy' mode: no Comic Sans fonts</li>
 					<li>- get the groceries</li>
-					<li>- fix the screen responsiveness of this todo list</li>
 				</ol>
 			</CardContent>
 		</Card>
