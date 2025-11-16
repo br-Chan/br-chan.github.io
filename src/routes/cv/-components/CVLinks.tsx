@@ -19,7 +19,7 @@ export const CVLinks = () => {
 			/>
 			<BadgeLink
 				className=" text-md"
-				href="https://www.youtube.com/@br-Chan-g5l"
+				href="https://www.youtube.com/@br-Chan-demos"
 				label="br-Chan"
 				target="_blank"
 				type="YouTube"

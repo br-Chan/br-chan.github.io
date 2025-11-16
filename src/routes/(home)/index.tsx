@@ -8,7 +8,6 @@ import {
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
 import { SubSection } from "@/components/SubSection";
-import { Card, CardContent } from "@/components/ui/card";
 import { useStarContext } from "@/context/StarContext";
 import rawCourses from "@/data/courses.json";
 import rawProjects from "@/data/projects.json";
@@ -16,7 +15,9 @@ import type { CourseCategory, Project } from "../cv/-components/types";
 import { Courses } from "./-components/Courses";
 import { Hobbies } from "./-components/Hobbies";
 import { Projects } from "./-components/Projects";
+import { Techs } from "./-components/Techs";
 import { VolunteerWork } from "./-components/VolunteerWork";
+import { GiCrane } from "react-icons/gi";
 
 export const Route = createFileRoute("/(home)/")({
 	component: App,
@@ -119,11 +120,11 @@ function App() {
 							title="Languages and Tools"
 							titleOutlineColor="#0448b0"
 						>
-							<Card>
-								<CardContent className="text-lg">
-									Coming soon! ~ 11/11/25
-								</CardContent>
-							</Card>
+							<span className="rounded-md bg-white p-2 font-normal-sans">
+								<GiCrane className="text-3xl" /> Under
+								Construction! ~ 16/11/25
+							</span>
+							<Techs />
 						</SubSection>
 
 						<SubSection

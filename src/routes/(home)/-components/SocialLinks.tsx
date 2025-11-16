@@ -17,7 +17,7 @@ export const SocialLinks = () => {
 			/>
 			<IconLink
 				className="size-10"
-				href="https://www.youtube.com/@br-Chan-g5l"
+				href="https://www.youtube.com/@br-Chan-demos"
 				target="_blank"
 				type="YouTube"
 			/>

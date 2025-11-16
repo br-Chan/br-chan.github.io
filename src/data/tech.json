@@ -1,0 +1,20 @@
+[
+	{},
+	{
+		"webdev:": [
+			"react",
+			"next.js",
+			"angular",
+			"vue",
+			"javascript/typescript",
+			"html",
+			"css",
+			"tailwind css",
+			"firebase",
+			"vite",
+			"tanstack router"
+		],
+		"languages": ["java", "python", "C/C++", "matlab"],
+		"other": ["sql"]
+	}
+]
