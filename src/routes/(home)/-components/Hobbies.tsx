@@ -70,11 +70,11 @@ export const Hobbies = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					Polytopia is a 4X turn-based strategy game for mobile and
-					PC. I started actively playing in 2023, and found that I
-					enjoyed it immensely and was quite good at it. It's a great
-					game to play with friends (if only they remembered to play
-					their turns!).
+					A 4X turn-based strategy game for mobile and PC. I started
+					actively playing in 2023, and found that I enjoyed it
+					immensely and was quite good at it. It's a great game to
+					play with friends (if they remember to play their turns!).
+					<br />
 					<br />
 					If you're also a player, feel free to send me a game invite!
 				</p>
@@ -97,14 +97,23 @@ export const Hobbies = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					Currently reading: Dune Messiah
+					<b>Currently reading:</b> <i>Nineteen Eighty-Four</i>
 					<br />
-					Top book series:
+					<b>Just finished:</b> <i>Dune Messiah</i>
+					<br />
+					<br />
+					<b>Top book series:</b>
 				</p>
 				<ol>
-					<li>1. Lord of the Rings</li>
-					<li>2. Mortal Engines</li>
-					<li>3. Inheritance Cycle</li>
+					<li>
+						1. <i>Lord of the Rings</i>
+					</li>
+					<li>
+						2. <i>Mortal Engines</i>
+					</li>
+					<li>
+						3. <i>Inheritance Cycle</i>
+					</li>
 				</ol>
 			</CardContent>
 			<CardFooter>
@@ -127,15 +136,14 @@ export const Hobbies = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					Among other music genres, I predominantly listen to{" "}
-					{`${getRandomLofiSpelling()}`}. My favourite{" "}
-					{`${getRandomLofiSpelling()}`} artist is Purrple Cat, who
-					makes {`${getRandomLofiSpelling()}`} music for Lofi Girl
+					I predominantly listen to {`${getRandomLofiSpelling()}`}. My
+					go-to {`${getRandomLofiSpelling()}`} artist is Purrple Cat,
+					who makes {`${getRandomLofiSpelling()}`} music for Lofi Girl
 					while also releasing her own unlabeled{" "}
 					{`${getRandomLofiSpelling()}`} tracks.
-				</p>
-				{/* Image here */}
-				<p>
+					{/* Image here */}
+					<br />
+					<br />
 					{`${getRandomLofiSpelling(true)}`} isn't for everyone, and
 					even I have preferences for certain sub-genres of{" "}
 					{`${getRandomLofiSpelling()}`} over other{" "}

@@ -80,12 +80,12 @@ export const VolunteerWork = () => (
 				<CardDescription>
 					<span className="font-bold">Mar 2025</span>
 					&nbsp;-&nbsp;
-					<span className="space-x-1 font-bold">present</span>
+					<span className="space-x-1 font-bold">Nov 2025</span>
 				</CardDescription>
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					I'm one of two class reps for the Part III Software
+					I was one of two class reps for the Part III Software
 					Engineering Cohort of 2025.
 					<br />I was responsible for collecting unbiased feedback
 					from the cohort, working with staff and the cohort to
@@ -95,7 +95,7 @@ export const VolunteerWork = () => (
 					Being a class rep this year was incredibly rewarding; I got
 					to meet and talk to so many new people (staff and students
 					alike) and I got to appreciate how awesome everyone in our
-					cohort is!
+					cohort was!
 				</p>
 			</CardContent>
 			<CardFooter>

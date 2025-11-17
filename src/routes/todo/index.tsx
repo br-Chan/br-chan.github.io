@@ -43,7 +43,6 @@ function RouteComponent() {
 			</CardHeader>
 			<CardContent>
 				<ol>
-					<li>- add the languages / tech subsection</li>
 					<li>- revamp the tech stack tags</li>
 					<li>- add images</li>
 					<li>- add dark mode</li>
@@ -51,7 +50,7 @@ function RouteComponent() {
 						- add '2-word' mode: all items of text reduced to 2
 						words
 					</li>
-					<li>- add 'I have no whimsy' mode: no Comic Sans fonts</li>
+					<li>- add 'Serious' mode: no Comic Sans fonts</li>
 					<li>- get the groceries</li>
 				</ol>
 			</CardContent>

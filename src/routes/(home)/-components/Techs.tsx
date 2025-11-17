@@ -5,12 +5,16 @@ import {
 } from "react-icons/bi";
 import {
 	FaAngular,
+	FaCode,
+	FaGitAlt,
 	FaHtml5,
+	FaInfinity,
+	FaJira,
 	FaPython,
 	FaReact,
 	FaVuejs,
 } from "react-icons/fa6";
-import { PiCrane, PiFileCss, PiFileSql } from "react-icons/pi";
+import { PiFileCss, PiFileSql, PiLightningFill } from "react-icons/pi";
 import {
 	RiFirebaseFill,
 	RiJavaLine,
@@ -22,6 +26,9 @@ import { TbBrandMysql, TbMathMaxMin } from "react-icons/tb";
 import { TechBadge } from "@/components/TechBadge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+/**
+ * Avert your gaze! I totally did *not* hard code every single tech badge!
+ */
 export const Techs = () => {
 	return (
 		<div className="grid gap-4 lg:grid-cols-2">
@@ -111,6 +118,16 @@ export const Techs = () => {
 						startIcon={RiTailwindCssFill}
 						themeColor="#00BCFF"
 					/>
+					<TechBadge
+						label="Express.js"
+						startIcon={FaCode}
+						themeColor="#000000"
+					/>
+					<TechBadge
+						label="Vite"
+						startIcon={PiLightningFill}
+						themeColor="#F7A807"
+					/>
 				</CardContent>
 			</Card>
 			<Card>
@@ -139,7 +156,21 @@ export const Techs = () => {
 					</CardTitle>
 				</CardHeader>
 				<CardContent className="flex h-fit flex-wrap gap-2 whitespace-pre-line text-lg">
-					<PiCrane className="text-2xl" /> Under Construction
+					<TechBadge
+						label="Git"
+						startIcon={FaGitAlt}
+						themeColor="#E84E31"
+					/>
+					<TechBadge
+						label="Jira"
+						startIcon={FaJira}
+						themeColor="#1868DB"
+					/>
+					<TechBadge
+						label="Arduino"
+						startIcon={FaInfinity}
+						themeColor="#179297"
+					/>
 				</CardContent>
 			</Card>
 		</div>
