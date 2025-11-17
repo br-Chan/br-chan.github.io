@@ -4,10 +4,11 @@ import {
 	BiLogoTypescript,
 } from "react-icons/bi";
 import { GiCargoCrane, GiCrane } from "react-icons/gi";
+import { PiCrane, PiCraneTowerBold } from "react-icons/pi";
 import { RiJavaLine, RiNextjsFill } from "react-icons/ri";
 import { BadgeLink } from "@/components/BadgeLink";
+import { TechBadge } from "@/components/TechBadge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PiCrane, PiCraneTowerBold } from "react-icons/pi";
 
 export const Techs = () => {
 	return (
@@ -19,35 +20,25 @@ export const Techs = () => {
 					</CardTitle>
 				</CardHeader>
 				<CardContent className="flex h-full flex-wrap gap-2 whitespace-pre-line text-lg">
-					<BadgeLink
-						className="bg-[#f89820] text-md"
-						endIcon={null}
-						href=""
+					<TechBadge
 						label="Java"
-						startIcon={<RiJavaLine />}
+						startIcon={RiJavaLine}
+						themeColor="#017694"
 					/>
-					<BadgeLink
-						className="bg-[#323330] text-[#F0DB4F] text-md"
-						endIcon={null}
-						href=""
+					<TechBadge
 						label="JavaScript"
-						startIcon={<BiLogoJavascript />}
+						startIcon={BiLogoJavascript}
+						themeColor="#EFC929"
 					/>
-					<BadgeLink
-						// biome-ignore lint/nursery/useSortedClasses: can't make border blue otherwise
-						className="border-opaque border-blue-400 bg-white text-[#3178c6] text-md "
-						endIcon={null}
-						href=""
+					<TechBadge
 						label="TypeScript"
-						startIcon={<BiLogoTypescript />}
+						startIcon={BiLogoTypescript}
+						themeColor="#3178c6"
 					/>
-					<BadgeLink
-						// biome-ignore lint/nursery/useSortedClasses: can't make border blue otherwise
-						className="border-opaque border-blue-400 bg-white text-[#659AD2] text-md"
-						endIcon={null}
-						href=""
+					<TechBadge
 						label="C / C++"
-						startIcon={<BiLogoCPlusPlus />}
+						startIcon={BiLogoCPlusPlus}
+						themeColor="#659AD2"
 					/>
 					<PiCraneTowerBold className="text-3xl" />
 				</CardContent>
