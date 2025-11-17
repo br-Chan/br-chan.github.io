@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { FaBook, FaKeyboard, FaPenToSquare } from "react-icons/fa6";
+import { GiCrane } from "react-icons/gi";
 import {
 	Accordion,
 	AccordionContent,
@@ -17,7 +18,6 @@ import { Hobbies } from "./-components/Hobbies";
 import { Projects } from "./-components/Projects";
 import { Techs } from "./-components/Techs";
 import { VolunteerWork } from "./-components/VolunteerWork";
-import { GiCrane } from "react-icons/gi";
 
 export const Route = createFileRoute("/(home)/")({
 	component: App,
@@ -76,7 +76,7 @@ function App() {
 
 					<AccordionContent>
 						<SubSection
-							className="bg-amber-400"
+							className="border-amber-400 bg-amber-200"
 							title="Projects"
 							titleOutlineColor="#ad7e00"
 						>
@@ -86,7 +86,7 @@ function App() {
 							/>
 						</SubSection>
 						<SubSection
-							className="bg-amber-400"
+							className="border-amber-400 bg-amber-200"
 							title="Competitions"
 							titleOutlineColor="#ad7e00"
 						>
@@ -116,7 +116,7 @@ function App() {
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-blue-500"
+							className="border-blue-500 bg-blue-200"
 							title="Languages and Tools"
 							titleOutlineColor="#0448b0"
 						>
@@ -128,7 +128,7 @@ function App() {
 						</SubSection>
 
 						<SubSection
-							className="bg-blue-500"
+							className="border-blue-500 bg-blue-200"
 							title="University Courses"
 							titleOutlineColor="#0448b0"
 						>
@@ -163,7 +163,7 @@ function App() {
 					</AccordionTrigger>
 					<AccordionContent>
 						<SubSection
-							className="bg-red-500"
+							className="border-red-500 bg-red-300"
 							title="Volunteer Work"
 							titleOutlineColor="#ad0c14"
 						>
@@ -171,7 +171,7 @@ function App() {
 						</SubSection>
 
 						<SubSection
-							className="bg-red-500"
+							className="border-red-500 bg-red-300"
 							title="Hobbies and Interests"
 							titleOutlineColor="#ad0c14"
 						>

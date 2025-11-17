@@ -15,13 +15,11 @@ export const TechBadge: FC<TechBadgeProps> = memo(
 		const Icon = startIcon;
 		return (
 			<Badge
-				className={cn(
-					`border-[${themeColor}] text-[${themeColor}] cursor-default text-md`,
-					className,
-				)}
+				className={cn(`cursor-default text-md`, className)}
+				style={{ color: themeColor, borderColor: themeColor }}
 				variant="outline"
 			>
-				<Icon className={`text-[${themeColor}]`} />
+				<Icon />
 				{label}
 			</Badge>
 		);

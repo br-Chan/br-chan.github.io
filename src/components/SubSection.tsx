@@ -19,7 +19,7 @@ export const SubSection: FC<SubSectionProps> = ({
 	return (
 		<section
 			className={cn(
-				"flex flex-col gap-4 rounded-lg bg-zinc-400/30 p-4",
+				"flex flex-col gap-4 rounded-lg border-4 p-4",
 				className,
 			)}
 		>
