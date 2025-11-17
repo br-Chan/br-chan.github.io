@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { FaBook, FaKeyboard, FaPenToSquare } from "react-icons/fa6";
-import { GiCrane } from "react-icons/gi";
 import {
 	Accordion,
 	AccordionContent,
@@ -120,10 +119,6 @@ function App() {
 							title="Languages and Tools"
 							titleOutlineColor="#0448b0"
 						>
-							<span className="rounded-md bg-white p-2 font-normal-sans">
-								<GiCrane className="text-3xl" /> Under
-								Construction! ~ 16/11/25
-							</span>
 							<Techs />
 						</SubSection>
 
