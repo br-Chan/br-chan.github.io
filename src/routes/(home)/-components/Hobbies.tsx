@@ -13,7 +13,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { getRandomLofiSpelling } from "@/lib/utils";
 import { TypingChart } from "./TypingChart";
 
 // TODO: make this configurable in json rather than hard-coded?
@@ -71,7 +70,7 @@ export const Hobbies = () => (
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
 					A 4X turn-based strategy game for mobile and PC. I started
-					actively playing in 2023, and found that I enjoyed it
+					playing actively in 2023, and found that I enjoyed it
 					immensely and was quite good at it. It's a great game to
 					play with friends (if they remember to play their turns!).
 					<br />
@@ -130,26 +129,17 @@ export const Hobbies = () => (
 		</Card>
 		<Card>
 			<CardHeader>
-				<CardTitle className="font-bold text-lg">
-					{`${getRandomLofiSpelling(true)}`} Music
-				</CardTitle>
+				<CardTitle className="font-bold text-lg">Lofi Music</CardTitle>
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					I predominantly listen to {`${getRandomLofiSpelling()}`}. My
-					go-to {`${getRandomLofiSpelling()}`} artist is Purrple Cat,
-					who makes {`${getRandomLofiSpelling()}`} music for Lofi Girl
-					while also releasing her own unlabeled{" "}
-					{`${getRandomLofiSpelling()}`} tracks.
+					Among a variety of other music genres, I predominantly
+					listen to lofi.
+					<br />
+					<br />
+					My go-to lofi artist is Purrple Cat, who makes music for
+					Lofi Girl alongside her own unlabeled tracks.
 					{/* Image here */}
-					<br />
-					<br />
-					{`${getRandomLofiSpelling(true)}`} isn't for everyone, and
-					even I have preferences for certain sub-genres of{" "}
-					{`${getRandomLofiSpelling()}`} over other{" "}
-					{`${getRandomLofiSpelling()}`} genres. One thing I hate
-					about {`${getRandomLofiSpelling()}`} is how many different
-					ways there are to spell {`${getRandomLofiSpelling()}`}.
 				</p>
 			</CardContent>
 			<CardFooter>

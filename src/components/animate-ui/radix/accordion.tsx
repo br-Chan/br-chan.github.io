@@ -149,7 +149,7 @@ function AccordionTrigger({
 											x: 20,
 										}
 							}
-							className="absolute size-30 text-white"
+							className="absolute size-30"
 							initial={{
 								height: 80,
 								width: 80,
@@ -160,7 +160,7 @@ function AccordionTrigger({
 								type: "stiff",
 							}}
 						>
-							<Icon className="-translate-x-8 size-full opacity-30" />
+							<Icon className="-translate-x-8 size-full opacity-40" />
 						</motion.div>
 					)}
 

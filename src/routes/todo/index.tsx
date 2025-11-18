@@ -28,8 +28,8 @@ function RouteComponent() {
 			<CardHeader className="text-2xl">
 				<CardTitle>TODO</CardTitle>
 				<CardDescription>
-					This site is under heavy (-ish) development! Here's a list
-					of what still needs doing:
+					As of Nov 17 2025, this site is in a complete state! Here's
+					a list of stretch goals:
 				</CardDescription>
 				<CardAction>
 					<a
@@ -46,6 +46,7 @@ function RouteComponent() {
 					<li>- revamp the tech stack tags</li>
 					<li>- add images</li>
 					<li>- add dark mode</li>
+					<li>- have more interactivity</li>
 					<li>
 						- add '2-word' mode: all items of text reduced to 2
 						words
