@@ -11,7 +11,7 @@
 			"TypeScript"
 		],
 		"startDate": "Jul 2025",
-		"endDate": "present",
+		"endDate": "Nov 2025",
 		"bulletPoints": ["Deployed my own portfolio website"],
 		"summary": "I finally sat down and created my own personal website. Unfortunately I can't seem to find it anywhere. Where could it have gone? I feel like it's right under my nose...",
 		"links": [
@@ -21,6 +21,35 @@
 			},
 			{
 				"href": "https://github.com/br-Chan/br-chan.github.io",
+				"type": "GitHub"
+			}
+		]
+	},
+		{
+		"name": "Rankle for NYT Games",
+		"projectType": "project",
+		"cv": true,
+		"techStack": [
+			"React",
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Firebase"
+		],
+		"startDate": "Jun 2024",
+		"endDate": "Sep 2025",
+		"bulletPoints": [
+			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
+			"Features OAuth account authentication, responsive design and interactive UI/UX."
+		],
+		"summary": "Input your statistics for Wordle, Connections and other New York Times games, and receive a weighted average grade.\nA full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this project up by the end of 2025.",
+		"links": [
+			{
+				"href": "https://rankle-rho.vercel.app/",
+				"type": "Deployment"
+			},
+			{
+				"href": "https://github.com/br-Chan/Rankle",
 				"type": "GitHub"
 			}
 		]
@@ -94,35 +123,6 @@
 			},
 			{
 				"href": "https://github.com/Hoverth/KiwiJam2025",
-				"type": "GitHub"
-			}
-		]
-	},
-	{
-		"name": "Rankle for NYT Games",
-		"projectType": "project",
-		"cv": true,
-		"techStack": [
-			"React",
-			"Next.js",
-			"TypeScript",
-			"Tailwind CSS",
-			"Firebase"
-		],
-		"startDate": "Jun 2024",
-		"endDate": "present",
-		"bulletPoints": [
-			"Deployed a web app to collect NYT game statistics (Wordle, Connections, etc) and return a weighted average grade.",
-			"Features OAuth account authentication, responsive design and interactive UI/UX."
-		],
-		"summary": "Input your statistics for Wordle, Connections and other New York Times games, and receive a weighted average grade.\nA full-stack React application with authentication, responsive design and modern UI. It became completely redundant after the New York Times released their own leaderboards, but it was still an incredibly fun project.\nI'm aiming to wrap this project up by the end of 2025.",
-		"links": [
-			{
-				"href": "https://rankle-rho.vercel.app/",
-				"type": "Deployment"
-			},
-			{
-				"href": "https://github.com/br-Chan/Rankle",
 				"type": "GitHub"
 			}
 		]
