@@ -159,7 +159,7 @@ function App() {
 					<AccordionContent>
 						<SubSection
 							className="border-red-500 bg-red-300"
-							title="Volunteer Work"
+							title="Extracurricular / Volunteer Work"
 							titleOutlineColor="#ad0c14"
 						>
 							<VolunteerWork />

@@ -15,6 +15,43 @@ export const VolunteerWork = () => (
 		<Card>
 			<CardHeader>
 				<CardTitle className="font-bold text-lg">
+					WDCC Projects Executive
+				</CardTitle>
+				<CardDescription>
+					<span className="font-bold">Nov 2025</span>
+					&nbsp;-&nbsp;
+					<span className="space-x-1 font-bold">present</span>
+				</CardDescription>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					I am a projects executive at the Web Development and
+					Consulting Club. With the rest of the project exec team, I'm
+					currently reaching out to potential clients to take on for
+					this year's WDCC Projects and recruiting project leads.
+					<br />
+					WDCC Projects are pro-bono web development projects for
+					external student groups, charities, and other organisations,
+					worked on by small teams of 10-12 WDCC members.
+					<br />
+					If you're interested, stay tuned for semester 1!
+				</p>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-wrap gap-2">
+					<BadgeLink
+						className="bg-[#3a86fe]"
+						href="https://wdcc.co.nz/projects"
+						label="WDCC Projects"
+						startIcon={<PiCowFill />}
+						target="_blank"
+					/>
+				</span>
+			</CardFooter>
+		</Card>
+		<Card>
+			<CardHeader>
+				<CardTitle className="font-bold text-lg">
 					WDCC Project Member
 				</CardTitle>
 				<CardDescription>
