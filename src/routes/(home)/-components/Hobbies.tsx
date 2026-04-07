@@ -33,7 +33,7 @@ export const Hobbies = () => (
 					Dvorak in 2020 and Colemak in 2025.
 				</p>
 				<p>
-					My personal record for 30 sec is 143 WPM (English 1k), but
+					My personal record for 30 sec is 147 WPM (English 1k), but
 					my current long-running goal is to master as many keyboard
 					layouts as possible, without losing mastery over any of
 					them. This is harder than it sounds - it's like when you

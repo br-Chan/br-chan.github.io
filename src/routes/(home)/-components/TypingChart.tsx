@@ -11,8 +11,8 @@ import {
 export const description = "A radial chart with a label";
 
 const chartData = [
-	{ keyboardLayout: "QWERTY", wpm: 121, fill: "var(--chart-1)" },
-	{ keyboardLayout: "DVORAK", wpm: 83, fill: "var(--chart-2)" },
+	{ keyboardLayout: "QWERTY", wpm: 122, fill: "var(--chart-1)" },
+	{ keyboardLayout: "DVORAK", wpm: 82, fill: "var(--chart-2)" },
 	{ keyboardLayout: "COLEMAK", wpm: 31, fill: "var(--chart-3)" },
 	{ keyboardLayout: "WORKMAN", wpm: 0, fill: "var(--chart-4)" },
 ];
