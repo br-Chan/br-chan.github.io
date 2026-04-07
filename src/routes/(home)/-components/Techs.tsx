@@ -12,10 +12,13 @@ import {
 	FaJira,
 	FaPython,
 	FaReact,
+	FaRobot,
+	FaSearchengin,
 	FaVuejs,
 } from "react-icons/fa6";
-import { PiFileCss, PiFileSql, PiLightningFill } from "react-icons/pi";
+import { PiFileCss, PiFileSql, PiGraph, PiLightningFill } from "react-icons/pi";
 import {
+	RiChat3Fill,
 	RiFirebaseFill,
 	RiJavaLine,
 	RiNextjsFill,
@@ -151,6 +154,28 @@ export const Techs = () => {
 			</Card>
 			<Card>
 				<CardHeader>
+					<CardTitle className="font-bold text-lg">AI</CardTitle>
+				</CardHeader>
+				<CardContent className="flex h-fit flex-wrap gap-2 whitespace-pre-line text-lg">
+					<TechBadge
+						label="MCP"
+						startIcon={FaRobot}
+						themeColor="#E84E31"
+					/>
+					<TechBadge
+						label="LangGraph"
+						startIcon={PiGraph}
+						themeColor="#197BE0"
+					/>
+					<TechBadge
+						label="Open WebUI"
+						startIcon={RiChat3Fill}
+						themeColor="#179297"
+					/>
+				</CardContent>
+			</Card>
+			<Card>
+				<CardHeader>
 					<CardTitle className="font-bold text-lg">
 						Other techs
 					</CardTitle>
@@ -165,6 +190,11 @@ export const Techs = () => {
 						label="Jira"
 						startIcon={FaJira}
 						themeColor="#1868DB"
+					/>
+					<TechBadge
+						label="Elasticsearch"
+						startIcon={FaSearchengin}
+						themeColor="#E8B919"
 					/>
 					<TechBadge
 						label="Arduino"

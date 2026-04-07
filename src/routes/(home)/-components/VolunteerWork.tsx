@@ -25,16 +25,24 @@ export const VolunteerWork = () => (
 			</CardHeader>
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
-					I am a projects executive at the Web Development and
-					Consulting Club. With the rest of the project exec team, I'm
-					currently reaching out to potential clients to take on for
-					this year's WDCC Projects and recruiting project leads.
+					I'm a Projects Executive at the Web Development and
+					Consulting Club, and it's perhaps one of the most fun and
+					exciting things I've done in my entire university life.
 					<br />
 					WDCC Projects are pro-bono web development projects for
 					external student groups, charities, and other organisations,
 					worked on by small teams of 10-12 WDCC members.
 					<br />
-					If you're interested, stay tuned for semester 1!
+					Over the summer I reached out to clients for these projects
+					to elicit requirements. I also was involved in interviews
+					for project lead roles for these projects. After our
+					successful Projects Launch Night back in March, I'm now
+					overseeing the progress of a few projects that are now in
+					their beginning phases.
+					<br />
+					I'm constantly amazed by all the wonderful people I've got
+					to work with - especially the awesome Projects Exec Team that
+					I'm a part of!
 				</p>
 			</CardContent>
 			<CardFooter>
@@ -68,21 +76,11 @@ export const VolunteerWork = () => (
 					portal for member management and court bookings.
 					<br />I created components for the frontend, worked on
 					backend services and endpoints and built frontend interfaces
-					such as login, onboarding flows and admin interfaces. My
-					last feature will hopefully be implementing{" "}
-					<a
-						className="font-normal-mono"
-						href="https://nextjs.org/?uwu=true"
-						rel="noopener"
-						target="_blank"
-					>
-						?uwu=true
-					</a>{" "}
-					to the logo :)
-					{/* <br />
+					such as login, onboarding flows and admin interfaces.
+					<br />
 					This was among the best experiences I've had in my degree
 					(and possibly beyond?), where I got to meet so many people,
-					learn so many new things and genuinely have a lot of fun. */}
+					learn so many new things and genuinely have a lot of fun.
 				</p>
 			</CardContent>
 			<CardFooter>
