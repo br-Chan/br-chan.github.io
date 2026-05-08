@@ -26,7 +26,7 @@ export const VolunteerWork = () => (
 			<CardContent className="h-full whitespace-pre-line">
 				<p>
 					I'm a Projects Executive at the Web Development and
-					Consulting Club, and it's perhaps one of the most fun and
+					Consulting Club, and it's been one of the most fun and
 					exciting things I've done in my entire university life.
 					<br />
 					WDCC Projects are pro-bono web development projects for
@@ -35,14 +35,13 @@ export const VolunteerWork = () => (
 					<br />
 					Over the summer I reached out to clients for these projects
 					to elicit requirements. I also was involved in interviews
-					for project lead roles for these projects. After our
-					successful Projects Launch Night back in March, I'm now
-					overseeing the progress of a few projects that are now in
-					their beginning phases.
+					for project lead roles. After our successful Projects Launch
+					Night back in March, I'm now overseeing projects' progress
+					for the rest of the year.
 					<br />
 					I'm constantly amazed by all the wonderful people I've got
-					to work with - especially the awesome Projects Exec Team that
-					I'm a part of!
+					to work with - especially the awesome Projects Exec Team
+					that I'm a part of!
 				</p>
 			</CardContent>
 			<CardFooter>
