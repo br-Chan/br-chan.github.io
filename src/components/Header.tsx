@@ -3,6 +3,30 @@ import { motion } from "motion/react";
 import { Title } from "@/routes/-components/Title";
 import { SocialLinks } from "@/routes/(home)/-components/SocialLinks";
 
+const HeaderLink = ({
+	to,
+	children,
+}: {
+	to: string;
+	children: React.ReactNode;
+}) => {
+	return (
+		<motion.span
+			transition={{
+				type: "tween",
+				duration: 0.1,
+			}}
+			whileHover={{
+				y: -2,
+			}}
+		>
+			<Link className="hover:underline" to={to}>
+				{children}
+			</Link>
+		</motion.span>
+	);
+};
+
 export default function Header() {
 	return (
 		<header className="fixed z-100 flex w-full flex-col items-center justify-between gap-2 border-b-2 bg-white p-2 px-4 text-black md:flex-row md:px-8 dark:bg-fuchsia-900 dark:text-slate-100">
@@ -15,45 +39,10 @@ export default function Header() {
 				{/* TODO: refactor using Shadcn Navigation Menu */}
 				{/* TODO: extract motion logic to its own component */}
 				<div className="flex flex-row items-center gap-4 font-bold text-xl">
-					<motion.span
-						transition={{
-							type: "tween",
-							duration: 0.1,
-						}}
-						whileHover={{
-							y: -2,
-						}}
-					>
-						<Link className="hover:underline" to="/">
-							Home
-						</Link>
-					</motion.span>
-					<motion.span
-						transition={{
-							type: "tween",
-							duration: 0.1,
-						}}
-						whileHover={{
-							y: -2,
-						}}
-					>
-						<Link className="hover:underline" to="/cv">
-							CV
-						</Link>
-					</motion.span>
-					<motion.span
-						transition={{
-							type: "tween",
-							duration: 0.1,
-						}}
-						whileHover={{
-							y: -2,
-						}}
-					>
-						<Link className="hover:underline" to="/todo">
-							Todo
-						</Link>
-					</motion.span>
+					<HeaderLink to="/">Home</HeaderLink>
+					<HeaderLink to="/cv">CV</HeaderLink>
+					<HeaderLink to="/music">Music</HeaderLink>
+					<HeaderLink to="/todo">Todo</HeaderLink>
 				</div>
 				<SocialLinks />
 			</nav>

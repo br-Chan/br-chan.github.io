@@ -12,6 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as TodoIndexImport } from './routes/todo/index'
+import { Route as MusicIndexImport } from './routes/music/index'
 import { Route as CvIndexImport } from './routes/cv/index'
 import { Route as homeIndexImport } from './routes/(home)/index'
 
@@ -20,6 +21,12 @@ import { Route as homeIndexImport } from './routes/(home)/index'
 const TodoIndexRoute = TodoIndexImport.update({
   id: '/todo/',
   path: '/todo/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const MusicIndexRoute = MusicIndexImport.update({
+  id: '/music/',
+  path: '/music/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -53,6 +60,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CvIndexImport
       parentRoute: typeof rootRoute
     }
+    '/music/': {
+      id: '/music/'
+      path: '/music'
+      fullPath: '/music'
+      preLoaderRoute: typeof MusicIndexImport
+      parentRoute: typeof rootRoute
+    }
     '/todo/': {
       id: '/todo/'
       path: '/todo'
@@ -68,12 +82,14 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
+  '/music': typeof MusicIndexRoute
   '/todo': typeof TodoIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof homeIndexRoute
   '/cv': typeof CvIndexRoute
+  '/music': typeof MusicIndexRoute
   '/todo': typeof TodoIndexRoute
 }
 
@@ -81,27 +97,30 @@ export interface FileRoutesById {
   __root__: typeof rootRoute
   '/(home)/': typeof homeIndexRoute
   '/cv/': typeof CvIndexRoute
+  '/music/': typeof MusicIndexRoute
   '/todo/': typeof TodoIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cv' | '/todo'
+  fullPaths: '/' | '/cv' | '/music' | '/todo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cv' | '/todo'
-  id: '__root__' | '/(home)/' | '/cv/' | '/todo/'
+  to: '/' | '/cv' | '/music' | '/todo'
+  id: '__root__' | '/(home)/' | '/cv/' | '/music/' | '/todo/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   homeIndexRoute: typeof homeIndexRoute
   CvIndexRoute: typeof CvIndexRoute
+  MusicIndexRoute: typeof MusicIndexRoute
   TodoIndexRoute: typeof TodoIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   homeIndexRoute: homeIndexRoute,
   CvIndexRoute: CvIndexRoute,
+  MusicIndexRoute: MusicIndexRoute,
   TodoIndexRoute: TodoIndexRoute,
 }
 
@@ -117,6 +136,7 @@ export const routeTree = rootRoute
       "children": [
         "/(home)/",
         "/cv/",
+        "/music/",
         "/todo/"
       ]
     },
@@ -125,6 +145,9 @@ export const routeTree = rootRoute
     },
     "/cv/": {
       "filePath": "cv/index.tsx"
+    },
+    "/music/": {
+      "filePath": "music/index.tsx"
     },
     "/todo/": {
       "filePath": "todo/index.tsx"
