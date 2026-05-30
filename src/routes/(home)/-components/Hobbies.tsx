@@ -30,15 +30,19 @@ export const Hobbies = () => (
 					touch typing. Over the next 3 years of practice, my typing
 					speed grew to about 100 WPM (words per minute) and I set my
 					sights on the other keyboard layouts. I began learning
-					Dvorak in 2020 and Colemak in 2025.
+					Dvorak in 2020 and Colemak in 2024.
 				</p>
 				<p>
-					My personal record for 30 sec is 147 WPM (English 1k), but
+					My personal record for 30 sec is 152 WPM (English 1k), but
 					my current long-running goal is to master as many keyboard
 					layouts as possible, without losing mastery over any of
 					them. This is harder than it sounds - it's like when you
 					switch from JavaScript to Java and forget to add semicolons
 					all the time, but 30 times worse.
+				</p>
+				<p>
+					More recently, I've gotten a lot more into competitive speed
+					typing. Send me a friend request at DvorakTurkey!
 				</p>
 				<TypingChart />
 			</CardContent>
