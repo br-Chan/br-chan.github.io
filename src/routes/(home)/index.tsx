@@ -8,6 +8,7 @@ import {
 	AccordionTrigger,
 } from "@/components/animate-ui/radix/accordion";
 import { SubSection } from "@/components/SubSection";
+import { TextBox } from "@/components/TextBox";
 import { useStarContext } from "@/context/StarContext";
 import rawCourses from "@/data/courses.json";
 import rawProjects from "@/data/projects.json";
@@ -44,17 +45,15 @@ function App() {
 			<img alt="rickroll" src="/rickroll.png" />
 			<h2>YOU JUST LOST THE GAME</h2> */}
 
-			<div className="my-2 flex w-full flex-col gap-2 border-y-2 bg-white px-4 py-2 md:rounded-md md:border-2">
-				<p className="mt-1 text-black text-lg dark:text-slate-100">
-					I love{" "}
-					<span className="font-bold text-amber-500">creating</span>
-					{", "}
-					<span className="font-bold text-blue-500">learning</span>
-					{" and "}
-					<span className="font-bold text-red-500">doing</span> things
-					(usually all 3 at once!).
-				</p>
-			</div>
+			<TextBox>
+				I love{" "}
+				<span className="font-bold text-amber-500">creating</span>
+				{", "}
+				<span className="font-bold text-blue-500">learning</span>
+				{" and "}
+				<span className="font-bold text-red-500">doing</span> things
+				(usually all 3 at once!).
+			</TextBox>
 
 			<Accordion onValueChange={onAccordionValueChange} type="multiple">
 				<AccordionItem
