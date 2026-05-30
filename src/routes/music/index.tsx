@@ -16,7 +16,7 @@ function RouteComponent() {
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run upon first render only
 	useEffect(() => {
-		setStarColor("#00f2ff");
+		setStarColor("#B05FBC");
 	}, []);
 
 	return (
@@ -27,9 +27,9 @@ function RouteComponent() {
 			</TextBox>
 			<div>
 				<SubSection
-					className="border-amber-400 bg-amber-200"
-					title="Projects"
-					titleOutlineColor="#ad7e00"
+					className="border-[#B05FBC] bg-[#f1b2fb]"
+					title="Lofi Packs"
+					titleOutlineColor="#9852a3"
 				>
 					<LofiPacks lofiPacks={rawLofiPacks as LofiPack[]} />
 				</SubSection>

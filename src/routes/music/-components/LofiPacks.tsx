@@ -9,11 +9,11 @@ import {
 } from "@/components/ui/card";
 import type { LofiPack } from "./types";
 
-export interface ProjectsProps {
+export interface LofiPacksProps {
 	lofiPacks: LofiPack[];
 }
 
-export const LofiPacks: FC<ProjectsProps> = memo(({ lofiPacks }) => {
+export const LofiPacks: FC<LofiPacksProps> = memo(({ lofiPacks }) => {
 	return (
 		<div className="grid gap-4 sm:grid-cols-2 2xl:grid-cols-3">
 			{lofiPacks.map((lofiPack) => {
@@ -34,7 +34,6 @@ export const LofiPacks: FC<ProjectsProps> = memo(({ lofiPacks }) => {
 								className="aspect-video w-full"
 								data-testid="embed-iframe"
 								height="352"
-								loading="lazy"
 								src={lofiPack.href}
 								title={lofiPack.title}
 								width="100%"
