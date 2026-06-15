@@ -1,3 +1,4 @@
+import { FaCarSide } from "react-icons/fa";
 import {
 	FaCar,
 	FaChessKnight,
@@ -53,6 +54,13 @@ export const Hobbies = () => (
 						href="https://monkeytype.com/profile/DvorakTurkey"
 						label="Monkeytype profile"
 						startIcon={<FaKeyboard />}
+						target="_blank"
+					/>
+					<BadgeLink
+						className="bg-[#005894]"
+						href="https://data.typeracer.com/pit/profile?user=turkey_typer"
+						label="Typeracer profile"
+						startIcon={<FaCarSide />}
 						target="_blank"
 					/>
 					<BadgeLink
