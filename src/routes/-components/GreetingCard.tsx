@@ -16,7 +16,7 @@ export const GreetingCard = () => {
 			<div className="flex gap-2">
 				<span className="font-extrabold text-3xl text-white">a...</span>
 				<span className="rounded-md bg-white text-sm">
-					Penultimate Software Engineering Student at the University
+					Final Year Software Engineering Student at the University
 					of Auckland
 				</span>
 			</div>

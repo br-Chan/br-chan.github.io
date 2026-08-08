@@ -2,7 +2,7 @@ export default function CVStatement() {
 	return (
 		<section className="flex flex-col gap-2">
 			<p>
-				Hi, I'm a Penultimate Software Engineering student at the
+				Hi, I'm a Final Year Software Engineering student at the
 				University of Auckland.
 			</p>
 			<p>
