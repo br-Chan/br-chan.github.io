@@ -4,6 +4,9 @@ import {
 	FaChessKnight,
 	FaHouse,
 	FaKeyboard,
+	FaMoon,
+	FaMountain,
+	FaPencil,
 	FaSpotify,
 } from "react-icons/fa6";
 import { BadgeLink } from "@/components/BadgeLink";
@@ -75,6 +78,120 @@ export const Hobbies = () => (
 		</Card>
 		<Card>
 			<CardHeader>
+				<CardTitle className="font-bold text-lg">Reading</CardTitle>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					<b>Currently reading:</b> <i>Nineteen Eighty-Four</i>
+					<br />
+					<b>Just finished:</b> <i>Dune Messiah</i>
+				</p>
+				<br />
+				<b>Top book series:</b>
+				<ol>
+					<li>
+						1. <i>Lord of the Rings</i>
+					</li>
+					<li>
+						2. <i>Mortal Engines</i>
+					</li>
+					<li>
+						3. <i>Inheritance Cycle</i>
+					</li>
+				</ol>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-wrap gap-2">
+					<BadgeLink
+						className="bg-black"
+						href="https://www.poetryfoundation.org/poems/48634/eldorado-56d22a0920778"
+						label="Eldorado - a nice poem"
+						startIcon={<FaChessKnight />}
+						target="_blank"
+					/>
+				</span>
+			</CardFooter>
+		</Card>
+		<Card>
+			<CardHeader>
+				<CardTitle className="font-bold text-lg">Writing</CardTitle>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					Creative writing has been one of my long term hobbies; I've
+					been actively writing for the past 6 years.
+					<br />
+					<br />I write short stories & poetry, sci-fi & fantasy,
+					speculative fiction & song parodies, and many things in
+					between.
+				</p>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-wrap gap-2">
+					<BadgeLink
+						className="bg-gray-800"
+						href="https://br-chan.github.io/writing-break/"
+						label="Writing Break - my blog"
+						startIcon={<FaPencil />}
+						target="_blank"
+					/>
+					<BadgeLink
+						className="bg-yellow-200 text-black"
+						href="https://br-chan.github.io/writing-break/stories/8_atlas-ascends/"
+						label="Atlas Ascends - a short story"
+						startIcon={<FaMountain />}
+						target="_blank"
+					/>
+					<BadgeLink
+						className="bg-black text-yellow-200"
+						href="https://br-chan.github.io/writing-break/poetry/2_the-moon-is-burning/"
+						label="The Moon Is Burning - a poem"
+						startIcon={<FaMoon />}
+						target="_blank"
+					/>
+				</span>
+			</CardFooter>
+		</Card>
+		<Card>
+			<CardHeader>
+				<CardTitle className="font-bold text-lg">Music</CardTitle>
+			</CardHeader>
+			<CardContent className="h-full whitespace-pre-line">
+				<p>
+					In a long forgotten age I used to play the piano. These
+					days, I listen to way too much lofi and also make my own
+					music.
+					<br />
+					<br />
+					My go-to lofi artist is Purrple Cat, who makes music for
+					Lofi Girl alongside her own unlabeled tracks.
+					{/* Image here */}
+				</p>
+			</CardContent>
+			<CardFooter>
+				<span className="flex flex-col flex-wrap gap-2">
+					<BadgeLink
+						href="https://www.youtube.com/watch?v=FQMWRsFBTew"
+						label="I Need Money - Music Video"
+						type="YouTube"
+					/>
+					<BadgeLink
+						href="https://www.youtube.com/watch?v=klOemD50vbU"
+						label="Too Good To Be True - OST"
+						type="YouTube"
+					/>
+					<BadgeLink
+						className="bg-black text-[#1ed760]"
+						href="https://open.spotify.com/artist/73aKnLT4O8G2pBEfdlQzrE"
+						label="Purrple Cat"
+						startIcon={<FaSpotify />}
+						target="_blank"
+					/>
+				</span>
+			</CardFooter>
+		</Card>
+		<Card>
+			<CardHeader>
 				<CardTitle className="font-bold text-lg">
 					The Battle of Polytopia
 				</CardTitle>
@@ -97,70 +214,6 @@ export const Hobbies = () => (
 						href="https://polytopia.io/"
 						label="Polytopia official website"
 						startIcon={<FaHouse />}
-						target="_blank"
-					/>
-				</span>
-			</CardFooter>
-		</Card>
-		<Card>
-			<CardHeader>
-				<CardTitle className="font-bold text-lg">Reading</CardTitle>
-			</CardHeader>
-			<CardContent className="h-full whitespace-pre-line">
-				<p>
-					<b>Currently reading:</b> <i>Nineteen Eighty-Four</i>
-					<br />
-					<b>Just finished:</b> <i>Dune Messiah</i>
-					<br />
-					<br />
-					<b>Top book series:</b>
-				</p>
-				<ol>
-					<li>
-						1. <i>Lord of the Rings</i>
-					</li>
-					<li>
-						2. <i>Mortal Engines</i>
-					</li>
-					<li>
-						3. <i>Inheritance Cycle</i>
-					</li>
-				</ol>
-			</CardContent>
-			<CardFooter>
-				<span className="flex flex-wrap gap-2">
-					<BadgeLink
-						className="bg-black"
-						href="https://www.poetryfoundation.org/poems/48634/eldorado-56d22a0920778"
-						label="'Eldorado' - a nice poem"
-						startIcon={<FaChessKnight />}
-						target="_blank"
-					/>
-				</span>
-			</CardFooter>
-		</Card>
-		<Card>
-			<CardHeader>
-				<CardTitle className="font-bold text-lg">Lofi Music</CardTitle>
-			</CardHeader>
-			<CardContent className="h-full whitespace-pre-line">
-				<p>
-					Among a variety of other music genres, I predominantly
-					listen to lofi.
-					<br />
-					<br />
-					My go-to lofi artist is Purrple Cat, who makes music for
-					Lofi Girl alongside her own unlabeled tracks.
-					{/* Image here */}
-				</p>
-			</CardContent>
-			<CardFooter>
-				<span className="flex flex-wrap gap-2">
-					<BadgeLink
-						className="bg-black text-[#1ed760]"
-						href="https://open.spotify.com/artist/73aKnLT4O8G2pBEfdlQzrE"
-						label="Purrple Cat"
-						startIcon={<FaSpotify />}
 						target="_blank"
 					/>
 				</span>
